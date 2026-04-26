@@ -8,6 +8,7 @@
 - [Aider](https://aider.chat): AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
 - [Amazon Q Developer](https://aws.amazon.com/q/developer/): AWS's AI coding assistant with deep integration into AWS services and enterprise compliance.
 - [Claude Code](https://claude.com/claude-code): Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
+- [Claude Desktop](https://claude.com/download): Anthropic's native desktop app — currently the strongest all-around AI coding companion via MCP, skills, and agent mode.
 - [Codeium](https://codeium.com): Free AI autocomplete extension for 40+ editors — from the makers of Windsurf.
 - [Continue](https://www.continue.dev): Open-source AI coding assistant for VS Code and JetBrains — bring any model, any provider, customizable.
 - [Cursor](https://cursor.com): AI-first fork of VS Code with deep LLM integration, agent mode, and codebase-aware context.

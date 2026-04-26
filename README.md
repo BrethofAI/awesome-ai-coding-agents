@@ -10,30 +10,32 @@ Maintained by [Brethof AI](https://brethof.com). Companion to [awesome-llms-txt]
 
 Pick by what matters to you. (Top to bottom — first match wins.)
 
+- **Want the strongest all-around AI coding companion right now (April 2026)?** → **[Claude Desktop](#claude-desktop)**
+- **Want the same Claude power but in your terminal / CI?** → **[Claude Code](#claude-code)**
 - **Want it free + open source?** → **[Aider](#aider)** / **[Continue](#continue-dev)**
 - **Need to run 100% locally with your own LLM?** → **[Aider](#aider)** / **[Continue](#continue-dev)**
 - **Already pay for GitHub and want zero setup?** → **[GitHub Copilot](#github-copilot)**
 - **Want a polished IDE replacement (closed-source)?** → **[Cursor](#cursor)** / **[Windsurf](#windsurf)**
 - **Working on a massive monorepo with code-search needs?** → **[Sourcegraph Cody](#sourcegraph-cody)**
 - **Heavy AWS stack, lots of cloud-service code?** → **[Amazon Q Developer](#amazon-q-developer)**
-- **Want the most agentic / multi-file refactor capability?** → **[Claude Code](#claude-code)**
 - **Just want free autocomplete in your existing editor?** → **[Codeium](#codeium)**
 
 ---
 
 ## Head-to-head comparison (April 2026)
 
-| Dimension | Aider | Amazon Q Developer | Claude Code | Codeium | Continue | Cursor | GitHub Copilot | Sourcegraph Cody | Windsurf |
-|---|---|---|---|---|---|---|---|---|---|
-| **Pricing** | FREE (BYOAPI key) | $19/seat/mo (FREE tier limited) | $20/mo Pro, $100/mo Max | FREE individual + paid teams tier | FREE (open source, BYOAPI) | $20/mo Pro, $40/mo Business | $10/mo individual, $19/seat business, FREE for OSS maintainers | $9-19/seat/mo | $15/mo Pro |
-| **Open source** | Apache 2.0 ✅ | Closed (AWS) | Closed (Anthropic-owned, runs locally with API key) | Closed (free tier available) | Apache 2.0 ✅ | Closed (VS Code fork) | Closed (Microsoft) | Apache 2.0 client; cloud backend closed | Closed (VS Code fork) |
-| **Bring your own model** | Yes — any LLM via LiteLLM | No | No (Anthropic only) | No | Yes — full BYOM, local LLMs first-class | Yes (BYOAPI) | GPT, Claude, Gemini selectable on paid tiers | Yes on enterprise tier | Limited (Codeium models + some pass-through) |
-| **Local LLM support** | Yes (Ollama, llama.cpp, vLLM, LM Studio) | No | No | No | First-class — Ollama, LM Studio, vLLM, custom endpoints | Hacky (via OpenAI-compatible base URL) | No | Limited (Ollama as model option) | No |
-| **Multi-file edits / refactor** | Good — git-aware, edits in commits | Good (refactoring tools) | Excellent — agentic, plans + executes across many files | Limited (autocomplete-focused) | Good — explicit @ context, edit-in-place | Strong (Composer / Agent mode) | Good (Agent mode in VS Code) | Good with codebase search backing | Strong (Cascade) |
-| **Codebase awareness** | Repo-map (deterministic, no embeddings) | AWS service catalog awareness | Reads files on demand, very strong with hooks | Indexed for paid teams | Indexed embeddings + custom retrievers | Indexed embeddings | Indexed for paid users | Best-in-class — Sourcegraph code graph | Real-time indexing |
-| **IDE coverage** | Terminal CLI (works alongside any editor) | VS Code, JetBrains | Terminal CLI; VS Code + JetBrains plugins | 40+ editors (VS Code, JetBrains, Vim, Emacs, Sublime, ...) | VS Code, JetBrains | Standalone IDE (VS Code fork) | VS Code, Visual Studio, JetBrains, Neovim, Xcode | VS Code, JetBrains, web | Standalone IDE (VS Code fork) |
-| **Privacy posture** | You pick the API; can be 100% local with Ollama | AWS retention by default; configurable | Anthropic API (sees your code) | Free tier sees code; enterprise zero-retention | 100% local possible; cloud optional | Telemetry on; Privacy Mode opts out of training | Microsoft cloud; enterprise gates | Self-hosted available (enterprise) | Codeium SOC 2; enterprise zero-retention |
-| **Best use case** | Open-source / local-first / git discipline / cost-sensitive | AWS-heavy stacks | Power users, big refactors, terminal-first workflows | Free autocomplete in your existing editor | BYOM / privacy-conscious / customizable / self-hosted | Polished IDE replacement, broad audience | Already on GitHub, want zero friction | Massive monorepos with deep code search needs | Cursor alternative if you prefer Codeium's ecosystem |
+| Dimension | Aider | Amazon Q Developer | Claude Code | Claude Desktop | Codeium | Continue | Cursor | GitHub Copilot | Sourcegraph Cody | Windsurf |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Pricing** | FREE (BYOAPI key) | $19/seat/mo (FREE tier limited) | $20/mo Pro, $100/mo Max | $20/mo Pro, $100/mo Max (same plans as Claude Code) | FREE individual + paid teams tier | FREE (open source, BYOAPI) | $20/mo Pro, $40/mo Business | $10/mo individual, $19/seat business, FREE for OSS maintainers | $9-19/seat/mo | $15/mo Pro |
+| **Open source** | Apache 2.0 ✅ | Closed (AWS) | Closed (Anthropic-owned, runs locally with API key) | Closed (Anthropic) | Closed (free tier available) | Apache 2.0 ✅ | Closed (VS Code fork) | Closed (Microsoft) | Apache 2.0 client; cloud backend closed | Closed (VS Code fork) |
+| **Bring your own model** | Yes — any LLM via LiteLLM | No | No (Anthropic only) | No (Anthropic only) | No | Yes — full BYOM, local LLMs first-class | Yes (BYOAPI) | GPT, Claude, Gemini selectable on paid tiers | Yes on enterprise tier | Limited (Codeium models + some pass-through) |
+| **Local LLM support** | Yes (Ollama, llama.cpp, vLLM, LM Studio) | No | No | No | No | First-class — Ollama, LM Studio, vLLM, custom endpoints | Hacky (via OpenAI-compatible base URL) | No | Limited (Ollama as model option) | No |
+| **Multi-file edits / refactor** | Good — git-aware, edits in commits | Good (refactoring tools) | Excellent — agentic, plans + executes across many files | Excellent — agent mode + filesystem MCP, edits via accepted diffs | Limited (autocomplete-focused) | Good — explicit @ context, edit-in-place | Strong (Composer / Agent mode) | Good (Agent mode in VS Code) | Good with codebase search backing | Strong (Cascade) |
+| **Codebase awareness** | Repo-map (deterministic, no embeddings) | AWS service catalog awareness | Reads files on demand, very strong with hooks | Filesystem MCP — reads on demand, can index via custom MCP | Indexed for paid teams | Indexed embeddings + custom retrievers | Indexed embeddings | Indexed for paid users | Best-in-class — Sourcegraph code graph | Real-time indexing |
+| **Visual / image input** | No (text only) | Limited | Limited (Read tool can ingest images) | Yes — drag in screenshots, PDFs, images for visual debugging | No | Limited | Yes — paste image into chat | Limited | No | Yes |
+| **IDE coverage** | Terminal CLI (works alongside any editor) | VS Code, JetBrains | Terminal CLI; VS Code + JetBrains plugins | Editor-agnostic — works alongside any IDE via filesystem MCP | 40+ editors (VS Code, JetBrains, Vim, Emacs, Sublime, ...) | VS Code, JetBrains | Standalone IDE (VS Code fork) | VS Code, Visual Studio, JetBrains, Neovim, Xcode | VS Code, JetBrains, web | Standalone IDE (VS Code fork) |
+| **Privacy posture** | You pick the API; can be 100% local with Ollama | AWS retention by default; configurable | Anthropic API (sees your code) | Anthropic API (sees your code) | Free tier sees code; enterprise zero-retention | 100% local possible; cloud optional | Telemetry on; Privacy Mode opts out of training | Microsoft cloud; enterprise gates | Self-hosted available (enterprise) | Codeium SOC 2; enterprise zero-retention |
+| **Best use case** | Open-source / local-first / git discipline / cost-sensitive | AWS-heavy stacks | Power users, big refactors, terminal-first workflows, CI integration | Architecture / planning sessions, visual debugging, MCP-extended workflows alongside any editor | Free autocomplete in your existing editor | BYOM / privacy-conscious / customizable / self-hosted | Polished IDE replacement, broad audience | Already on GitHub, want zero friction | Massive monorepos with deep code search needs | Cursor alternative if you prefer Codeium's ecosystem |
 
 ---
 
@@ -124,6 +126,61 @@ references available to other AI assistants.
 - Writing new features with reviewed commits and CI awareness
 - Onboarding to unfamiliar repos via guided exploration
 - Building and testing in one loop without leaving the terminal
+
+---
+
+### Claude Desktop <a name="claude-desktop"></a>
+
+_Anthropic's native desktop app — currently the strongest all-around AI coding companion via MCP, skills, and agent mode._
+
+**Site:** [https://claude.com/download](https://claude.com/download) · **License:** commercial · **Deployment:** local
+
+Claude Desktop is Anthropic's official native app for macOS, Windows,
+and Linux. While not exclusively a coding tool, it's currently the
+strongest all-around AI coding companion in 2026 thanks to the
+combination of: MCP (Model Context Protocol) servers that give it
+filesystem, git, GitHub, database, and shell access; a skills system
+for packaging repeatable coding workflows; agent mode for autonomous
+multi-step tasks; long-context conversations with local history; and
+Anthropic's Claude Sonnet 4.x / Opus 4.x family running underneath.
+
+Compared to **Claude Code** (Anthropic's terminal CLI agent): same
+underlying models and tool-use primitives, different interface. Claude
+Desktop is faster for visual work (drop in screenshots, read PDFs,
+inspect designs), and the chat-first UX suits multi-turn coding
+sessions where you're thinking through architecture rather than
+typing-to-edit. Claude Code wins for terminal-native workflows and
+CI integration; Claude Desktop wins for the "I want to talk through
+a problem with full repo access" mode.
+
+Compared to **Cursor / Windsurf**: those are IDE-bound. Claude Desktop
+is editor-agnostic — works alongside any editor (VS Code, JetBrains,
+Neovim) by reading/writing files via MCP. The UX trade-off is that
+edits aren't inline; they happen in a chat-driven loop where Claude
+proposes diffs you accept.
+
+Plus: Claude Desktop is the place where MCP server experimentation
+happens. New community MCP servers ship constantly (puppeteer, Stripe,
+Slack, Postgres, Sentry, ...) — adding any of them gives Claude
+Desktop a new capability without changing the app.
+
+**Features:**
+- Native apps for macOS, Windows, and Linux
+- MCP (Model Context Protocol) integration — filesystem, git, GitHub, postgres, shell, browser, custom servers
+- Skills system — package coding workflows as reusable invocations
+- Agent mode for autonomous multi-step coding tasks
+- Drop in screenshots / PDFs for visual debugging
+- Long-context conversations with local persistence
+- Multiple models (Sonnet, Opus, Haiku) selectable
+- Editor-agnostic — pairs with any IDE you already use
+
+**Best for:**
+- Architecture / planning sessions where you talk through a design
+- Multi-file refactors driven by chat with the agent reading the repo
+- Visual debugging — drop in a screenshot of a broken UI
+- Workflow automation via custom MCP servers and skills
+- Power users who want Claude's full capabilities without committing to a CLI or new IDE
+- Working alongside an existing editor (VS Code / JetBrains / Neovim) without replacing it
 
 ---
 

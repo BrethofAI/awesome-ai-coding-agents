@@ -1,0 +1,67 @@
+name: Claude Desktop
+slug: claude-desktop
+url: https://claude.com/download
+repository: null
+llms_txt: https://docs.claude.com/llms.txt
+llms_full_txt: https://docs.claude.com/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-coding-app
+
+tagline: Anthropic's native desktop app — currently the strongest all-around AI coding companion via MCP, skills, and agent mode.
+
+description: |
+  Claude Desktop is Anthropic's official native app for macOS, Windows,
+  and Linux. While not exclusively a coding tool, it's currently the
+  strongest all-around AI coding companion in 2026 thanks to the
+  combination of: MCP (Model Context Protocol) servers that give it
+  filesystem, git, GitHub, database, and shell access; a skills system
+  for packaging repeatable coding workflows; agent mode for autonomous
+  multi-step tasks; long-context conversations with local history; and
+  Anthropic's Claude Sonnet 4.x / Opus 4.x family running underneath.
+
+  Compared to **Claude Code** (Anthropic's terminal CLI agent): same
+  underlying models and tool-use primitives, different interface. Claude
+  Desktop is faster for visual work (drop in screenshots, read PDFs,
+  inspect designs), and the chat-first UX suits multi-turn coding
+  sessions where you're thinking through architecture rather than
+  typing-to-edit. Claude Code wins for terminal-native workflows and
+  CI integration; Claude Desktop wins for the "I want to talk through
+  a problem with full repo access" mode.
+
+  Compared to **Cursor / Windsurf**: those are IDE-bound. Claude Desktop
+  is editor-agnostic — works alongside any editor (VS Code, JetBrains,
+  Neovim) by reading/writing files via MCP. The UX trade-off is that
+  edits aren't inline; they happen in a chat-driven loop where Claude
+  proposes diffs you accept.
+
+  Plus: Claude Desktop is the place where MCP server experimentation
+  happens. New community MCP servers ship constantly (puppeteer, Stripe,
+  Slack, Postgres, Sentry, ...) — adding any of them gives Claude
+  Desktop a new capability without changing the app.
+
+features:
+  - Native apps for macOS, Windows, and Linux
+  - MCP (Model Context Protocol) integration — filesystem, git, GitHub, postgres, shell, browser, custom servers
+  - Skills system — package coding workflows as reusable invocations
+  - Agent mode for autonomous multi-step coding tasks
+  - Drop in screenshots / PDFs for visual debugging
+  - Long-context conversations with local persistence
+  - Multiple models (Sonnet, Opus, Haiku) selectable
+  - Editor-agnostic — pairs with any IDE you already use
+
+use_cases:
+  - Architecture / planning sessions where you talk through a design
+  - Multi-file refactors driven by chat with the agent reading the repo
+  - Visual debugging — drop in a screenshot of a broken UI
+  - Workflow automation via custom MCP servers and skills
+  - Power users who want Claude's full capabilities without committing to a CLI or new IDE
+  - Working alongside an existing editor (VS Code / JetBrains / Neovim) without replacing it
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [claude, anthropic, mcp, skills, agent-mode, desktop]
+maintainer: Anthropic
+added: 2026-04-26

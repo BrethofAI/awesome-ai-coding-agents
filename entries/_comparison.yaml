@@ -5,6 +5,7 @@ title: "Head-to-head comparison (April 2026)"
 dimensions:
   - name: "Pricing"
     values:
+      claude-desktop: "$20/mo Pro, $100/mo Max (same plans as Claude Code)"
       claude-code: "$20/mo Pro, $100/mo Max"
       cursor: "$20/mo Pro, $40/mo Business"
       windsurf: "$15/mo Pro"
@@ -16,6 +17,7 @@ dimensions:
       sourcegraph-cody: "$9-19/seat/mo"
   - name: "Open source"
     values:
+      claude-desktop: "Closed (Anthropic)"
       claude-code: "Closed (Anthropic-owned, runs locally with API key)"
       cursor: "Closed (VS Code fork)"
       windsurf: "Closed (VS Code fork)"
@@ -27,6 +29,7 @@ dimensions:
       sourcegraph-cody: "Apache 2.0 client; cloud backend closed"
   - name: "Bring your own model"
     values:
+      claude-desktop: "No (Anthropic only)"
       claude-code: "No (Anthropic only)"
       cursor: "Yes (BYOAPI)"
       windsurf: "Limited (Codeium models + some pass-through)"
@@ -38,6 +41,7 @@ dimensions:
       sourcegraph-cody: "Yes on enterprise tier"
   - name: "Local LLM support"
     values:
+      claude-desktop: "No"
       claude-code: "No"
       cursor: "Hacky (via OpenAI-compatible base URL)"
       windsurf: "No"
@@ -49,6 +53,7 @@ dimensions:
       sourcegraph-cody: "Limited (Ollama as model option)"
   - name: "Multi-file edits / refactor"
     values:
+      claude-desktop: "Excellent — agent mode + filesystem MCP, edits via accepted diffs"
       claude-code: "Excellent — agentic, plans + executes across many files"
       cursor: "Strong (Composer / Agent mode)"
       windsurf: "Strong (Cascade)"
@@ -60,6 +65,7 @@ dimensions:
       sourcegraph-cody: "Good with codebase search backing"
   - name: "Codebase awareness"
     values:
+      claude-desktop: "Filesystem MCP — reads on demand, can index via custom MCP"
       claude-code: "Reads files on demand, very strong with hooks"
       cursor: "Indexed embeddings"
       windsurf: "Real-time indexing"
@@ -69,8 +75,21 @@ dimensions:
       codeium: "Indexed for paid teams"
       amazon-q-developer: "AWS service catalog awareness"
       sourcegraph-cody: "Best-in-class — Sourcegraph code graph"
+  - name: "Visual / image input"
+    values:
+      claude-desktop: "Yes — drag in screenshots, PDFs, images for visual debugging"
+      claude-code: "Limited (Read tool can ingest images)"
+      cursor: "Yes — paste image into chat"
+      windsurf: "Yes"
+      github-copilot: "Limited"
+      aider: "No (text only)"
+      continue-dev: "Limited"
+      codeium: "No"
+      amazon-q-developer: "Limited"
+      sourcegraph-cody: "No"
   - name: "IDE coverage"
     values:
+      claude-desktop: "Editor-agnostic — works alongside any IDE via filesystem MCP"
       claude-code: "Terminal CLI; VS Code + JetBrains plugins"
       cursor: "Standalone IDE (VS Code fork)"
       windsurf: "Standalone IDE (VS Code fork)"
@@ -82,6 +101,7 @@ dimensions:
       sourcegraph-cody: "VS Code, JetBrains, web"
   - name: "Privacy posture"
     values:
+      claude-desktop: "Anthropic API (sees your code)"
       claude-code: "Anthropic API (sees your code)"
       cursor: "Telemetry on; Privacy Mode opts out of training"
       windsurf: "Codeium SOC 2; enterprise zero-retention"
@@ -93,7 +113,8 @@ dimensions:
       sourcegraph-cody: "Self-hosted available (enterprise)"
   - name: "Best use case"
     values:
-      claude-code: "Power users, big refactors, terminal-first workflows"
+      claude-desktop: "Architecture / planning sessions, visual debugging, MCP-extended workflows alongside any editor"
+      claude-code: "Power users, big refactors, terminal-first workflows, CI integration"
       cursor: "Polished IDE replacement, broad audience"
       windsurf: "Cursor alternative if you prefer Codeium's ecosystem"
       github-copilot: "Already on GitHub, want zero friction"
