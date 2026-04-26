@@ -1,0 +1,70 @@
+name: build-and-validate
+
+on:
+  pull_request:
+    paths:
+      - 'entries/**'
+      - 'scripts/**'
+      - '.github/workflows/ci.yml'
+  push:
+    branches:
+      - main
+  schedule:
+    # Daily re-validate to catch entries whose llms.txt went 404 silently.
+    - cron: '17 3 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pyyaml requests
+      - name: Build README + llms.txt
+        run: python3 scripts/build.py
+      - name: Check for uncommitted changes (fails if PR didn't regenerate)
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --exit-code README.md llms.txt llms-full.txt; then
+            echo "::warning::README.md / llms.txt / llms-full.txt are out of sync with entries/."
+            echo "That's OK — main branch will regenerate on merge. No action needed in the PR."
+          fi
+
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pyyaml requests
+      - name: Validate llms.txt URLs
+        run: python3 scripts/validate.py
+
+  regenerate-on-main:
+    # On push-to-main: rebuild README and commit back so human visitors
+    # always see fresh output.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pyyaml requests
+      - run: python3 scripts/build.py
+      - name: Commit regenerated files
+        run: |
+          git config user.name "awesome-llms-txt-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet; then
+            echo "No changes."
+          else
+            git add README.md llms.txt llms-full.txt
+            git commit -m "chore: regenerate README and llms.txt from entries/"
+            git push
+          fi

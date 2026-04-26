@@ -1,0 +1,52 @@
+name: Aider
+slug: aider
+url: https://aider.chat
+repository: https://github.com/Aider-AI/aider
+llms_txt: https://aider.chat/llms.txt
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
+
+description: |
+  Aider is an open-source CLI coding assistant that edits code in an
+  existing git repository under the developer's direction. It's known for
+  two core design choices: it operates on git (every change becomes a
+  discrete commit with an auto-generated message, making rollback trivial),
+  and it builds a "repo map" of the codebase so the model always has
+  context for where functions and types live across files.
+
+  It supports any LLM provider — Anthropic Claude, OpenAI GPT, local models
+  via Ollama or OpenAI-compatible servers, DeepSeek, xAI. Unlike IDE-coupled
+  assistants, Aider lives in the terminal and plays well with any editor
+  the developer already uses.
+
+  The `/architect` mode separates planning (using a reasoning model) from
+  editing (using a fast edit model) for complex changes. The benchmark
+  leaderboard Aider maintains is a widely-cited reference for LLM coding
+  performance.
+
+features:
+  - Git-first workflow with automatic commits per change
+  - Repo-map context for large codebase awareness
+  - Any LLM provider (Claude, GPT, local, DeepSeek, xAI)
+  - Architect mode: reasoning model plans, edit model executes
+  - Voice input support
+  - In-chat commands for file management, linting, testing
+  - Language-agnostic (Python, JS, Rust, Go, Java, C++, … )
+
+use_cases:
+  - Pair programming in the terminal without IDE lock-in
+  - Refactoring across multi-file changes with git discipline
+  - Adding features to existing codebases with reviewable commits
+  - Running local LLMs as coding assistants
+  - Developers who prefer vim / emacs over IDE-integrated assistants
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, aider, git, open-source, pair-programming]
+maintainer: Aider-AI
+added: 2026-04-24

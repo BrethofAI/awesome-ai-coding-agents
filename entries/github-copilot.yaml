@@ -1,0 +1,50 @@
+name: GitHub Copilot
+slug: github-copilot
+url: https://github.com/features/copilot
+repository: null
+llms_txt: https://docs.github.com/llms.txt
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: ide-coding-assistant
+
+tagline: GitHub's native AI coding assistant with chat, autocomplete, and agent mode across major IDEs.
+
+description: |
+  GitHub Copilot is the original and most widely deployed AI coding
+  assistant, integrated natively into VS Code, Visual Studio, JetBrains
+  IDEs, Neovim, Xcode, and GitHub itself. It offers inline code completion,
+  chat, a multi-file agent mode, pull-request summaries, and command-line
+  assistance via `gh copilot`.
+
+  Under the hood Copilot routes to multiple LLMs — GPT, Claude Sonnet,
+  Gemini — with model choice exposed to users on the paid tiers. Its
+  reach within the GitHub platform (issues, PRs, code review, Actions)
+  makes it a practical default for teams already on GitHub.
+
+  For enterprise deployments, Copilot offers SOC 2 compliance, data
+  residency, code reference filtering, and the ability to restrict
+  external traffic — the most mature enterprise posture in the category.
+
+features:
+  - VS Code, Visual Studio, JetBrains, Neovim, Xcode integrations
+  - Inline autocomplete, chat, and multi-file agent mode
+  - Pull-request and code-review assistance on GitHub
+  - Multiple model backends (GPT, Claude, Gemini)
+  - "`gh copilot` CLI for command-line help"
+  - Enterprise tier with SOC 2, data residency, content filtering
+  - Free tier available for open-source maintainers and students
+
+use_cases:
+  - Professional development at organizations already on GitHub
+  - Teams needing enterprise compliance posture out of the box
+  - Users who want PR / issue / code-review AI integrated into Git workflow
+  - Cross-IDE consistency (one subscription, many editors)
+  - Students and OSS maintainers on the free tier
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, github, copilot, ide, enterprise, commercial]
+maintainer: GitHub / Microsoft
+added: 2026-04-24

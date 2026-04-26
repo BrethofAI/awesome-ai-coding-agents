@@ -1,0 +1,51 @@
+name: Cursor
+slug: cursor
+url: https://cursor.com
+repository: null
+llms_txt: https://docs.cursor.com/llms.txt
+llms_full_txt: https://docs.cursor.com/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-ide
+
+tagline: AI-first fork of VS Code with deep LLM integration, agent mode, and codebase-aware context.
+
+description: |
+  Cursor is a commercial fork of VS Code that puts AI coding assistance at
+  the center of the editor rather than as an extension. It ships chat,
+  inline edits, multi-file rewrites, autocomplete, an agent mode for
+  autonomous task execution, and codebase-wide context retrieval out of the
+  box — all tuned against Claude and GPT models.
+
+  Cursor differentiates on UX polish: @-mentions to reference files and
+  symbols, diff-style inline edits, a native command palette for AI
+  actions, and proprietary context-selection heuristics tuned for the
+  provided models. Its agent mode (formerly "Composer") can execute
+  multi-step refactors across many files with user approval gates.
+
+  It's closed-source and subscription-based, with a free tier that has
+  meaningful limits. Commercial adoption among professional developers is
+  significant.
+
+features:
+  - VS Code fork with preserved extension compatibility
+  - Chat with @-file, @-symbol, @-web context references
+  - Inline edit with diff-preview before applying
+  - Agent mode for multi-step autonomous refactors
+  - Codebase-wide semantic search and retrieval
+  - Tab autocomplete tuned for each supported model
+  - Anthropic and OpenAI model support out of the box
+
+use_cases:
+  - Professional developers who want maximum AI integration
+  - Teams that want a consistent IDE across members with built-in AI
+  - Large refactors that benefit from multi-file agent coordination
+  - Developers migrating from pure VS Code who want more AI than extensions provide
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, cursor, ide, vscode-fork, agent-mode, commercial]
+maintainer: Anysphere
+added: 2026-04-24

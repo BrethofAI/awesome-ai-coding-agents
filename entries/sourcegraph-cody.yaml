@@ -1,0 +1,13 @@
+name: Sourcegraph Cody
+slug: sourcegraph-cody
+url: https://sourcegraph.com/cody
+llms_txt: https://sourcegraph.com/cody/llms.txt
+llms_txt_status: missing
+status: stub
+
+category: coding-agents
+tagline: AI coding assistant with enterprise-grade code search context across massive codebases.
+
+license: commercial
+deployment: local
+added: 2026-04-24

@@ -1,0 +1,50 @@
+name: Windsurf
+slug: windsurf
+url: https://windsurf.com
+repository: null
+llms_txt: https://docs.windsurf.com/llms.txt
+llms_full_txt: https://docs.windsurf.com/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-ide
+
+tagline: AI-native IDE from Codeium with Cascade agent mode, deep indexing, and real-time code awareness.
+
+description: |
+  Windsurf (formerly Codeium) is a commercial AI-native IDE and VS Code
+  fork competing directly with Cursor. Its flagship feature is Cascade —
+  an agent mode that combines chat, multi-file edits, and codebase
+  understanding into a single conversational interface that can execute
+  long-running tasks with user approval.
+
+  Windsurf emphasizes real-time awareness of the developer's actions (what
+  they just edited, what they're looking at) to feed context into agent
+  responses. Its indexing of large codebases is a recurring strength in
+  benchmarks against comparable AI IDEs.
+
+  Windsurf shares roots with the Codeium autocomplete extension, which
+  remains available as a standalone plugin for VS Code, JetBrains, Vim,
+  Emacs, and many more.
+
+features:
+  - VS Code-based IDE with Cascade agent mode
+  - Real-time context awareness of developer actions
+  - Multi-file edit planning and execution
+  - Deep codebase indexing (fast on large repos)
+  - Supervised agent with user-approval gates
+  - Standalone Codeium autocomplete for 40+ editors
+  - Team plans with shared context / custom instructions
+
+use_cases:
+  - Developers who want Cursor-style AI IDE with a different polish model
+  - Large-codebase work where indexing quality matters
+  - Teams standardizing on an AI-native IDE
+  - Users of Codeium autocomplete who want the full Cascade experience
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, windsurf, codeium, ide, agent-mode, commercial]
+maintainer: Windsurf (Codeium)
+added: 2026-04-24

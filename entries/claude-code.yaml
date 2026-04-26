@@ -1,0 +1,51 @@
+name: Claude Code
+slug: claude-code
+url: https://claude.com/claude-code
+repository: null
+llms_txt: https://docs.claude.com/llms.txt
+llms_full_txt: https://docs.claude.com/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
+
+description: |
+  Claude Code is Anthropic's official terminal-based coding agent. It runs
+  locally against the Claude API and has first-class tool use for reading
+  and editing files, running shell commands, searching codebases, browsing
+  the web, and orchestrating sub-agents. It ships with a hook system, slash
+  commands, MCP server support, and IDE integrations (VS Code, JetBrains).
+
+  Unlike chat-only coding assistants, Claude Code is agentic by design: it
+  plans, executes multi-step changes, reads its own output, and recovers
+  from errors. It's built around the Claude Agent SDK and exposes the same
+  primitives to developers who want to build custom agents.
+
+  Anthropic publishes both `llms.txt` and `llms-full.txt` for the Claude
+  Code documentation, making it one of the best-indexed coding-agent
+  references available to other AI assistants.
+
+features:
+  - Terminal CLI with native tool use (Bash, Read, Edit, Write, Grep)
+  - Hook system for shaping agent behavior per-project
+  - Slash commands and user-defined skills via SKILL.md
+  - MCP server support for connecting external tools and data
+  - IDE integrations for VS Code and JetBrains
+  - Background task support and session persistence
+  - Built on the Claude Agent SDK, exposed for custom agent builders
+
+use_cases:
+  - Refactoring and migration across large codebases
+  - Debugging and fixing issues with full shell + git access
+  - Writing new features with reviewed commits and CI awareness
+  - Onboarding to unfamiliar repos via guided exploration
+  - Building and testing in one loop without leaving the terminal
+
+license: commercial
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, anthropic, claude, agentic, mcp]
+maintainer: Anthropic
+added: 2026-04-24

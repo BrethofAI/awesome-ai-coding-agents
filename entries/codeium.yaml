@@ -1,0 +1,13 @@
+name: Codeium
+slug: codeium
+url: https://codeium.com
+llms_txt: https://codeium.com/llms.txt
+llms_txt_status: missing
+status: stub
+
+category: coding-agents
+tagline: Free AI autocomplete extension for 40+ editors — from the makers of Windsurf.
+
+license: freemium
+deployment: local
+added: 2026-04-24

@@ -1,0 +1,52 @@
+name: Continue
+slug: continue-dev
+url: https://www.continue.dev
+repository: https://github.com/continuedev/continue
+llms_txt: https://docs.continue.dev/llms.txt
+llms_full_txt: https://docs.continue.dev/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ide-coding-assistant
+
+tagline: Open-source AI coding assistant for VS Code and JetBrains — bring any model, any provider, customizable.
+
+description: |
+  Continue is an open-source AI coding assistant that runs as a VS Code or
+  JetBrains extension. Unlike vendor-locked assistants, Continue is fully
+  configurable: users bring their own model (cloud or local), their own
+  provider (Anthropic, OpenAI, local via Ollama, vLLM, LM Studio, etc.),
+  and define custom slash commands, context providers, and tools via a
+  plain YAML config.
+
+  It supports chat, inline autocomplete, tab-complete, edit-in-place, agent
+  mode with tool use, codebase-aware retrieval, and team-shared configs. The
+  extension works online or fully offline against local inference servers,
+  making it a popular choice for organizations where code can't leave
+  developer machines.
+
+  Continue publishes `llms.txt` and `llms-full.txt` — a useful reference
+  while building coding assistants on top of local or hybrid models.
+
+features:
+  - VS Code and JetBrains extensions
+  - Bring-your-own-model (cloud or local)
+  - Chat, autocomplete, edit-in-place, agent mode
+  - Codebase retrieval and context providers
+  - Custom slash commands and tools via YAML config
+  - Team-shared configuration for consistent org-wide setups
+  - Fully offline capable with local model servers
+
+use_cases:
+  - IDE-integrated coding assistance without vendor lock-in
+  - Air-gapped development teams using local LLMs
+  - Organizations standardizing on a custom model + prompt setup
+  - Developers who want Cursor-like features in vanilla VS Code
+  - Hybrid setups: fast local completions, smart cloud chat
+
+license: open-source
+deployment: library
+platforms: [linux, macos, windows]
+tags: [coding-agent, vscode, jetbrains, continue, open-source, local-llm]
+maintainer: Continue
+added: 2026-04-24

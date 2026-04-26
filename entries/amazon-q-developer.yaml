@@ -1,0 +1,13 @@
+name: Amazon Q Developer
+slug: amazon-q-developer
+url: https://aws.amazon.com/q/developer/
+llms_txt: https://aws.amazon.com/q/developer/llms.txt
+llms_txt_status: missing
+status: stub
+
+category: coding-agents
+tagline: AWS's AI coding assistant with deep integration into AWS services and enterprise compliance.
+
+license: commercial
+deployment: local
+added: 2026-04-24
