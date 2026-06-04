@@ -59,8 +59,8 @@ jobs:
       - run: python3 scripts/build.py
       - name: Commit regenerated files
         run: |
-          git config user.name "awesome-llms-txt-bot"
-          git config user.email "actions@github.com"
+          git config user.name "BrethofAI"
+          git config user.email "hello@brethof.ai"
           if git diff --quiet; then
             echo "No changes."
           else
