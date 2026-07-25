@@ -21,6 +21,13 @@ except ImportError:
     sys.exit("Missing deps. Install them: pip install pyyaml requests")
 
 
+# This script prints check marks and box glyphs. On Windows the default stdout
+# codec is cp1252, which raises UnicodeEncodeError on them; force UTF-8 so the
+# output is identical on Linux CI and a Windows shell.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_DIR = REPO_ROOT / "entries"
 
@@ -32,7 +39,7 @@ SLEEP_BETWEEN = 0.5  # be polite
 def load_entries() -> list[dict]:
     entries = []
     for p in sorted(ENTRIES_DIR.glob("*.yaml")):
-        with p.open() as f:
+        with p.open(encoding="utf-8") as f:
             d = yaml.safe_load(f) or {}
         d["_source_file"] = p.name
         entries.append(d)

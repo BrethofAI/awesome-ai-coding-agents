@@ -2,7 +2,7 @@
 
 > Honest comparison of AI coding assistants in April 2026. What each one does well, what it does badly, which to pick for your situation. No sponsored placements, no affiliate links, no paid rankings.
 
-Maintained by [Brethof AI](https://brethof.com). Companion to [awesome-llms-txt](https://github.com/BrethofAI/awesome-llms-txt) — this list goes deeper on one category.
+Maintained by [Brethof AI](https://brethof.ai). Companion to [awesome-llms-txt](https://github.com/BrethofAI/awesome-llms-txt) — this list goes deeper on one category.
 
 ---
 

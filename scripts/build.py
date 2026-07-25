@@ -45,7 +45,7 @@ def load_entries() -> tuple[list[dict], dict]:
     entries = []
     comparison = None
     for yaml_path in sorted(ENTRIES_DIR.glob("*.yaml")):
-        with yaml_path.open() as f:
+        with yaml_path.open(encoding="utf-8") as f:
             data = yaml.safe_load(f)
         if not isinstance(data, dict):
             continue
@@ -134,7 +134,7 @@ def render_readme(entries: list[dict], comparison: dict) -> str:
     )
     lines.append("")
     lines.append(
-        "Maintained by [Brethof AI](https://brethof.com). Companion to "
+        "Maintained by [Brethof AI](https://brethof.ai). Companion to "
         "[awesome-llms-txt](https://github.com/BrethofAI/awesome-llms-txt) — "
         "this list goes deeper on one category."
     )
@@ -222,9 +222,9 @@ def main() -> int:
     if not entries:
         sys.exit("No entries found.")
     print(f"loaded {len(entries)} tool entries + comparison={'yes' if comparison else 'no'}")
-    README_OUT.write_text(render_readme(entries, comparison))
-    LLMS_OUT.write_text(render_llms_txt(entries))
-    LLMS_FULL_OUT.write_text(render_llms_full_txt(entries, comparison))
+    README_OUT.write_text(render_readme(entries, comparison), encoding="utf-8")
+    LLMS_OUT.write_text(render_llms_txt(entries), encoding="utf-8")
+    LLMS_FULL_OUT.write_text(render_llms_full_txt(entries, comparison), encoding="utf-8")
     print(f"wrote {README_OUT.name}   ({README_OUT.stat().st_size} bytes)")
     print(f"wrote {LLMS_OUT.name}       ({LLMS_OUT.stat().st_size} bytes)")
     print(f"wrote {LLMS_FULL_OUT.name}  ({LLMS_FULL_OUT.stat().st_size} bytes)")
