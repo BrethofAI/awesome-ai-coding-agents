@@ -16,9 +16,14 @@ on:
     branches:
       - main
   schedule:
-    # Daily reconcile against the live web.
+    # Daily read-only check against the live web. Reports; never writes.
     - cron: '17 3 * * *'
-  workflow_dispatch:      # heal on demand, without waiting for the cron
+  workflow_dispatch:
+    inputs:
+      heal:
+        description: 'Write corrected statuses back and commit them'
+        type: boolean
+        default: false
 
 concurrency:
   # Two runs committing to main at once would race on the push.
@@ -78,9 +83,43 @@ jobs:
             git push
           fi
 
-  # ── daily: reconcile llms_txt_status with reality, then commit. ──────────
+  # ── daily: READ-ONLY. Reports drift, writes nothing, never fails. ────────
+  #
+  # Deliberately does not commit. Nothing writes to main on a timer: an
+  # unattended job that rewrites the list is a lot of trust to hand a cron,
+  # and a wrong heuristic would quietly propagate with nobody watching.
+  # Drift is surfaced here and applied by a human via the `heal` job below.
+  monitor:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.heal != 'true')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pyyaml requests
+
+      - name: Check llms_txt_status against live URLs
+        run: |
+          set -o pipefail
+          python3 scripts/validate.py 2>&1 | tee check.log
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo '## Daily llms.txt check (read-only)'
+            echo
+            echo '```'
+            sed -n '/^=\{10,\}/,$p' check.log 2>/dev/null || echo "(no report — see the step log)"
+            echo '```'
+            echo
+            echo 'To apply: Actions -> this workflow -> Run workflow -> tick **heal**.'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  # ── heal: writes. Only ever runs when a human ticks the box. ─────────────
   heal:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.heal == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -105,7 +144,7 @@ jobs:
         if: always()
         run: |
           {
-            echo '## Daily llms.txt reconcile'
+            echo '## llms.txt reconcile (manual)'
             echo
             echo '```'
             sed -n '/^=\{10,\}/,$p' heal.log 2>/dev/null || echo "(no report — see the step log)"
@@ -117,16 +156,12 @@ jobs:
           git config user.name  "BrethofAI"
           git config user.email "hello@brethof.ai"
           rm -f heal.log
-          if git diff --quiet && git diff --quiet --cached && [ -z "$(git status --porcelain)" ]; then
-            echo "Nothing changed — every status already matches the live web."
-            exit 0
-          fi
           git add -A entries .health.json README.md llms.txt llms-full.txt
           if git diff --quiet --cached; then
-            echo "No tracked changes to commit."
+            echo "Nothing changed — every status already matches the live web."
             exit 0
           fi
           git commit \
             -m "chore: reconcile llms_txt_status with live URLs" \
-            -m "Automated daily check. Statuses are derived from what each URL actually serves; see .health.json for the consecutive-outcome streaks that gate each flip."
+            -m "Manually triggered. Statuses are derived from what each URL actually serves; see .health.json for the consecutive-outcome streaks that gate each flip."
           git push
