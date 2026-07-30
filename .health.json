@@ -1,0 +1,96 @@
+{
+ "schema": 1,
+ "_comment": "Machine state for scripts/validate.py. Consecutive-outcome streaks per entry, capped at their thresholds and carrying no timestamps, so this file only changes when a URL's real state changes. Do not hand-edit.",
+ "entries": {
+  "aider": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "gone",
+    "code": 404,
+    "shape": "HTTP 404"
+   }
+  },
+  "amazon-q-developer": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "gone",
+    "code": 404,
+    "shape": "HTTP 404"
+   }
+  },
+  "claude-code": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200,
+    "shape": "llms.txt (56903B)"
+   }
+  },
+  "claude-desktop": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200,
+    "shape": "llms.txt (56903B)"
+   }
+  },
+  "codeium": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "not_a_file",
+    "code": 200,
+    "shape": "HTML page (text/html, 66967B)"
+   }
+  },
+  "continue-dev": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "gone",
+    "code": 404,
+    "shape": "HTTP 404"
+   }
+  },
+  "cursor": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "not_a_file",
+    "code": 200,
+    "shape": "HTML page (text/html, 140685B)"
+   }
+  },
+  "github-copilot": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200,
+    "shape": "llms.txt (28666B)"
+   }
+  },
+  "sourcegraph-cody": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "gone",
+    "code": 404,
+    "shape": "HTTP 404"
+   }
+  },
+  "windsurf": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200,
+    "shape": "llms.txt (24108B)"
+   }
+  }
+ }
+}

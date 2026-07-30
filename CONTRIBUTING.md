@@ -8,7 +8,22 @@ agent discovery. Every well-described entry helps that mission.
 1. Fork this repo.
 2. Add a YAML file under `entries/` named after the tool's slug
    (e.g. `entries/my-tool.yaml`).
-3. Open a pull request. CI will validate; if it passes, we merge.
+3. Open a pull request. CI reports what it finds, but a wrong
+   `llms_txt_status` won't block the merge — see below.
+
+## `llms_txt_status` is maintained automatically
+
+That field is a *derived fact* about a live URL, not an editorial decision, so
+a daily job (`scripts/validate.py --heal`) keeps it honest. Put your best guess
+in your PR; if it's wrong, CI corrects it within a few days. Hand-editing a
+status to override the checker will just be reverted — fix the URL instead.
+
+The check sniffs the response body, not only the status code: many docs sites
+answer *any* unknown path with HTTP 200 and their app shell, and a code-only
+check would read that as a working `llms.txt`. Flips require a streak — 3
+consecutive definitive failures to demote, 2 consecutive clean fetches to
+promote — so one bad network day changes nothing. Streak counters live in
+`.health.json`; don't hand-edit that either.
 
 ## Schema
 

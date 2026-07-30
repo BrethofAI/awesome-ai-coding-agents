@@ -7,3 +7,6 @@ venv/
 .vscode/
 *.swp
 .DS_Store
+
+# validate.py atomic-write sidecar for .health.json
+*.json.tmp
