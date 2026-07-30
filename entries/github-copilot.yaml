@@ -3,7 +3,7 @@ slug: github-copilot
 url: https://github.com/features/copilot
 repository: null
 llms_txt: https://docs.github.com/llms.txt
-llms_txt_status: missing
+llms_txt_status: published
 
 category: coding-agents
 subcategory: ide-coding-assistant

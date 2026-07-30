@@ -318,8 +318,9 @@ extension works online or fully offline against local inference servers,
 making it a popular choice for organizations where code can't leave
 developer machines.
 
-Continue publishes `llms.txt` and `llms-full.txt` — a useful reference
-while building coding assistants on top of local or hybrid models.
+Continue used to publish `llms.txt` and `llms-full.txt`, but both have
+returned 404 since at least 2026-07-24. The docs site itself is still up
+at docs.continue.dev — only the machine-readable index went away.
 
 Features:
 - VS Code and JetBrains extensions

@@ -4,7 +4,7 @@ url: https://www.continue.dev
 repository: https://github.com/continuedev/continue
 llms_txt: https://docs.continue.dev/llms.txt
 llms_full_txt: https://docs.continue.dev/llms-full.txt
-llms_txt_status: published
+llms_txt_status: missing
 
 category: coding-agents
 subcategory: ide-coding-assistant
@@ -25,8 +25,9 @@ description: |
   making it a popular choice for organizations where code can't leave
   developer machines.
 
-  Continue publishes `llms.txt` and `llms-full.txt` — a useful reference
-  while building coding assistants on top of local or hybrid models.
+  Continue used to publish `llms.txt` and `llms-full.txt`, but both have
+  returned 404 since at least 2026-07-24. The docs site itself is still up
+  at docs.continue.dev — only the machine-readable index went away.
 
 features:
   - VS Code and JetBrains extensions
