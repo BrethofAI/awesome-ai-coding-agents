@@ -1,0 +1,45 @@
+name: Cline
+slug: cline
+url: https://cline.bot
+repository: https://github.com/cline/cline
+llms_txt: https://docs.cline.bot/llms.txt
+llms_full_txt: https://docs.cline.bot/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ide-coding-assistant
+
+tagline: Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models.
+
+description: |
+  Cline is "the open source coding agent in your IDE, terminal, & desktop",
+  licensed Apache 2.0. The extension installs into VS Code, Cursor,
+  Windsurf, VSCodium, Antigravity and JetBrains IDEs; there is also a CLI
+  (interactive or headless for CI/CD) and a desktop app (macOS, Windows).
+
+  The open-source version is free and runs on your own API keys ("OpenAI,
+  Anthropic, Google, and others") or on local models via Ollama and
+  LM Studio. An Enterprise tier adds team management, SSO, audit logs and
+  VPC deployment.
+
+  It supports MCP servers and plugins, and can scaffold new MCP tools on
+  request.
+
+features:
+  - Extension for VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains
+  - CLI (interactive or headless) and desktop app
+  - Bring your own API keys; local models via Ollama / LM Studio
+  - MCP servers and plugins
+  - Plans — Open Source (free) and Enterprise
+
+use_cases:
+  - Open-source agent inside an existing editor
+  - Teams that need BYOK with enterprise controls
+  - Local-model setups for code that can't leave the machine
+
+license: open-source
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, vscode, jetbrains, cli, cline, open-source, mcp, local-llm]
+maintainer: Cline
+added: 2026-09-29

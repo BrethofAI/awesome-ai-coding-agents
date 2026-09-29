@@ -1,0 +1,48 @@
+name: Gemini CLI
+slug: gemini-cli
+url: https://www.geminicli.com
+repository: https://github.com/google-gemini/gemini-cli
+llms_txt: https://geminicli.com/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Google's open-source (Apache 2.0) terminal agent for Gemini models, with a free tier for personal Google accounts.
+
+description: |
+  Gemini CLI is "an open-source AI agent that brings the power of Gemini
+  directly into your terminal", licensed Apache 2.0. It runs Gemini 3
+  models with a 1M-token context window and can build from PDFs, images or
+  sketches using Gemini's multimodal input.
+
+  Signing in with a personal Google account gives a free tier (the README
+  lists request-per-minute and per-day allowances); alternatively it uses a
+  Gemini API key, Vertex AI, or a Gemini Code Assist licence. Which privacy
+  terms apply depends on that sign-in method — Google's docs point to
+  separate notices for Code Assist for individuals, the Gemini API and
+  Google Cloud.
+
+  It supports MCP servers and extensions. Editor integration is via the
+  Gemini CLI Companion extension for VS Code-compatible IDEs, and via the
+  Agent Client Protocol for JetBrains IDEs, Zed and other ACP editors.
+
+features:
+  - Terminal agent, Apache 2.0
+  - Free tier with a personal Google account; API key, Vertex AI or Code Assist licence also supported
+  - Gemini 3 models, 1M-token context
+  - Multimodal input (images, PDFs, sketches)
+  - MCP servers and extensions
+  - VS Code companion extension; ACP for JetBrains and Zed
+
+use_cases:
+  - Trying a capable terminal agent at no cost
+  - Google Cloud / Vertex AI shops
+  - Very large context tasks (whole-repo reading)
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, google, gemini, open-source, mcp]
+maintainer: Google
+added: 2026-09-29

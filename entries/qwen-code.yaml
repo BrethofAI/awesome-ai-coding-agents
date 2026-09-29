@@ -1,0 +1,42 @@
+name: Qwen Code
+slug: qwen-code
+url: https://qwenlm.github.io/qwen-code-docs/
+repository: https://github.com/QwenLM/qwen-code
+llms_txt: https://qwenlm.github.io/qwen-code-docs/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model.
+
+description: |
+  Qwen Code is "the open-source AI coding agent for your terminal, editor,
+  desktop, browser, and chat", from Alibaba's Qwen team, licensed
+  Apache 2.0. It is developed alongside the Qwen models but is
+  multi-protocol: it
+  "Supports OpenAI, Anthropic, Gemini, and Qwen APIs. Any third-party
+  provider or local model (Ollama / vLLM)."
+
+  It ships subagents, agent teams, auto-memory, skills and MCP. Editor
+  integrations are a VS Code companion extension (beta), Zed and JetBrains;
+  there is also a desktop app, web UI, SDKs and chat integrations.
+
+features:
+  - Terminal agent, Apache 2.0
+  - OpenAI, Anthropic, Gemini and Qwen API protocols; local models via Ollama / vLLM
+  - Subagents, agent teams, auto-memory, skills
+  - MCP support
+  - VS Code (beta), Zed and JetBrains integrations; desktop app
+
+use_cases:
+  - Qwen-model users who want a first-party agent
+  - Open-source agent with local-model support
+  - Teams mixing Chinese and Western model providers
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, qwen, alibaba, open-source, mcp, local-llm]
+maintainer: QwenLM (Alibaba)
+added: 2026-09-29

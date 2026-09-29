@@ -12,29 +12,32 @@ Pick by what matters to you. (Top to bottom — first match wins.)
 
 - **Want the strongest all-around AI coding companion right now (April 2026)?** → **[Claude Desktop](#claude-desktop)**
 - **Want the same Claude power but in your terminal / CI?** → **[Claude Code](#claude-code)**
-- **Want it free + open source?** → **[Aider](#aider)**
-- **Need to run 100% locally with your own LLM?** → **[Aider](#aider)**
+- **Already pay for ChatGPT and want a terminal agent?** → **[OpenAI Codex CLI](#codex-cli)**
+- **Want a capable terminal agent with a free tier?** → **[Gemini CLI](#gemini-cli)**
+- **Want it free + open source?** → **[OpenCode](#opencode)** / **[Cline](#cline)** / **[Kilo Code](#kilo-code)** / **[Aider](#aider)**
+- **Need to run 100% locally with your own LLM?** → **[OpenCode](#opencode)** / **[Cline](#cline)** / **[Qwen Code](#qwen-code)** / **[Aider](#aider)**
 - **Already pay for GitHub and want zero setup?** → **[GitHub Copilot](#github-copilot)**
 - **Want a polished IDE replacement (closed-source)?** → **[Cursor](#cursor)** / **[Devin Desktop (formerly Windsurf)](#devin-desktop)**
 - **Enterprise with a massive monorepo and code-search needs?** → **[Sourcegraph Cody (Enterprise only)](#sourcegraph-cody)**
-- **Heavy AWS stack, lots of cloud-service code?** → **[Kiro (successor to Amazon Q Developer)](#kiro)**
+- **Heavy AWS stack, moving off Amazon Q Developer, or want a spec before code?** → **[Kiro (successor to Amazon Q Developer)](#kiro)**
+- **Standardised on Qwen models?** → **[Qwen Code](#qwen-code)**
 
 ---
 
 ## Head-to-head comparison (April 2026)
 
-| Dimension | Aider | Claude Code | Claude Desktop | Continue (discontinued) | Cursor | Devin Desktop (formerly Windsurf) | GitHub Copilot | Kiro (successor to Amazon Q Developer) | Sourcegraph Cody (Enterprise only) |
-|---|---|---|---|---|---|---|---|---|---|
-| **Pricing tiers (no prices — see each vendor)** | Free (open source; you pay your model provider) | Claude Pro and above (not in Free), or API-key billing | Free, Pro, Max (5x / 20x), Team, Enterprise | Discontinued (code stays free under Apache 2.0) | Hobby (free), Individual (Pro / Pro+ / Ultra), Teams, Enterprise | Free, Pro, Max, Teams, Enterprise | Free, Pro, Pro+, Max, Business, Enterprise (Pro access for verified students, faculty, OSS maintainers) | Free, Pro, Pro+, Pro Max, Power, Enterprise (Amazon Q Developer: no new signups since 2026-05-15) | Enterprise only (Cody Free / Pro ended 2025-07-23) |
-| **Open source** | Apache 2.0 ✅ | Closed (Anthropic) | Closed (Anthropic) | Apache 2.0 — read-only, unmaintained | Closed (VS Code fork) | Closed (Cognition; VS Code-based) | Closed (Microsoft) | Closed (AWS) | Closed; last public client source archived 2025-08-01 |
-| **Bring your own model** | Yes — any LLM via LiteLLM | Claude models only — Anthropic, Amazon Bedrock, Google Cloud, Microsoft Foundry, or an LLM gateway | No (Claude models only) | Yes (final release) | Chat only — OpenAI, Anthropic, Google, Azure, Bedrock keys; Tab stays on Cursor models | Some BYOK options alongside Cognition's SWE models | Model picker on paid plans; BYOK for any compatible provider in VS Code | Multi-provider menu (Anthropic, OpenAI, open-weight); BYOK not documented | Unverified |
-| **Local LLM support** | Yes (Ollama, llama.cpp, vLLM, LM Studio) | No | No | Yes (final release; unmaintained) | Not documented | Not documented | Yes in VS Code — BYOK via the Ollama extension, works offline without a Copilot plan | Not documented | Unverified |
-| **Multi-file edits / refactor** | Good — git-aware, edits in commits | Excellent — agentic, plans + executes across many files | Excellent — agent mode + filesystem MCP, edits via accepted diffs | Good (final release) | Strong (Agent mode) | Strong (Devin Local agent, replaced Cascade) | Good (Agent mode in VS Code; Copilot CLI) | Spec-driven: requirements → design → tasks, then the agent implements | Good with codebase search backing |
-| **Codebase awareness** | Repo-map (deterministic, no embeddings) | Reads files on demand, very strong with hooks | Filesystem MCP — reads on demand, can index via custom MCP | Indexed embeddings + custom retrievers (final release) | Indexed embeddings | RAG-based indexing + Fast Context retrieval | Indexed for paid users | Steering files + specs | Best-in-class — Sourcegraph code graph |
-| **Visual / image input** | Yes — images and web pages for vision-capable models | Yes — drag-and-drop or paste (Ctrl+V) | Yes — drag in screenshots, PDFs, images for visual debugging | Limited | Yes — paste image into chat | Unverified | Limited | Unverified | No |
-| **IDE coverage** | Terminal CLI (works alongside any editor) | Terminal CLI; VS Code + JetBrains; desktop app; browser | Editor-agnostic — works alongside any IDE via filesystem MCP; includes Claude Code | VS Code, JetBrains, CLI (final release) | Standalone IDE (VS Code fork); Cursor CLI | Standalone IDE (VS Code-based); legacy Windsurf plugins in maintenance mode | VS Code, Visual Studio, JetBrains, Neovim, Xcode; Copilot CLI | Kiro IDE, Kiro CLI, web, iOS; ACP editors | VS Code, JetBrains, Visual Studio, web |
-| **Privacy posture** | You pick the API; can be 100% local with Ollama | Account-dependent: Free / Pro / Max under Consumer Terms (training if the setting is on); Team / Enterprise / API under Commercial Terms (no training, 30-day retention) | Account-dependent: Free / Pro / Max under Consumer Terms (training if the setting is on); Team / Enterprise / API under Commercial Terms (no training) | 100% local possible (final release) | Telemetry on; Privacy Mode opts out of training | Unverified | Microsoft cloud; enterprise gates; local BYOK possible in VS Code | Unverified | Unverified |
-| **Best use case** | Open-source / local-first / git discipline (note: development has slowed) | Power users, big refactors, terminal-first workflows, CI integration | Architecture / planning sessions, visual debugging, MCP-extended workflows alongside any editor | Migrating off it, or forking the Apache-2.0 code | Polished IDE replacement, broad audience | Cursor alternative, especially alongside Devin cloud agents | Already on GitHub, want zero friction | AWS shops, spec-first teams, Amazon Q Developer migrations | Enterprises on Sourcegraph with massive monorepos |
+| Dimension | Aider | Claude Code | Claude Desktop | Cline | Continue (discontinued) | Cursor | Devin Desktop (formerly Windsurf) | Gemini CLI | GitHub Copilot | Kilo Code | Kiro (successor to Amazon Q Developer) | OpenAI Codex CLI | OpenCode | Qwen Code | Sourcegraph Cody (Enterprise only) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Pricing tiers (no prices — see each vendor)** | Free (open source; you pay your model provider) | Claude Pro and above (not in Free), or API-key billing | Free, Pro, Max (5x / 20x), Team, Enterprise | Open Source (free, BYOK), Enterprise | Discontinued (code stays free under Apache 2.0) | Hobby (free), Individual (Pro / Pro+ / Ultra), Teams, Enterprise | Free, Pro, Max, Teams, Enterprise | Free tier (personal Google account); Gemini API key, Vertex AI or Code Assist licence | Free, Pro, Pro+, Max, Business, Enterprise (Pro access for verified students, faculty, OSS maintainers) | Free & Open Source, Teams, Enterprise | Free, Pro, Pro+, Pro Max, Power, Enterprise (Amazon Q Developer: no new signups since 2026-05-15) | Included in ChatGPT Free, Go, Plus, Pro, Business, Edu, Enterprise; or API-key billing | Free (open source); optional OpenCode Zen curated models | Free (open source); you pay your model provider | Enterprise only (Cody Free / Pro ended 2025-07-23) |
+| **Open source** | Apache 2.0 ✅ | Closed (Anthropic) | Closed (Anthropic) | Apache 2.0 ✅ | Apache 2.0 — read-only, unmaintained | Closed (VS Code fork) | Closed (Cognition; VS Code-based) | Apache 2.0 ✅ | Closed (Microsoft) | MIT ✅ | Closed (AWS) | Apache 2.0 ✅ | MIT ✅ | Apache 2.0 ✅ | Closed; last public client source archived 2025-08-01 |
+| **Bring your own model** | Yes — any LLM via LiteLLM | Claude models only — Anthropic, Amazon Bedrock, Google Cloud, Microsoft Foundry, or an LLM gateway | No (Claude models only) | Yes — OpenAI, Anthropic, Google and others (BYOK) | Yes (final release) | Chat only — OpenAI, Anthropic, Google, Azure, Bedrock keys; Tab stays on Cursor models | Some BYOK options alongside Cognition's SWE models | Gemini models (Google account, Gemini API, Vertex AI) | Model picker on paid plans; BYOK for any compatible provider in VS Code | Yes — BYOK, or 500+ models via Kilo | Multi-provider menu (Anthropic, OpenAI, open-weight); BYOK not documented | Yes — custom model providers in config.toml | Yes — 75+ providers | Yes — OpenAI, Anthropic, Gemini and Qwen APIs; any third-party provider | Unverified |
+| **Local LLM support** | Yes (Ollama, llama.cpp, vLLM, LM Studio) | No | No | Yes — Ollama, LM Studio | Yes (final release; unmaintained) | Not documented | Not documented | Not documented | Yes in VS Code — BYOK via the Ollama extension, works offline without a Copilot plan | Yes — Ollama, LM Studio | Not documented | Yes — `--oss` with Ollama or LM Studio | Yes — Ollama, LM Studio, llama.cpp | Yes — Ollama, vLLM | Unverified |
+| **Multi-file edits / refactor** | Good — git-aware, edits in commits | Excellent — agentic, plans + executes across many files | Excellent — agent mode + filesystem MCP, edits via accepted diffs | Agentic | Good (final release) | Strong (Agent mode) | Strong (Devin Local agent, replaced Cascade) | Agentic | Good (Agent mode in VS Code; Copilot CLI) | Agentic | Spec-driven: requirements → design → tasks, then the agent implements | Agentic, sandboxed | Agentic (`build` agent; read-only `plan` agent) | Agentic (subagents, agent teams) | Good with codebase search backing |
+| **Codebase awareness** | Repo-map (deterministic, no embeddings) | Reads files on demand, very strong with hooks | Filesystem MCP — reads on demand, can index via custom MCP | Unverified | Indexed embeddings + custom retrievers (final release) | Indexed embeddings | RAG-based indexing + Fast Context retrieval | 1M-token context window | Indexed for paid users | Unverified | Steering files + specs | AGENTS.md project instructions | Unverified | LSP integration, auto-memory | Best-in-class — Sourcegraph code graph |
+| **Visual / image input** | Yes — images and web pages for vision-capable models | Yes — drag-and-drop or paste (Ctrl+V) | Yes — drag in screenshots, PDFs, images for visual debugging | Unverified | Limited | Yes — paste image into chat | Unverified | Yes — images, PDFs, sketches | Limited | Unverified | Unverified | Yes — `--image` | Yes — drag image into the terminal | Unverified | No |
+| **IDE coverage** | Terminal CLI (works alongside any editor) | Terminal CLI; VS Code + JetBrains; desktop app; browser | Editor-agnostic — works alongside any IDE via filesystem MCP; includes Claude Code | VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains; CLI; desktop app | VS Code, JetBrains, CLI (final release) | Standalone IDE (VS Code fork); Cursor CLI | Standalone IDE (VS Code-based); legacy Windsurf plugins in maintenance mode | Terminal CLI; VS Code companion; JetBrains + Zed via ACP | VS Code, Visual Studio, JetBrains, Neovim, Xcode; Copilot CLI | VS Code, JetBrains, CLI, cloud | Kiro IDE, Kiro CLI, web, iOS; ACP editors | Terminal CLI; VS Code / Cursor / Windsurf extension; Xcode + JetBrains integrations; desktop app | Terminal TUI; desktop app (beta); IDE integration | Terminal CLI; VS Code (beta), Zed, JetBrains; desktop app | VS Code, JetBrains, Visual Studio, web |
+| **Privacy posture** | You pick the API; can be 100% local with Ollama | Account-dependent: Free / Pro / Max under Consumer Terms (training if the setting is on); Team / Enterprise / API under Commercial Terms (no training, 30-day retention) | Account-dependent: Free / Pro / Max under Consumer Terms (training if the setting is on); Team / Enterprise / API under Commercial Terms (no training) | BYOK — code goes to the provider you choose; can be fully local | 100% local possible (final release) | Telemetry on; Privacy Mode opts out of training | Unverified | Google cloud; terms depend on sign-in method (Code Assist individuals, Gemini API, Vertex AI) | Microsoft cloud; enterprise gates; local BYOK possible in VS Code | BYOK or Kilo-routed models; can be fully local | Unverified | OpenAI cloud (ChatGPT or API terms), or fully local with `--oss` | You pick the provider; can be fully local | You pick the provider; can be fully local | Unverified |
+| **Best use case** | Open-source / local-first / git discipline (note: development has slowed) | Power users, big refactors, terminal-first workflows, CI integration | Architecture / planning sessions, visual debugging, MCP-extended workflows alongside any editor | Open-source agent inside your existing editor | Migrating off it, or forking the Apache-2.0 code | Polished IDE replacement, broad audience | Cursor alternative, especially alongside Devin cloud agents | Free terminal agent; very large context | Already on GitHub, want zero friction | One open-source agent across VS Code, JetBrains and terminal | AWS shops, spec-first teams, Amazon Q Developer migrations | ChatGPT subscribers; open-source terminal agent with a sandbox | Vendor-neutral open-source terminal agent; fully local setups | Qwen-model users; open-source agent with local models | Enterprises on Sourcegraph with massive monorepos |
 
 ---
 
@@ -197,6 +200,39 @@ Desktop a new capability without changing the app.
 
 ---
 
+### Cline <a name="cline"></a>
+
+_Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models._
+
+**Site:** [https://cline.bot](https://cline.bot) · **Repo:** [https://github.com/cline/cline](https://github.com/cline/cline) · **License:** open-source · **Deployment:** local
+
+Cline is "the open source coding agent in your IDE, terminal, & desktop",
+licensed Apache 2.0. The extension installs into VS Code, Cursor,
+Windsurf, VSCodium, Antigravity and JetBrains IDEs; there is also a CLI
+(interactive or headless for CI/CD) and a desktop app (macOS, Windows).
+
+The open-source version is free and runs on your own API keys ("OpenAI,
+Anthropic, Google, and others") or on local models via Ollama and
+LM Studio. An Enterprise tier adds team management, SSO, audit logs and
+VPC deployment.
+
+It supports MCP servers and plugins, and can scaffold new MCP tools on
+request.
+
+**Features:**
+- Extension for VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains
+- CLI (interactive or headless) and desktop app
+- Bring your own API keys; local models via Ollama / LM Studio
+- MCP servers and plugins
+- Plans — Open Source (free) and Enterprise
+
+**Best for:**
+- Open-source agent inside an existing editor
+- Teams that need BYOK with enterprise controls
+- Local-model setups for code that can't leave the machine
+
+---
+
 ### Continue (discontinued) <a name="continue-dev"></a>
 
 _DISCONTINUED — Continue was acquired by Cursor in June 2026; the Apache-2.0 repo is now read-only and no longer maintained._
@@ -325,6 +361,43 @@ separate Codeium entry.
 
 ---
 
+### Gemini CLI <a name="gemini-cli"></a>
+
+_Google's open-source (Apache 2.0) terminal agent for Gemini models, with a free tier for personal Google accounts._
+
+**Site:** [https://www.geminicli.com](https://www.geminicli.com) · **Repo:** [https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) · **License:** open-source · **Deployment:** cli
+
+Gemini CLI is "an open-source AI agent that brings the power of Gemini
+directly into your terminal", licensed Apache 2.0. It runs Gemini 3
+models with a 1M-token context window and can build from PDFs, images or
+sketches using Gemini's multimodal input.
+
+Signing in with a personal Google account gives a free tier (the README
+lists request-per-minute and per-day allowances); alternatively it uses a
+Gemini API key, Vertex AI, or a Gemini Code Assist licence. Which privacy
+terms apply depends on that sign-in method — Google's docs point to
+separate notices for Code Assist for individuals, the Gemini API and
+Google Cloud.
+
+It supports MCP servers and extensions. Editor integration is via the
+Gemini CLI Companion extension for VS Code-compatible IDEs, and via the
+Agent Client Protocol for JetBrains IDEs, Zed and other ACP editors.
+
+**Features:**
+- Terminal agent, Apache 2.0
+- Free tier with a personal Google account; API key, Vertex AI or Code Assist licence also supported
+- Gemini 3 models, 1M-token context
+- Multimodal input (images, PDFs, sketches)
+- MCP servers and extensions
+- VS Code companion extension; ACP for JetBrains and Zed
+
+**Best for:**
+- Trying a capable terminal agent at no cost
+- Google Cloud / Vertex AI shops
+- Very large context tasks (whole-repo reading)
+
+---
+
 ### GitHub Copilot <a name="github-copilot"></a>
 
 _GitHub's native AI coding assistant with chat, autocomplete, and agent mode across major IDEs._
@@ -372,6 +445,38 @@ external traffic — the most mature enterprise posture in the category.
 
 ---
 
+### Kilo Code <a name="kilo-code"></a>
+
+_MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models._
+
+**Site:** [https://kilo.ai](https://kilo.ai) · **Repo:** [https://github.com/Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) · **License:** open-source · **Deployment:** local
+
+Kilo Code is an MIT-licensed coding agent that "meets you everywhere you
+work": VS Code, JetBrains, the CLI, and a cloud surface at app.kilo.ai.
+The Kilo CLI is a fork of OpenCode.
+
+Kilo's pricing page lists a free and open-source tier (VS Code, JetBrains
+and CLI extensions), plus Teams and Enterprise. You can "Bring your own
+Anthropic, OpenAI, Google, Azure, AWS Bedrock, or other provider keys" and
+"Run local models with Ollama or LM Studio"; through a Kilo account there
+are 500+ models with mid-task switching.
+
+A Kilo Marketplace distributes agents, skills, MCP servers and plugins.
+
+**Features:**
+- VS Code and JetBrains extensions, CLI (OpenCode fork), cloud agents
+- 500+ models; BYOK for major providers
+- Local models via Ollama or LM Studio
+- Marketplace for agents, skills, MCP servers, plugins
+- Plans — Free & Open Source, Teams, Enterprise
+
+**Best for:**
+- One open-source agent across VS Code, JetBrains and terminal
+- Teams that want BYOK and model choice with central billing
+- Local-model workflows
+
+---
+
 ### Kiro (successor to Amazon Q Developer) <a name="kiro"></a>
 
 _AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30._
@@ -409,6 +514,111 @@ not describe bring-your-own-key or local-model support.
 - Amazon Q Developer users migrating before the 2027-04-30 end of support
 - Teams that want a written spec before the agent touches code
 - AWS-centric organisations standardising on an AWS-supported agent
+
+---
+
+### OpenAI Codex CLI <a name="codex-cli"></a>
+
+_OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and a desktop app on the same harness._
+
+**Site:** [https://developers.openai.com/codex](https://developers.openai.com/codex) · **Repo:** [https://github.com/openai/codex](https://github.com/openai/codex) · **License:** open-source · **Deployment:** cli
+
+Codex CLI is "a coding agent from OpenAI that runs locally on your
+computer". The CLI is open source under Apache 2.0 and written in Rust;
+the same agent is available as an IDE extension (VS Code, Cursor,
+Windsurf, VS Code Insiders, with Xcode and JetBrains providing their own
+integrations), a desktop app (`codex app`) and a cloud agent at
+chatgpt.com/codex.
+
+You can sign in with a ChatGPT account — OpenAI's pricing docs say Codex is
+included in the Free, Go, Plus, Pro, Business, Edu and Enterprise plans —
+or use an API key, which OpenAI recommends for CI and shared environments.
+It is not locked to OpenAI's hosted models: with `--oss` it runs against a
+local "open source" provider such as Ollama or LM Studio, and custom
+model providers can be defined in `config.toml`.
+
+It supports MCP servers, lifecycle hooks, skills, AGENTS.md project
+instructions and a configurable sandbox, and accepts image attachments
+(`--image`).
+
+**Features:**
+- Terminal agent (Rust), Apache 2.0
+- Sign in with ChatGPT (Free through Enterprise plans) or an API key
+- Local models via `--oss` (Ollama, LM Studio) and custom providers
+- MCP servers, hooks, skills, AGENTS.md
+- Image attachments (`--image`)
+- IDE extension for VS Code-family editors; desktop app; cloud agent
+
+**Best for:**
+- ChatGPT subscribers who want a terminal agent included in their plan
+- Open-source, auditable CLI agent with a sandbox
+- Mixing hosted OpenAI models with local open-weight models
+
+---
+
+### OpenCode <a name="opencode"></a>
+
+_MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models._
+
+**Site:** [https://opencode.ai](https://opencode.ai) · **Repo:** [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) · **License:** open-source · **Deployment:** cli
+
+OpenCode describes itself as "the open source AI coding agent". It is
+MIT-licensed (about 211k GitHub stars as of 2026-09-29); the
+repository moved from `sst/opencode` to `anomalyco/opencode`.
+
+It is provider-agnostic: the docs list support for "75+ LLM providers",
+and local models through Ollama, LM Studio and llama.cpp. OpenCode Zen is
+an optional curated list of models tested by the OpenCode team. It ships
+two built-in agents — `build` (full access) and `plan` (read-only, asks
+before running shell commands) — plus subagents.
+
+Beyond the terminal UI there is a desktop app (beta, macOS / Windows /
+Linux) and IDE integration. It supports MCP servers, and images can be
+dragged into the terminal.
+
+**Features:**
+- Terminal agent, MIT licence
+- 75+ providers; local models via Ollama, LM Studio, llama.cpp
+- Built-in `build` and `plan` agents, subagents
+- MCP servers
+- Image input (drag and drop)
+- Desktop app (beta) and IDE integration
+
+**Best for:**
+- Open-source, vendor-neutral terminal agent
+- Running fully local with open-weight models
+- Switching providers without switching tools
+
+---
+
+### Qwen Code <a name="qwen-code"></a>
+
+_Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model._
+
+**Site:** [https://qwenlm.github.io/qwen-code-docs/](https://qwenlm.github.io/qwen-code-docs/) · **Repo:** [https://github.com/QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) · **License:** open-source · **Deployment:** cli
+
+Qwen Code is "the open-source AI coding agent for your terminal, editor,
+desktop, browser, and chat", from Alibaba's Qwen team, licensed
+Apache 2.0. It is developed alongside the Qwen models but is
+multi-protocol: it
+"Supports OpenAI, Anthropic, Gemini, and Qwen APIs. Any third-party
+provider or local model (Ollama / vLLM)."
+
+It ships subagents, agent teams, auto-memory, skills and MCP. Editor
+integrations are a VS Code companion extension (beta), Zed and JetBrains;
+there is also a desktop app, web UI, SDKs and chat integrations.
+
+**Features:**
+- Terminal agent, Apache 2.0
+- OpenAI, Anthropic, Gemini and Qwen API protocols; local models via Ollama / vLLM
+- Subagents, agent teams, auto-memory, skills
+- MCP support
+- VS Code (beta), Zed and JetBrains integrations; desktop app
+
+**Best for:**
+- Qwen-model users who want a first-party agent
+- Open-source agent with local-model support
+- Teams mixing Chinese and Western model providers
 
 ---
 

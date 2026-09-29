@@ -8,9 +8,15 @@
 - [Aider](https://aider.chat): AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
 - [Claude Code](https://claude.com/claude-code): Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
 - [Claude Desktop](https://claude.com/download): Anthropic's native desktop app — currently the strongest all-around AI coding companion via MCP, skills, and agent mode.
+- [Cline](https://cline.bot): Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models.
 - [Continue (discontinued)](https://www.continue.dev): DISCONTINUED — Continue was acquired by Cursor in June 2026; the Apache-2.0 repo is now read-only and no longer maintained.
 - [Cursor](https://cursor.com): AI-first fork of VS Code with deep LLM integration, agent mode, and codebase-aware context.
 - [Devin Desktop (formerly Windsurf)](https://devin.ai/desktop): Cognition's AI-native IDE — the product formerly called Windsurf (and before that, Codeium), now built around the Devin Local agent.
+- [Gemini CLI](https://www.geminicli.com): Google's open-source (Apache 2.0) terminal agent for Gemini models, with a free tier for personal Google accounts.
 - [GitHub Copilot](https://github.com/features/copilot): GitHub's native AI coding assistant with chat, autocomplete, and agent mode across major IDEs.
+- [Kilo Code](https://kilo.ai): MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models.
 - [Kiro (successor to Amazon Q Developer)](https://kiro.dev): AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30.
+- [OpenAI Codex CLI](https://developers.openai.com/codex): OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and a desktop app on the same harness.
+- [OpenCode](https://opencode.ai): MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models.
+- [Qwen Code](https://qwenlm.github.io/qwen-code-docs/): Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model.
 - [Sourcegraph Cody (Enterprise only)](https://sourcegraph.com/cody): Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025.

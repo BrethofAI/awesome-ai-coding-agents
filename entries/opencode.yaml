@@ -1,0 +1,46 @@
+name: OpenCode
+slug: opencode
+url: https://opencode.ai
+repository: https://github.com/anomalyco/opencode
+llms_txt: https://opencode.ai/llms.txt
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models.
+
+description: |
+  OpenCode describes itself as "the open source AI coding agent". It is
+  MIT-licensed (about 211k GitHub stars as of 2026-09-29); the
+  repository moved from `sst/opencode` to `anomalyco/opencode`.
+
+  It is provider-agnostic: the docs list support for "75+ LLM providers",
+  and local models through Ollama, LM Studio and llama.cpp. OpenCode Zen is
+  an optional curated list of models tested by the OpenCode team. It ships
+  two built-in agents — `build` (full access) and `plan` (read-only, asks
+  before running shell commands) — plus subagents.
+
+  Beyond the terminal UI there is a desktop app (beta, macOS / Windows /
+  Linux) and IDE integration. It supports MCP servers, and images can be
+  dragged into the terminal.
+
+features:
+  - Terminal agent, MIT licence
+  - 75+ providers; local models via Ollama, LM Studio, llama.cpp
+  - Built-in `build` and `plan` agents, subagents
+  - MCP servers
+  - Image input (drag and drop)
+  - Desktop app (beta) and IDE integration
+
+use_cases:
+  - Open-source, vendor-neutral terminal agent
+  - Running fully local with open-weight models
+  - Switching providers without switching tools
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, opencode, open-source, mcp, local-llm, byom]
+maintainer: anomalyco
+added: 2026-09-29
