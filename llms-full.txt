@@ -6,64 +6,64 @@
 ## Head-to-head comparison (April 2026)
 
 
-### Pricing
+### Pricing tiers (no prices — see each vendor)
 
-- **Claude Desktop**: $20/mo Pro, $100/mo Max (same plans as Claude Code)
-- **Claude Code**: $20/mo Pro, $100/mo Max
-- **Cursor**: $20/mo Pro, $40/mo Business
-- **Devin Desktop (formerly Windsurf)**: $15/mo Pro
-- **GitHub Copilot**: $10/mo individual, $19/seat business, FREE for OSS maintainers
-- **Aider**: FREE (BYOAPI key)
-- **Continue (discontinued)**: FREE (open source, BYOAPI)
-- **Kiro (successor to Amazon Q Developer)**: $19/seat/mo (FREE tier limited)
-- **Sourcegraph Cody (Enterprise only)**: $9-19/seat/mo
+- **Claude Desktop**: Free, Pro, Max (5x / 20x), Team, Enterprise
+- **Claude Code**: Claude Pro and above (not in Free), or API-key billing
+- **Cursor**: Hobby (free), Individual (Pro / Pro+ / Ultra), Teams, Enterprise
+- **Devin Desktop (formerly Windsurf)**: Free, Pro, Max, Teams, Enterprise
+- **GitHub Copilot**: Free, Pro, Pro+, Max, Business, Enterprise (Pro access for verified students, faculty, OSS maintainers)
+- **Aider**: Free (open source; you pay your model provider)
+- **Continue (discontinued)**: Discontinued (code stays free under Apache 2.0)
+- **Kiro (successor to Amazon Q Developer)**: Free, Pro, Pro+, Pro Max, Power, Enterprise (Amazon Q Developer: no new signups since 2026-05-15)
+- **Sourcegraph Cody (Enterprise only)**: Enterprise only (Cody Free / Pro ended 2025-07-23)
 
 ### Open source
 
 - **Claude Desktop**: Closed (Anthropic)
-- **Claude Code**: Closed (Anthropic-owned, runs locally with API key)
+- **Claude Code**: Closed (Anthropic)
 - **Cursor**: Closed (VS Code fork)
-- **Devin Desktop (formerly Windsurf)**: Closed (VS Code fork)
+- **Devin Desktop (formerly Windsurf)**: Closed (Cognition; VS Code-based)
 - **GitHub Copilot**: Closed (Microsoft)
 - **Aider**: Apache 2.0 ✅
-- **Continue (discontinued)**: Apache 2.0 ✅
+- **Continue (discontinued)**: Apache 2.0 — read-only, unmaintained
 - **Kiro (successor to Amazon Q Developer)**: Closed (AWS)
-- **Sourcegraph Cody (Enterprise only)**: Apache 2.0 client; cloud backend closed
+- **Sourcegraph Cody (Enterprise only)**: Closed; last public client source archived 2025-08-01
 
 ### Bring your own model
 
-- **Claude Desktop**: No (Anthropic only)
-- **Claude Code**: No (Anthropic only)
-- **Cursor**: Yes (BYOAPI)
-- **Devin Desktop (formerly Windsurf)**: Limited (Codeium models + some pass-through)
-- **GitHub Copilot**: GPT, Claude, Gemini selectable on paid tiers
+- **Claude Desktop**: No (Claude models only)
+- **Claude Code**: Claude models only — Anthropic, Amazon Bedrock, Google Cloud, Microsoft Foundry, or an LLM gateway
+- **Cursor**: Chat only — OpenAI, Anthropic, Google, Azure, Bedrock keys; Tab stays on Cursor models
+- **Devin Desktop (formerly Windsurf)**: Some BYOK options alongside Cognition's SWE models
+- **GitHub Copilot**: Model picker on paid plans; BYOK for any compatible provider in VS Code
 - **Aider**: Yes — any LLM via LiteLLM
-- **Continue (discontinued)**: Yes — full BYOM, local LLMs first-class
-- **Kiro (successor to Amazon Q Developer)**: No
-- **Sourcegraph Cody (Enterprise only)**: Yes on enterprise tier
+- **Continue (discontinued)**: Yes (final release)
+- **Kiro (successor to Amazon Q Developer)**: Multi-provider menu (Anthropic, OpenAI, open-weight); BYOK not documented
+- **Sourcegraph Cody (Enterprise only)**: Unverified
 
 ### Local LLM support
 
 - **Claude Desktop**: No
 - **Claude Code**: No
-- **Cursor**: Hacky (via OpenAI-compatible base URL)
-- **Devin Desktop (formerly Windsurf)**: No
-- **GitHub Copilot**: No
+- **Cursor**: Not documented
+- **Devin Desktop (formerly Windsurf)**: Not documented
+- **GitHub Copilot**: Yes in VS Code — BYOK via the Ollama extension, works offline without a Copilot plan
 - **Aider**: Yes (Ollama, llama.cpp, vLLM, LM Studio)
-- **Continue (discontinued)**: First-class — Ollama, LM Studio, vLLM, custom endpoints
-- **Kiro (successor to Amazon Q Developer)**: No
-- **Sourcegraph Cody (Enterprise only)**: Limited (Ollama as model option)
+- **Continue (discontinued)**: Yes (final release; unmaintained)
+- **Kiro (successor to Amazon Q Developer)**: Not documented
+- **Sourcegraph Cody (Enterprise only)**: Unverified
 
 ### Multi-file edits / refactor
 
 - **Claude Desktop**: Excellent — agent mode + filesystem MCP, edits via accepted diffs
 - **Claude Code**: Excellent — agentic, plans + executes across many files
-- **Cursor**: Strong (Composer / Agent mode)
-- **Devin Desktop (formerly Windsurf)**: Strong (Cascade)
-- **GitHub Copilot**: Good (Agent mode in VS Code)
+- **Cursor**: Strong (Agent mode)
+- **Devin Desktop (formerly Windsurf)**: Strong (Devin Local agent, replaced Cascade)
+- **GitHub Copilot**: Good (Agent mode in VS Code; Copilot CLI)
 - **Aider**: Good — git-aware, edits in commits
-- **Continue (discontinued)**: Good — explicit @ context, edit-in-place
-- **Kiro (successor to Amazon Q Developer)**: Good (refactoring tools)
+- **Continue (discontinued)**: Good (final release)
+- **Kiro (successor to Amazon Q Developer)**: Spec-driven: requirements → design → tasks, then the agent implements
 - **Sourcegraph Cody (Enterprise only)**: Good with codebase search backing
 
 ### Codebase awareness
@@ -71,60 +71,60 @@
 - **Claude Desktop**: Filesystem MCP — reads on demand, can index via custom MCP
 - **Claude Code**: Reads files on demand, very strong with hooks
 - **Cursor**: Indexed embeddings
-- **Devin Desktop (formerly Windsurf)**: Real-time indexing
+- **Devin Desktop (formerly Windsurf)**: RAG-based indexing + Fast Context retrieval
 - **GitHub Copilot**: Indexed for paid users
 - **Aider**: Repo-map (deterministic, no embeddings)
-- **Continue (discontinued)**: Indexed embeddings + custom retrievers
-- **Kiro (successor to Amazon Q Developer)**: AWS service catalog awareness
+- **Continue (discontinued)**: Indexed embeddings + custom retrievers (final release)
+- **Kiro (successor to Amazon Q Developer)**: Steering files + specs
 - **Sourcegraph Cody (Enterprise only)**: Best-in-class — Sourcegraph code graph
 
 ### Visual / image input
 
 - **Claude Desktop**: Yes — drag in screenshots, PDFs, images for visual debugging
-- **Claude Code**: Limited (Read tool can ingest images)
+- **Claude Code**: Yes — drag-and-drop or paste (Ctrl+V)
 - **Cursor**: Yes — paste image into chat
-- **Devin Desktop (formerly Windsurf)**: Yes
+- **Devin Desktop (formerly Windsurf)**: Unverified
 - **GitHub Copilot**: Limited
-- **Aider**: No (text only)
+- **Aider**: Yes — images and web pages for vision-capable models
 - **Continue (discontinued)**: Limited
-- **Kiro (successor to Amazon Q Developer)**: Limited
+- **Kiro (successor to Amazon Q Developer)**: Unverified
 - **Sourcegraph Cody (Enterprise only)**: No
 
 ### IDE coverage
 
-- **Claude Desktop**: Editor-agnostic — works alongside any IDE via filesystem MCP
-- **Claude Code**: Terminal CLI; VS Code + JetBrains plugins
-- **Cursor**: Standalone IDE (VS Code fork)
-- **Devin Desktop (formerly Windsurf)**: Standalone IDE (VS Code fork)
-- **GitHub Copilot**: VS Code, Visual Studio, JetBrains, Neovim, Xcode
+- **Claude Desktop**: Editor-agnostic — works alongside any IDE via filesystem MCP; includes Claude Code
+- **Claude Code**: Terminal CLI; VS Code + JetBrains; desktop app; browser
+- **Cursor**: Standalone IDE (VS Code fork); Cursor CLI
+- **Devin Desktop (formerly Windsurf)**: Standalone IDE (VS Code-based); legacy Windsurf plugins in maintenance mode
+- **GitHub Copilot**: VS Code, Visual Studio, JetBrains, Neovim, Xcode; Copilot CLI
 - **Aider**: Terminal CLI (works alongside any editor)
-- **Continue (discontinued)**: VS Code, JetBrains
-- **Kiro (successor to Amazon Q Developer)**: VS Code, JetBrains
-- **Sourcegraph Cody (Enterprise only)**: VS Code, JetBrains, web
+- **Continue (discontinued)**: VS Code, JetBrains, CLI (final release)
+- **Kiro (successor to Amazon Q Developer)**: Kiro IDE, Kiro CLI, web, iOS; ACP editors
+- **Sourcegraph Cody (Enterprise only)**: VS Code, JetBrains, Visual Studio, web
 
 ### Privacy posture
 
-- **Claude Desktop**: Anthropic API (sees your code)
-- **Claude Code**: Anthropic API (sees your code)
+- **Claude Desktop**: Account-dependent: Free / Pro / Max under Consumer Terms (training if the setting is on); Team / Enterprise / API under Commercial Terms (no training)
+- **Claude Code**: Account-dependent: Free / Pro / Max under Consumer Terms (training if the setting is on); Team / Enterprise / API under Commercial Terms (no training, 30-day retention)
 - **Cursor**: Telemetry on; Privacy Mode opts out of training
-- **Devin Desktop (formerly Windsurf)**: Codeium SOC 2; enterprise zero-retention
-- **GitHub Copilot**: Microsoft cloud; enterprise gates
+- **Devin Desktop (formerly Windsurf)**: Unverified
+- **GitHub Copilot**: Microsoft cloud; enterprise gates; local BYOK possible in VS Code
 - **Aider**: You pick the API; can be 100% local with Ollama
-- **Continue (discontinued)**: 100% local possible; cloud optional
-- **Kiro (successor to Amazon Q Developer)**: AWS retention by default; configurable
-- **Sourcegraph Cody (Enterprise only)**: Self-hosted available (enterprise)
+- **Continue (discontinued)**: 100% local possible (final release)
+- **Kiro (successor to Amazon Q Developer)**: Unverified
+- **Sourcegraph Cody (Enterprise only)**: Unverified
 
 ### Best use case
 
 - **Claude Desktop**: Architecture / planning sessions, visual debugging, MCP-extended workflows alongside any editor
 - **Claude Code**: Power users, big refactors, terminal-first workflows, CI integration
 - **Cursor**: Polished IDE replacement, broad audience
-- **Devin Desktop (formerly Windsurf)**: Cursor alternative if you prefer Codeium's ecosystem
+- **Devin Desktop (formerly Windsurf)**: Cursor alternative, especially alongside Devin cloud agents
 - **GitHub Copilot**: Already on GitHub, want zero friction
-- **Aider**: Open-source / local-first / git discipline / cost-sensitive
-- **Continue (discontinued)**: BYOM / privacy-conscious / customizable / self-hosted
-- **Kiro (successor to Amazon Q Developer)**: AWS-heavy stacks
-- **Sourcegraph Cody (Enterprise only)**: Massive monorepos with deep code search needs
+- **Aider**: Open-source / local-first / git discipline (note: development has slowed)
+- **Continue (discontinued)**: Migrating off it, or forking the Apache-2.0 code
+- **Kiro (successor to Amazon Q Developer)**: AWS shops, spec-first teams, Amazon Q Developer migrations
+- **Sourcegraph Cody (Enterprise only)**: Enterprises on Sourcegraph with massive monorepos
 
 
 ## Tools
