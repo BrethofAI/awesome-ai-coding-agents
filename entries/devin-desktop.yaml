@@ -1,0 +1,54 @@
+name: Devin Desktop (formerly Windsurf)
+slug: devin-desktop
+url: https://devin.ai/desktop
+repository: null
+llms_txt: https://docs.windsurf.com/llms.txt
+llms_full_txt: https://docs.windsurf.com/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-ide
+
+tagline: Cognition's AI-native IDE — the product formerly called Windsurf (and before that, Codeium), now built around the Devin Local agent.
+
+description: |
+  Devin Desktop is the product that used to be called Windsurf. Cognition
+  (the company behind the Devin cloud agent) acquired Windsurf's "IP,
+  product, trademark and brand" on 2025-07-14, after Google hired Windsurf's
+  CEO and licensed its technology. On 2026-06-02 Windsurf was renamed Devin
+  Desktop via an over-the-air update: same editor, settings and extensions,
+  and — per Cognition — the same plans. windsurf.com and codeium.com now
+  redirect to devin.ai/desktop.
+
+  The rename also replaced the agent. Cascade, Windsurf's original agent,
+  was succeeded by Devin Local, rewritten from scratch in Rust; the legacy
+  Cascade agent remained available until July 1. The editor now positions
+  itself as a command center for local and cloud agents (including Devin
+  itself) and speaks the Agent Client Protocol (ACP).
+
+  The old Codeium autocomplete extensions live on as "Windsurf plugins", but
+  Cognition's docs put the VS Code, Vim/Neovim, Visual Studio, Jupyter,
+  Chrome and Eclipse plugins in maintenance mode, and say of the JetBrains
+  plugin that "Cascade is being deprecated". This list no longer carries a
+  separate Codeium entry.
+
+features:
+  - VS Code-based IDE (backwards-compatible with Windsurf and VS Code extensions)
+  - Devin Local agent (replaced Cascade in June–July 2026)
+  - Agent Command Center for managing local and cloud agents
+  - MCP server integration
+  - RAG-based codebase indexing and Fast Context retrieval
+  - BYOK options alongside Cognition's own SWE models
+  - Plans — Free, Pro, Max, Teams, Enterprise
+
+use_cases:
+  - Developers who want a Cursor-style AI IDE from a different vendor
+  - Teams that also use Devin cloud agents and want one place to manage both
+  - Former Windsurf / Codeium users (the update carried settings forward)
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, devin, windsurf, codeium, cognition, ide, agent-mode, commercial]
+maintainer: Cognition
+added: 2026-04-24

@@ -31,13 +31,12 @@ LLMS_FULL_OUT = REPO_ROOT / "llms-full.txt"
 DECISION_TREE = [
     ("Want the strongest all-around AI coding companion right now (April 2026)?", ["claude-desktop"]),
     ("Want the same Claude power but in your terminal / CI?", ["claude-code"]),
-    ("Want it free + open source?", ["aider", "continue-dev"]),
-    ("Need to run 100% locally with your own LLM?", ["aider", "continue-dev"]),
+    ("Want it free + open source?", ["aider"]),
+    ("Need to run 100% locally with your own LLM?", ["aider"]),
     ("Already pay for GitHub and want zero setup?", ["github-copilot"]),
-    ("Want a polished IDE replacement (closed-source)?", ["cursor", "windsurf"]),
-    ("Working on a massive monorepo with code-search needs?", ["sourcegraph-cody"]),
-    ("Heavy AWS stack, lots of cloud-service code?", ["amazon-q-developer"]),
-    ("Just want free autocomplete in your existing editor?", ["codeium"]),
+    ("Want a polished IDE replacement (closed-source)?", ["cursor", "devin-desktop"]),
+    ("Enterprise with a massive monorepo and code-search needs?", ["sourcegraph-cody"]),
+    ("Heavy AWS stack, lots of cloud-service code?", ["kiro"]),
 ]
 
 

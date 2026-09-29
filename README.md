@@ -12,30 +12,29 @@ Pick by what matters to you. (Top to bottom — first match wins.)
 
 - **Want the strongest all-around AI coding companion right now (April 2026)?** → **[Claude Desktop](#claude-desktop)**
 - **Want the same Claude power but in your terminal / CI?** → **[Claude Code](#claude-code)**
-- **Want it free + open source?** → **[Aider](#aider)** / **[Continue](#continue-dev)**
-- **Need to run 100% locally with your own LLM?** → **[Aider](#aider)** / **[Continue](#continue-dev)**
+- **Want it free + open source?** → **[Aider](#aider)**
+- **Need to run 100% locally with your own LLM?** → **[Aider](#aider)**
 - **Already pay for GitHub and want zero setup?** → **[GitHub Copilot](#github-copilot)**
-- **Want a polished IDE replacement (closed-source)?** → **[Cursor](#cursor)** / **[Windsurf](#windsurf)**
-- **Working on a massive monorepo with code-search needs?** → **[Sourcegraph Cody](#sourcegraph-cody)**
-- **Heavy AWS stack, lots of cloud-service code?** → **[Amazon Q Developer](#amazon-q-developer)**
-- **Just want free autocomplete in your existing editor?** → **[Codeium](#codeium)**
+- **Want a polished IDE replacement (closed-source)?** → **[Cursor](#cursor)** / **[Devin Desktop (formerly Windsurf)](#devin-desktop)**
+- **Enterprise with a massive monorepo and code-search needs?** → **[Sourcegraph Cody (Enterprise only)](#sourcegraph-cody)**
+- **Heavy AWS stack, lots of cloud-service code?** → **[Kiro (successor to Amazon Q Developer)](#kiro)**
 
 ---
 
 ## Head-to-head comparison (April 2026)
 
-| Dimension | Aider | Amazon Q Developer | Claude Code | Claude Desktop | Codeium | Continue | Cursor | GitHub Copilot | Sourcegraph Cody | Windsurf |
-|---|---|---|---|---|---|---|---|---|---|---|
-| **Pricing** | FREE (BYOAPI key) | $19/seat/mo (FREE tier limited) | $20/mo Pro, $100/mo Max | $20/mo Pro, $100/mo Max (same plans as Claude Code) | FREE individual + paid teams tier | FREE (open source, BYOAPI) | $20/mo Pro, $40/mo Business | $10/mo individual, $19/seat business, FREE for OSS maintainers | $9-19/seat/mo | $15/mo Pro |
-| **Open source** | Apache 2.0 ✅ | Closed (AWS) | Closed (Anthropic-owned, runs locally with API key) | Closed (Anthropic) | Closed (free tier available) | Apache 2.0 ✅ | Closed (VS Code fork) | Closed (Microsoft) | Apache 2.0 client; cloud backend closed | Closed (VS Code fork) |
-| **Bring your own model** | Yes — any LLM via LiteLLM | No | No (Anthropic only) | No (Anthropic only) | No | Yes — full BYOM, local LLMs first-class | Yes (BYOAPI) | GPT, Claude, Gemini selectable on paid tiers | Yes on enterprise tier | Limited (Codeium models + some pass-through) |
-| **Local LLM support** | Yes (Ollama, llama.cpp, vLLM, LM Studio) | No | No | No | No | First-class — Ollama, LM Studio, vLLM, custom endpoints | Hacky (via OpenAI-compatible base URL) | No | Limited (Ollama as model option) | No |
-| **Multi-file edits / refactor** | Good — git-aware, edits in commits | Good (refactoring tools) | Excellent — agentic, plans + executes across many files | Excellent — agent mode + filesystem MCP, edits via accepted diffs | Limited (autocomplete-focused) | Good — explicit @ context, edit-in-place | Strong (Composer / Agent mode) | Good (Agent mode in VS Code) | Good with codebase search backing | Strong (Cascade) |
-| **Codebase awareness** | Repo-map (deterministic, no embeddings) | AWS service catalog awareness | Reads files on demand, very strong with hooks | Filesystem MCP — reads on demand, can index via custom MCP | Indexed for paid teams | Indexed embeddings + custom retrievers | Indexed embeddings | Indexed for paid users | Best-in-class — Sourcegraph code graph | Real-time indexing |
-| **Visual / image input** | No (text only) | Limited | Limited (Read tool can ingest images) | Yes — drag in screenshots, PDFs, images for visual debugging | No | Limited | Yes — paste image into chat | Limited | No | Yes |
-| **IDE coverage** | Terminal CLI (works alongside any editor) | VS Code, JetBrains | Terminal CLI; VS Code + JetBrains plugins | Editor-agnostic — works alongside any IDE via filesystem MCP | 40+ editors (VS Code, JetBrains, Vim, Emacs, Sublime, ...) | VS Code, JetBrains | Standalone IDE (VS Code fork) | VS Code, Visual Studio, JetBrains, Neovim, Xcode | VS Code, JetBrains, web | Standalone IDE (VS Code fork) |
-| **Privacy posture** | You pick the API; can be 100% local with Ollama | AWS retention by default; configurable | Anthropic API (sees your code) | Anthropic API (sees your code) | Free tier sees code; enterprise zero-retention | 100% local possible; cloud optional | Telemetry on; Privacy Mode opts out of training | Microsoft cloud; enterprise gates | Self-hosted available (enterprise) | Codeium SOC 2; enterprise zero-retention |
-| **Best use case** | Open-source / local-first / git discipline / cost-sensitive | AWS-heavy stacks | Power users, big refactors, terminal-first workflows, CI integration | Architecture / planning sessions, visual debugging, MCP-extended workflows alongside any editor | Free autocomplete in your existing editor | BYOM / privacy-conscious / customizable / self-hosted | Polished IDE replacement, broad audience | Already on GitHub, want zero friction | Massive monorepos with deep code search needs | Cursor alternative if you prefer Codeium's ecosystem |
+| Dimension | Aider | Claude Code | Claude Desktop | Continue (discontinued) | Cursor | Devin Desktop (formerly Windsurf) | GitHub Copilot | Kiro (successor to Amazon Q Developer) | Sourcegraph Cody (Enterprise only) |
+|---|---|---|---|---|---|---|---|---|---|
+| **Pricing** | FREE (BYOAPI key) | $20/mo Pro, $100/mo Max | $20/mo Pro, $100/mo Max (same plans as Claude Code) | FREE (open source, BYOAPI) | $20/mo Pro, $40/mo Business | $15/mo Pro | $10/mo individual, $19/seat business, FREE for OSS maintainers | $19/seat/mo (FREE tier limited) | $9-19/seat/mo |
+| **Open source** | Apache 2.0 ✅ | Closed (Anthropic-owned, runs locally with API key) | Closed (Anthropic) | Apache 2.0 ✅ | Closed (VS Code fork) | Closed (VS Code fork) | Closed (Microsoft) | Closed (AWS) | Apache 2.0 client; cloud backend closed |
+| **Bring your own model** | Yes — any LLM via LiteLLM | No (Anthropic only) | No (Anthropic only) | Yes — full BYOM, local LLMs first-class | Yes (BYOAPI) | Limited (Codeium models + some pass-through) | GPT, Claude, Gemini selectable on paid tiers | No | Yes on enterprise tier |
+| **Local LLM support** | Yes (Ollama, llama.cpp, vLLM, LM Studio) | No | No | First-class — Ollama, LM Studio, vLLM, custom endpoints | Hacky (via OpenAI-compatible base URL) | No | No | No | Limited (Ollama as model option) |
+| **Multi-file edits / refactor** | Good — git-aware, edits in commits | Excellent — agentic, plans + executes across many files | Excellent — agent mode + filesystem MCP, edits via accepted diffs | Good — explicit @ context, edit-in-place | Strong (Composer / Agent mode) | Strong (Cascade) | Good (Agent mode in VS Code) | Good (refactoring tools) | Good with codebase search backing |
+| **Codebase awareness** | Repo-map (deterministic, no embeddings) | Reads files on demand, very strong with hooks | Filesystem MCP — reads on demand, can index via custom MCP | Indexed embeddings + custom retrievers | Indexed embeddings | Real-time indexing | Indexed for paid users | AWS service catalog awareness | Best-in-class — Sourcegraph code graph |
+| **Visual / image input** | No (text only) | Limited (Read tool can ingest images) | Yes — drag in screenshots, PDFs, images for visual debugging | Limited | Yes — paste image into chat | Yes | Limited | Limited | No |
+| **IDE coverage** | Terminal CLI (works alongside any editor) | Terminal CLI; VS Code + JetBrains plugins | Editor-agnostic — works alongside any IDE via filesystem MCP | VS Code, JetBrains | Standalone IDE (VS Code fork) | Standalone IDE (VS Code fork) | VS Code, Visual Studio, JetBrains, Neovim, Xcode | VS Code, JetBrains | VS Code, JetBrains, web |
+| **Privacy posture** | You pick the API; can be 100% local with Ollama | Anthropic API (sees your code) | Anthropic API (sees your code) | 100% local possible; cloud optional | Telemetry on; Privacy Mode opts out of training | Codeium SOC 2; enterprise zero-retention | Microsoft cloud; enterprise gates | AWS retention by default; configurable | Self-hosted available (enterprise) |
+| **Best use case** | Open-source / local-first / git discipline / cost-sensitive | Power users, big refactors, terminal-first workflows, CI integration | Architecture / planning sessions, visual debugging, MCP-extended workflows alongside any editor | BYOM / privacy-conscious / customizable / self-hosted | Polished IDE replacement, broad audience | Cursor alternative if you prefer Codeium's ecosystem | Already on GitHub, want zero friction | AWS-heavy stacks | Massive monorepos with deep code search needs |
 
 ---
 
@@ -62,13 +61,20 @@ the developer already uses.
 The `/architect` mode separates planning (using a reasoning model) from
 editing (using a fast edit model) for complex changes. The benchmark
 leaderboard Aider maintains is a widely-cited reference for LLM coding
-performance.
+performance. Images (screenshots, mockups) and web pages can be added to
+the chat for vision-capable models.
+
+Staleness note (checked 2026-09-29): the latest tagged release is v0.86.0
+from 2025-08-09, and the last commit to the main branch is from
+2026-05-22. Aider still works and its docs are online, but development has
+slowed sharply — weigh that before standardising on it.
 
 **Features:**
 - Git-first workflow with automatic commits per change
 - Repo-map context for large codebase awareness
 - Any LLM provider (Claude, GPT, local, DeepSeek, xAI)
-- {'Architect mode': 'reasoning model plans, edit model executes'}
+- Architect mode: reasoning model plans, edit model executes
+- Image and web-page input for vision-capable models
 - Voice input support
 - In-chat commands for file management, linting, testing
 - Language-agnostic (Python, JS, Rust, Go, Java, C++, … )
@@ -82,22 +88,17 @@ performance.
 
 ---
 
-### Amazon Q Developer <a name="amazon-q-developer"></a>
-
-_AWS's AI coding assistant with deep integration into AWS services and enterprise compliance._
-
-**Site:** [https://aws.amazon.com/q/developer/](https://aws.amazon.com/q/developer/) · **License:** commercial · **Deployment:** local
-
----
-
 ### Claude Code <a name="claude-code"></a>
 
 _Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness._
 
 **Site:** [https://claude.com/claude-code](https://claude.com/claude-code) · **License:** commercial · **Deployment:** cli
 
-Claude Code is Anthropic's official terminal-based coding agent. It runs
-locally against the Claude API and has first-class tool use for reading
+Claude Code is Anthropic's official agentic coding tool, available in the
+terminal, IDEs (VS Code, JetBrains), the Claude desktop app and the
+browser. It runs against Claude models — via Anthropic directly or via
+Amazon Bedrock, Google Cloud or Microsoft Foundry — and has first-class
+tool use for reading
 and editing files, running shell commands, searching codebases, browsing
 the web, and orchestrating sub-agents. It ships with a hook system, slash
 commands, MCP server support, and IDE integrations (VS Code, JetBrains).
@@ -107,16 +108,28 @@ plans, executes multi-step changes, reads its own output, and recovers
 from errors. It's built around the Claude Agent SDK and exposes the same
 primitives to developers who want to build custom agents.
 
+Privacy depends on how you sign in. With a Free, Pro or Max account,
+Claude Code falls under Anthropic's Consumer Terms: data is used to train
+future models when the account's model-improvement setting is on (5-year
+retention; 30 days if off). Under the Commercial Terms (Team, Enterprise,
+API and cloud platforms), Anthropic does not train on Claude Code prompts
+or code and retains them for 30 days by default. On Claude subscriptions,
+Claude Code needs Pro or higher (it is not in the Free plan); it can also
+be billed through an API key.
+
+Images can be dragged in or pasted (Ctrl+V) into a session.
+
 Anthropic publishes both `llms.txt` and `llms-full.txt` for the Claude
-Code documentation, making it one of the best-indexed coding-agent
-references available to other AI assistants.
+Code documentation at code.claude.com, making it one of the best-indexed
+coding-agent references available to other AI assistants.
 
 **Features:**
 - Terminal CLI with native tool use (Bash, Read, Edit, Write, Grep)
 - Hook system for shaping agent behavior per-project
 - Slash commands and user-defined skills via SKILL.md
 - MCP server support for connecting external tools and data
-- IDE integrations for VS Code and JetBrains
+- IDE integrations for VS Code and JetBrains; also in the desktop app and browser
+- Image input (drag-and-drop or paste)
 - Background task support and session persistence
 - Built on the Claude Agent SDK, exposed for custom agent builders
 
@@ -184,52 +197,39 @@ Desktop a new capability without changing the app.
 
 ---
 
-### Codeium <a name="codeium"></a>
+### Continue (discontinued) <a name="continue-dev"></a>
 
-_Free AI autocomplete extension for 40+ editors — from the makers of Windsurf._
-
-**Site:** [https://codeium.com](https://codeium.com) · **License:** freemium · **Deployment:** local
-
----
-
-### Continue <a name="continue-dev"></a>
-
-_Open-source AI coding assistant for VS Code and JetBrains — bring any model, any provider, customizable._
+_DISCONTINUED — Continue was acquired by Cursor in June 2026; the Apache-2.0 repo is now read-only and no longer maintained._
 
 **Site:** [https://www.continue.dev](https://www.continue.dev) · **Repo:** [https://github.com/continuedev/continue](https://github.com/continuedev/continue) · **License:** open-source · **Deployment:** library
 
-Continue is an open-source AI coding assistant that runs as a VS Code or
-JetBrains extension. Unlike vendor-locked assistants, Continue is fully
-configurable: users bring their own model (cloud or local), their own
-provider (Anthropic, OpenAI, local via Ollama, vLLM, LM Studio, etc.),
-and define custom slash commands, context providers, and tools via a
-plain YAML config.
+Continue was an open-source (Apache 2.0) coding agent for VS Code,
+JetBrains and the terminal, best known for bring-your-own-model
+configuration and first-class local LLM support (Ollama, LM Studio, vLLM).
 
-It supports chat, inline autocomplete, tab-complete, edit-in-place, agent
-mode with tool use, codebase-aware retrieval, and team-shared configs. The
-extension works online or fully offline against local inference servers,
-making it a popular choice for organizations where code can't leave
-developer machines.
+It has been discontinued. continue.dev now reads "Continue was acquired by
+Cursor", and the repository README states that it "is no longer actively
+maintained and is read-only for all users". The team shipped a final
+2.0.0 release of the VS Code extension, CLI and JetBrains plugin
+(v2.0.0 / v2.1.0 tags, 2026-06-19). The source stays available under
+Apache 2.0, so existing installs keep working and the code can be forked,
+but there will be no fixes, new model support or security updates.
 
-Continue used to publish `llms.txt` and `llms-full.txt`, but both have
-returned 404 since at least 2026-07-24. The docs site itself is still up
-at docs.continue.dev — only the machine-readable index went away.
+Kept on this list as a pointer for people searching for it. For an
+actively maintained open-source, bring-your-own-model alternative, see
+Cline, Kilo Code, OpenCode or Qwen Code.
+
+Continue's `llms.txt` and `llms-full.txt` have returned 404 since at least
+2026-07-24.
 
 **Features:**
-- VS Code and JetBrains extensions
-- Bring-your-own-model (cloud or local)
-- Chat, autocomplete, edit-in-place, agent mode
-- Codebase retrieval and context providers
-- Custom slash commands and tools via YAML config
-- Team-shared configuration for consistent org-wide setups
-- Fully offline capable with local model servers
+- Final release 2.0.0 (VS Code extension, CLI, JetBrains plugin), 2026-06-19
+- Source remains Apache 2.0 on GitHub (read-only)
+- No further maintenance
 
 **Best for:**
-- IDE-integrated coding assistance without vendor lock-in
-- Air-gapped development teams using local LLMs
-- Organizations standardizing on a custom model + prompt setup
-- Developers who want Cursor-like features in vanilla VS Code
-- {'Hybrid setups': 'fast local completions, smart cloud chat'}
+- Existing users planning a migration
+- Forks that want an Apache-2.0 IDE-agent codebase to build on
 
 ---
 
@@ -251,9 +251,18 @@ actions, and proprietary context-selection heuristics tuned for the
 provided models. Its agent mode (formerly "Composer") can execute
 multi-step refactors across many files with user approval gates.
 
-It's closed-source and subscription-based, with a free tier that has
-meaningful limits. Commercial adoption among professional developers is
-significant.
+It's closed-source and subscription-based. Plans are Hobby (free, with
+limited agent requests), Individual (Pro / Pro+ / Ultra), Teams and
+Enterprise; paid plans include MCPs, skills, hooks and cloud agents. A
+terminal agent, Cursor CLI (`agent`), ships alongside the editor. Bring-
+your-own API keys (OpenAI, Anthropic, Google, Azure, AWS Bedrock) work for
+chat models only — per Cursor's docs, Tab completion stays on Cursor's
+built-in models.
+
+Ownership changed in 2026: "Cursor has officially been acquired by SpaceX"
+(Cursor blog, 2026-08-14), completing a process that began with a SpaceXAI
+model-training partnership in April. The product keeps its name. Cursor
+also acquired Continue in June 2026 (see that entry).
 
 **Features:**
 - VS Code fork with preserved extension compatibility
@@ -263,12 +272,56 @@ significant.
 - Codebase-wide semantic search and retrieval
 - Tab autocomplete tuned for each supported model
 - Anthropic and OpenAI model support out of the box
+- Cursor CLI (`agent`) for terminal use
+- MCP support
 
 **Best for:**
 - Professional developers who want maximum AI integration
 - Teams that want a consistent IDE across members with built-in AI
 - Large refactors that benefit from multi-file agent coordination
 - Developers migrating from pure VS Code who want more AI than extensions provide
+
+---
+
+### Devin Desktop (formerly Windsurf) <a name="devin-desktop"></a>
+
+_Cognition's AI-native IDE — the product formerly called Windsurf (and before that, Codeium), now built around the Devin Local agent._
+
+**Site:** [https://devin.ai/desktop](https://devin.ai/desktop) · **License:** commercial · **Deployment:** local
+
+Devin Desktop is the product that used to be called Windsurf. Cognition
+(the company behind the Devin cloud agent) acquired Windsurf's "IP,
+product, trademark and brand" on 2025-07-14, after Google hired Windsurf's
+CEO and licensed its technology. On 2026-06-02 Windsurf was renamed Devin
+Desktop via an over-the-air update: same editor, settings and extensions,
+and — per Cognition — the same plans. windsurf.com and codeium.com now
+redirect to devin.ai/desktop.
+
+The rename also replaced the agent. Cascade, Windsurf's original agent,
+was succeeded by Devin Local, rewritten from scratch in Rust; the legacy
+Cascade agent remained available until July 1. The editor now positions
+itself as a command center for local and cloud agents (including Devin
+itself) and speaks the Agent Client Protocol (ACP).
+
+The old Codeium autocomplete extensions live on as "Windsurf plugins", but
+Cognition's docs put the VS Code, Vim/Neovim, Visual Studio, Jupyter,
+Chrome and Eclipse plugins in maintenance mode, and say of the JetBrains
+plugin that "Cascade is being deprecated". This list no longer carries a
+separate Codeium entry.
+
+**Features:**
+- VS Code-based IDE (backwards-compatible with Windsurf and VS Code extensions)
+- Devin Local agent (replaced Cascade in June–July 2026)
+- Agent Command Center for managing local and cloud agents
+- MCP server integration
+- RAG-based codebase indexing and Fast Context retrieval
+- BYOK options alongside Cognition's own SWE models
+- Plans — Free, Pro, Max, Teams, Enterprise
+
+**Best for:**
+- Developers who want a Cursor-style AI IDE from a different vendor
+- Teams that also use Devin cloud agents and want one place to manage both
+- Former Windsurf / Codeium users (the update carried settings forward)
 
 ---
 
@@ -281,11 +334,18 @@ _GitHub's native AI coding assistant with chat, autocomplete, and agent mode acr
 GitHub Copilot is the original and most widely deployed AI coding
 assistant, integrated natively into VS Code, Visual Studio, JetBrains
 IDEs, Neovim, Xcode, and GitHub itself. It offers inline code completion,
-chat, a multi-file agent mode, pull-request summaries, and command-line
-assistance via `gh copilot`.
+chat, a multi-file agent mode, pull-request summaries, and a terminal
+agent, GitHub Copilot CLI (`copilot`), which ships with the GitHub MCP
+server preconfigured and accepts additional MCP servers. The older
+`gh copilot` extension was deprecated on 2025-10-25 in favour of Copilot
+CLI.
 
 Under the hood Copilot routes to multiple LLMs — GPT, Claude Sonnet,
-Gemini — with model choice exposed to users on the paid tiers. Its
+Gemini — with model choice exposed to users on the paid tiers. In VS Code,
+Bring Your Own Key (BYOK) connects any compatible model provider, including
+local models via the Ollama extension; per the VS Code docs, "You can use a
+local model completely offline", and BYOK models work without a Copilot
+plan or GitHub sign-in (Business/Enterprise admins can disable BYOK). Its
 reach within the GitHub platform (issues, PRs, code review, Actions)
 makes it a practical default for teams already on GitHub.
 
@@ -298,9 +358,10 @@ external traffic — the most mature enterprise posture in the category.
 - Inline autocomplete, chat, and multi-file agent mode
 - Pull-request and code-review assistance on GitHub
 - Multiple model backends (GPT, Claude, Gemini)
-- `gh copilot` CLI for command-line help
+- GitHub Copilot CLI (`copilot`) — terminal agent with MCP support (replaced `gh copilot`)
+- BYOK and offline local models in VS Code (Ollama extension)
 - Enterprise tier with SOC 2, data residency, content filtering
-- Free tier available for open-source maintainers and students
+- Plans — Free, Pro, Pro+, Max, Business, Enterprise (Copilot Pro access for verified students, faculty and OSS maintainers)
 
 **Best for:**
 - Professional development at organizations already on GitHub
@@ -311,49 +372,62 @@ external traffic — the most mature enterprise posture in the category.
 
 ---
 
-### Sourcegraph Cody <a name="sourcegraph-cody"></a>
+### Kiro (successor to Amazon Q Developer) <a name="kiro"></a>
 
-_AI coding assistant with enterprise-grade code search context across massive codebases._
+_AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30._
 
-**Site:** [https://sourcegraph.com/cody](https://sourcegraph.com/cody) · **License:** commercial · **Deployment:** local
+**Site:** [https://kiro.dev](https://kiro.dev) · **Repo:** [https://github.com/kirodotdev/Kiro](https://github.com/kirodotdev/Kiro) · **License:** commercial · **Deployment:** local
+
+Kiro is AWS's AI coding agent, built around one agent harness shared by
+the Kiro IDE, the Kiro CLI, a web surface, iOS, and any ACP-compatible
+editor. Its distinguishing idea is spec-driven development: a feature is
+planned as requirements, design and tasks before the agent implements it,
+with steering files and event-driven hooks shaping the agent's behaviour.
+
+Kiro is what AWS points Amazon Q Developer users to. Per AWS's end-of-support
+announcement, new Q Developer Free Tier accounts and subscriptions were
+blocked from 2026-05-15, and "Amazon Q Developer IDE plugins and paid
+Subscriptions will reach end of support on April 30, 2027, giving customers
+12 months to transition to Kiro." The Q Developer CLI has already become
+Kiro CLI — Kiro's docs call it "the next update of the Q CLI", with
+existing workflows, subscription and authentication carried over.
+
+Models come from several providers (Anthropic, OpenAI and open-weight
+families such as DeepSeek, GLM, MiniMax and Qwen). The docs we checked do
+not describe bring-your-own-key or local-model support.
+
+**Features:**
+- Spec-driven development (requirements → design → tasks)
+- Steering files and event-driven agent hooks
+- MCP support
+- Kiro IDE, Kiro CLI (successor to Amazon Q Developer CLI), web and iOS
+- ACP support for other editors
+- Multi-provider model menu (Anthropic, OpenAI, open-weight models)
+- Plans — Free, Pro, Pro+, Pro Max, Power, Enterprise
+
+**Best for:**
+- Amazon Q Developer users migrating before the 2027-04-30 end of support
+- Teams that want a written spec before the agent touches code
+- AWS-centric organisations standardising on an AWS-supported agent
 
 ---
 
-### Windsurf <a name="windsurf"></a>
+### Sourcegraph Cody (Enterprise only) <a name="sourcegraph-cody"></a>
 
-_AI-native IDE from Codeium with Cascade agent mode, deep indexing, and real-time code awareness._
+_Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025._
 
-**Site:** [https://windsurf.com](https://windsurf.com) · **License:** commercial · **Deployment:** local
+**Site:** [https://sourcegraph.com/cody](https://sourcegraph.com/cody) · **License:** commercial · **Deployment:** local
 
-Windsurf (formerly Codeium) is a commercial AI-native IDE and VS Code
-fork competing directly with Cursor. Its flagship feature is Cascade —
-an agent mode that combines chat, multi-file edits, and codebase
-understanding into a single conversational interface that can execute
-long-running tasks with user approval.
+Cody pairs an AI assistant with Sourcegraph's code search and code graph,
+which is why it is aimed at very large codebases and monorepos. Its docs
+describe it as "Supported on Sourcegraph Enterprise", available in VS Code,
+JetBrains, Visual Studio and the web app.
 
-Windsurf emphasizes real-time awareness of the developer's actions (what
-they just edited, what they're looking at) to feed context into agent
-responses. Its indexing of large codebases is a recurring strength in
-benchmarks against comparable AI IDEs.
-
-Windsurf shares roots with the Codeium autocomplete extension, which
-remains available as a standalone plugin for VS Code, JetBrains, Vim,
-Emacs, and many more.
-
-**Features:**
-- VS Code-based IDE with Cascade agent mode
-- Real-time context awareness of developer actions
-- Multi-file edit planning and execution
-- Deep codebase indexing (fast on large repos)
-- Supervised agent with user-approval gates
-- Standalone Codeium autocomplete for 40+ editors
-- Team plans with shared context / custom instructions
-
-**Best for:**
-- Developers who want Cursor-style AI IDE with a different polish model
-- Large-codebase work where indexing quality matters
-- Teams standardizing on an AI-native IDE
-- Users of Codeium autocomplete who want the full Cascade experience
+Individual plans are gone: Sourcegraph stopped Cody Free and Cody Pro
+signups on 2025-06-25 and cut off access on 2025-07-23, while stating that
+"Cody Enterprise customers are not affected by these changes." The client
+is no longer developed in the open: the public source now lives in
+`sourcegraph/cody-public-snapshot`, archived since 2025-08-01.
 
 ---
 

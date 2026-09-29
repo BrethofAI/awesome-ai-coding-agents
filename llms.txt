@@ -6,12 +6,11 @@
 ## Tools
 
 - [Aider](https://aider.chat): AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
-- [Amazon Q Developer](https://aws.amazon.com/q/developer/): AWS's AI coding assistant with deep integration into AWS services and enterprise compliance.
 - [Claude Code](https://claude.com/claude-code): Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
 - [Claude Desktop](https://claude.com/download): Anthropic's native desktop app — currently the strongest all-around AI coding companion via MCP, skills, and agent mode.
-- [Codeium](https://codeium.com): Free AI autocomplete extension for 40+ editors — from the makers of Windsurf.
-- [Continue](https://www.continue.dev): Open-source AI coding assistant for VS Code and JetBrains — bring any model, any provider, customizable.
+- [Continue (discontinued)](https://www.continue.dev): DISCONTINUED — Continue was acquired by Cursor in June 2026; the Apache-2.0 repo is now read-only and no longer maintained.
 - [Cursor](https://cursor.com): AI-first fork of VS Code with deep LLM integration, agent mode, and codebase-aware context.
+- [Devin Desktop (formerly Windsurf)](https://devin.ai/desktop): Cognition's AI-native IDE — the product formerly called Windsurf (and before that, Codeium), now built around the Devin Local agent.
 - [GitHub Copilot](https://github.com/features/copilot): GitHub's native AI coding assistant with chat, autocomplete, and agent mode across major IDEs.
-- [Sourcegraph Cody](https://sourcegraph.com/cody): AI coding assistant with enterprise-grade code search context across massive codebases.
-- [Windsurf](https://windsurf.com): AI-native IDE from Codeium with Cascade agent mode, deep indexing, and real-time code awareness.
+- [Kiro (successor to Amazon Q Developer)](https://kiro.dev): AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30.
+- [Sourcegraph Cody (Enterprise only)](https://sourcegraph.com/cody): Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025.

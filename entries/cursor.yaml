@@ -24,9 +24,18 @@ description: |
   provided models. Its agent mode (formerly "Composer") can execute
   multi-step refactors across many files with user approval gates.
 
-  It's closed-source and subscription-based, with a free tier that has
-  meaningful limits. Commercial adoption among professional developers is
-  significant.
+  It's closed-source and subscription-based. Plans are Hobby (free, with
+  limited agent requests), Individual (Pro / Pro+ / Ultra), Teams and
+  Enterprise; paid plans include MCPs, skills, hooks and cloud agents. A
+  terminal agent, Cursor CLI (`agent`), ships alongside the editor. Bring-
+  your-own API keys (OpenAI, Anthropic, Google, Azure, AWS Bedrock) work for
+  chat models only — per Cursor's docs, Tab completion stays on Cursor's
+  built-in models.
+
+  Ownership changed in 2026: "Cursor has officially been acquired by SpaceX"
+  (Cursor blog, 2026-08-14), completing a process that began with a SpaceXAI
+  model-training partnership in April. The product keeps its name. Cursor
+  also acquired Continue in June 2026 (see that entry).
 
 features:
   - VS Code fork with preserved extension compatibility
@@ -36,6 +45,8 @@ features:
   - Codebase-wide semantic search and retrieval
   - Tab autocomplete tuned for each supported model
   - Anthropic and OpenAI model support out of the box
+  - Cursor CLI (`agent`) for terminal use
+  - MCP support
 
 use_cases:
   - Professional developers who want maximum AI integration
@@ -47,5 +58,5 @@ license: commercial
 deployment: local
 platforms: [linux, macos, windows]
 tags: [coding-agent, cursor, ide, vscode-fork, agent-mode, commercial]
-maintainer: Anysphere
+maintainer: Cursor (Anysphere; acquired by SpaceX, 2026-08-14)
 added: 2026-04-24

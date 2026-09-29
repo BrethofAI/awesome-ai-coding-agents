@@ -2,8 +2,8 @@ name: Claude Code
 slug: claude-code
 url: https://claude.com/claude-code
 repository: null
-llms_txt: https://docs.claude.com/llms.txt
-llms_full_txt: https://docs.claude.com/llms-full.txt
+llms_txt: https://code.claude.com/docs/llms.txt
+llms_full_txt: https://code.claude.com/docs/llms-full.txt
 llms_txt_status: published
 
 category: coding-agents
@@ -12,8 +12,11 @@ subcategory: cli-coding-agent
 tagline: Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
 
 description: |
-  Claude Code is Anthropic's official terminal-based coding agent. It runs
-  locally against the Claude API and has first-class tool use for reading
+  Claude Code is Anthropic's official agentic coding tool, available in the
+  terminal, IDEs (VS Code, JetBrains), the Claude desktop app and the
+  browser. It runs against Claude models — via Anthropic directly or via
+  Amazon Bedrock, Google Cloud or Microsoft Foundry — and has first-class
+  tool use for reading
   and editing files, running shell commands, searching codebases, browsing
   the web, and orchestrating sub-agents. It ships with a hook system, slash
   commands, MCP server support, and IDE integrations (VS Code, JetBrains).
@@ -23,16 +26,28 @@ description: |
   from errors. It's built around the Claude Agent SDK and exposes the same
   primitives to developers who want to build custom agents.
 
+  Privacy depends on how you sign in. With a Free, Pro or Max account,
+  Claude Code falls under Anthropic's Consumer Terms: data is used to train
+  future models when the account's model-improvement setting is on (5-year
+  retention; 30 days if off). Under the Commercial Terms (Team, Enterprise,
+  API and cloud platforms), Anthropic does not train on Claude Code prompts
+  or code and retains them for 30 days by default. On Claude subscriptions,
+  Claude Code needs Pro or higher (it is not in the Free plan); it can also
+  be billed through an API key.
+
+  Images can be dragged in or pasted (Ctrl+V) into a session.
+
   Anthropic publishes both `llms.txt` and `llms-full.txt` for the Claude
-  Code documentation, making it one of the best-indexed coding-agent
-  references available to other AI assistants.
+  Code documentation at code.claude.com, making it one of the best-indexed
+  coding-agent references available to other AI assistants.
 
 features:
   - Terminal CLI with native tool use (Bash, Read, Edit, Write, Grep)
   - Hook system for shaping agent behavior per-project
   - Slash commands and user-defined skills via SKILL.md
   - MCP server support for connecting external tools and data
-  - IDE integrations for VS Code and JetBrains
+  - IDE integrations for VS Code and JetBrains; also in the desktop app and browser
+  - Image input (drag-and-drop or paste)
   - Background task support and session persistence
   - Built on the Claude Agent SDK, exposed for custom agent builders
 

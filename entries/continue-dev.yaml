@@ -1,4 +1,4 @@
-name: Continue
+name: Continue (discontinued)
 slug: continue-dev
 url: https://www.continue.dev
 repository: https://github.com/continuedev/continue
@@ -9,45 +9,40 @@ llms_txt_status: missing
 category: coding-agents
 subcategory: ide-coding-assistant
 
-tagline: Open-source AI coding assistant for VS Code and JetBrains — bring any model, any provider, customizable.
+tagline: DISCONTINUED — Continue was acquired by Cursor in June 2026; the Apache-2.0 repo is now read-only and no longer maintained.
 
 description: |
-  Continue is an open-source AI coding assistant that runs as a VS Code or
-  JetBrains extension. Unlike vendor-locked assistants, Continue is fully
-  configurable: users bring their own model (cloud or local), their own
-  provider (Anthropic, OpenAI, local via Ollama, vLLM, LM Studio, etc.),
-  and define custom slash commands, context providers, and tools via a
-  plain YAML config.
+  Continue was an open-source (Apache 2.0) coding agent for VS Code,
+  JetBrains and the terminal, best known for bring-your-own-model
+  configuration and first-class local LLM support (Ollama, LM Studio, vLLM).
 
-  It supports chat, inline autocomplete, tab-complete, edit-in-place, agent
-  mode with tool use, codebase-aware retrieval, and team-shared configs. The
-  extension works online or fully offline against local inference servers,
-  making it a popular choice for organizations where code can't leave
-  developer machines.
+  It has been discontinued. continue.dev now reads "Continue was acquired by
+  Cursor", and the repository README states that it "is no longer actively
+  maintained and is read-only for all users". The team shipped a final
+  2.0.0 release of the VS Code extension, CLI and JetBrains plugin
+  (v2.0.0 / v2.1.0 tags, 2026-06-19). The source stays available under
+  Apache 2.0, so existing installs keep working and the code can be forked,
+  but there will be no fixes, new model support or security updates.
 
-  Continue used to publish `llms.txt` and `llms-full.txt`, but both have
-  returned 404 since at least 2026-07-24. The docs site itself is still up
-  at docs.continue.dev — only the machine-readable index went away.
+  Kept on this list as a pointer for people searching for it. For an
+  actively maintained open-source, bring-your-own-model alternative, see
+  Cline, Kilo Code, OpenCode or Qwen Code.
+
+  Continue's `llms.txt` and `llms-full.txt` have returned 404 since at least
+  2026-07-24.
 
 features:
-  - VS Code and JetBrains extensions
-  - Bring-your-own-model (cloud or local)
-  - Chat, autocomplete, edit-in-place, agent mode
-  - Codebase retrieval and context providers
-  - Custom slash commands and tools via YAML config
-  - Team-shared configuration for consistent org-wide setups
-  - Fully offline capable with local model servers
+  - Final release 2.0.0 (VS Code extension, CLI, JetBrains plugin), 2026-06-19
+  - Source remains Apache 2.0 on GitHub (read-only)
+  - No further maintenance
 
 use_cases:
-  - IDE-integrated coding assistance without vendor lock-in
-  - Air-gapped development teams using local LLMs
-  - Organizations standardizing on a custom model + prompt setup
-  - Developers who want Cursor-like features in vanilla VS Code
-  - Hybrid setups: fast local completions, smart cloud chat
+  - Existing users planning a migration
+  - Forks that want an Apache-2.0 IDE-agent codebase to build on
 
 license: open-source
 deployment: library
 platforms: [linux, macos, windows]
-tags: [coding-agent, vscode, jetbrains, continue, open-source, local-llm]
-maintainer: Continue
+tags: [coding-agent, vscode, jetbrains, continue, open-source, discontinued]
+maintainer: Continue (acquired by Cursor)
 added: 2026-04-24

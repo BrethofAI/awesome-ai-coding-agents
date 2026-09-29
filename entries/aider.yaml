@@ -26,13 +26,20 @@ description: |
   The `/architect` mode separates planning (using a reasoning model) from
   editing (using a fast edit model) for complex changes. The benchmark
   leaderboard Aider maintains is a widely-cited reference for LLM coding
-  performance.
+  performance. Images (screenshots, mockups) and web pages can be added to
+  the chat for vision-capable models.
+
+  Staleness note (checked 2026-09-29): the latest tagged release is v0.86.0
+  from 2025-08-09, and the last commit to the main branch is from
+  2026-05-22. Aider still works and its docs are online, but development has
+  slowed sharply — weigh that before standardising on it.
 
 features:
   - Git-first workflow with automatic commits per change
   - Repo-map context for large codebase awareness
   - Any LLM provider (Claude, GPT, local, DeepSeek, xAI)
-  - Architect mode: reasoning model plans, edit model executes
+  - "Architect mode: reasoning model plans, edit model executes"
+  - Image and web-page input for vision-capable models
   - Voice input support
   - In-chat commands for file management, linting, testing
   - Language-agnostic (Python, JS, Rust, Go, Java, C++, … )

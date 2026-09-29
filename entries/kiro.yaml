@@ -1,0 +1,51 @@
+name: Kiro (successor to Amazon Q Developer)
+slug: kiro
+url: https://kiro.dev
+repository: https://github.com/kirodotdev/Kiro
+llms_txt: https://kiro.dev/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-ide
+
+tagline: AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30.
+
+description: |
+  Kiro is AWS's AI coding agent, built around one agent harness shared by
+  the Kiro IDE, the Kiro CLI, a web surface, iOS, and any ACP-compatible
+  editor. Its distinguishing idea is spec-driven development: a feature is
+  planned as requirements, design and tasks before the agent implements it,
+  with steering files and event-driven hooks shaping the agent's behaviour.
+
+  Kiro is what AWS points Amazon Q Developer users to. Per AWS's end-of-support
+  announcement, new Q Developer Free Tier accounts and subscriptions were
+  blocked from 2026-05-15, and "Amazon Q Developer IDE plugins and paid
+  Subscriptions will reach end of support on April 30, 2027, giving customers
+  12 months to transition to Kiro." The Q Developer CLI has already become
+  Kiro CLI — Kiro's docs call it "the next update of the Q CLI", with
+  existing workflows, subscription and authentication carried over.
+
+  Models come from several providers (Anthropic, OpenAI and open-weight
+  families such as DeepSeek, GLM, MiniMax and Qwen). The docs we checked do
+  not describe bring-your-own-key or local-model support.
+
+features:
+  - Spec-driven development (requirements → design → tasks)
+  - Steering files and event-driven agent hooks
+  - MCP support
+  - Kiro IDE, Kiro CLI (successor to Amazon Q Developer CLI), web and iOS
+  - ACP support for other editors
+  - Multi-provider model menu (Anthropic, OpenAI, open-weight models)
+  - Plans — Free, Pro, Pro+, Pro Max, Power, Enterprise
+
+use_cases:
+  - Amazon Q Developer users migrating before the 2027-04-30 end of support
+  - Teams that want a written spec before the agent touches code
+  - AWS-centric organisations standardising on an AWS-supported agent
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, kiro, aws, amazon-q, spec-driven, mcp, commercial]
+maintainer: AWS
+added: 2026-04-24
