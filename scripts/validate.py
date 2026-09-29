@@ -347,7 +347,10 @@ def main() -> int:
         return 1
 
     if args.heal:
-        save_health(health)
+        # Only entries that still exist keep a record: a removed or renamed
+        # entry would otherwise leave its streak behind forever.
+        live = {e["_key"] for e in checkable}
+        save_health({k: v for k, v in health.items() if k in live})
         changed = len(promoted) + len(demoted)
         print(f"\nhealed {changed} status change(s); "
               f"{HEALTH_PATH.name} updated.")

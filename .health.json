@@ -4,92 +4,122 @@
  "entries": {
   "aider": {
    "ok_streak": 0,
-   "fail_streak": 1,
+   "fail_streak": 2,
    "last": {
     "state": "gone",
-    "code": 404,
-    "shape": "HTTP 404"
-   }
-  },
-  "amazon-q-developer": {
-   "ok_streak": 0,
-   "fail_streak": 1,
-   "last": {
-    "state": "gone",
-    "code": 404,
-    "shape": "HTTP 404"
+    "code": 404
    }
   },
   "claude-code": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
-    "code": 200,
-    "shape": "llms.txt (56903B)"
+    "code": 200
    }
   },
   "claude-desktop": {
+   "ok_streak": 2,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "cline": {
    "ok_streak": 1,
    "fail_streak": 0,
    "last": {
     "state": "ok",
-    "code": 200,
-    "shape": "llms.txt (56903B)"
+    "code": 200
    }
   },
-  "codeium": {
-   "ok_streak": 0,
-   "fail_streak": 1,
+  "codex-cli": {
+   "ok_streak": 1,
+   "fail_streak": 0,
    "last": {
-    "state": "not_a_file",
-    "code": 200,
-    "shape": "HTML page (text/html, 66967B)"
+    "state": "ok",
+    "code": 200
    }
   },
   "continue-dev": {
    "ok_streak": 0,
-   "fail_streak": 1,
+   "fail_streak": 2,
    "last": {
     "state": "gone",
-    "code": 404,
-    "shape": "HTTP 404"
+    "code": 404
    }
   },
   "cursor": {
    "ok_streak": 0,
-   "fail_streak": 1,
+   "fail_streak": 2,
    "last": {
     "state": "not_a_file",
-    "code": 200,
-    "shape": "HTML page (text/html, 140685B)"
+    "code": 200
    }
   },
-  "github-copilot": {
+  "devin-desktop": {
    "ok_streak": 1,
    "fail_streak": 0,
    "last": {
     "state": "ok",
-    "code": 200,
-    "shape": "llms.txt (28666B)"
+    "code": 200
    }
   },
-  "sourcegraph-cody": {
+  "gemini-cli": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "github-copilot": {
+   "ok_streak": 2,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "kilo-code": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "kiro": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "opencode": {
    "ok_streak": 0,
    "fail_streak": 1,
    "last": {
     "state": "gone",
-    "code": 404,
-    "shape": "HTTP 404"
+    "code": 404
    }
   },
-  "windsurf": {
+  "qwen-code": {
    "ok_streak": 1,
    "fail_streak": 0,
    "last": {
     "state": "ok",
-    "code": 200,
-    "shape": "llms.txt (24108B)"
+    "code": 200
+   }
+  },
+  "sourcegraph-cody": {
+   "ok_streak": 0,
+   "fail_streak": 2,
+   "last": {
+    "state": "gone",
+    "code": 404
    }
   }
  }
