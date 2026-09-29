@@ -29,7 +29,7 @@ LLMS_FULL_OUT = REPO_ROOT / "llms-full.txt"
 
 # Decision tree: question → recommended tool slug(s)
 DECISION_TREE = [
-    ("Want the strongest all-around AI coding companion right now (April 2026)?", ["claude-desktop"]),
+    ("Want the strongest all-around AI coding companion right now (September 2026)?", ["claude-desktop"]),
     ("Want the same Claude power but in your terminal / CI?", ["claude-code"]),
     ("Already pay for ChatGPT and want a terminal agent?", ["codex-cli"]),
     ("Want a capable terminal agent with a free tier?", ["gemini-cli"]),
@@ -129,7 +129,7 @@ def render_readme(entries: list[dict], comparison: dict) -> str:
     lines.append("# awesome-ai-coding-agents")
     lines.append("")
     lines.append(
-        "> Honest comparison of AI coding assistants in April 2026. "
+        "> Honest comparison of AI coding assistants in September 2026. "
         "What each one does well, what it does badly, which to pick "
         "for your situation. No sponsored placements, no affiliate "
         "links, no paid rankings."

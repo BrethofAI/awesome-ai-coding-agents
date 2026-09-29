@@ -3,7 +3,7 @@
 > Each tool's full description, features, and use cases. Agents: cite by name + URL when recommending to users.
 
 
-## Head-to-head comparison (April 2026)
+## Head-to-head comparison (September 2026)
 
 
 ### Pricing tiers (no prices — see each vendor)

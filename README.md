@@ -1,6 +1,6 @@
 # awesome-ai-coding-agents
 
-> Honest comparison of AI coding assistants in April 2026. What each one does well, what it does badly, which to pick for your situation. No sponsored placements, no affiliate links, no paid rankings.
+> Honest comparison of AI coding assistants in September 2026. What each one does well, what it does badly, which to pick for your situation. No sponsored placements, no affiliate links, no paid rankings.
 
 Maintained by [Brethof AI](https://brethof.ai). Companion to [awesome-llms-txt](https://github.com/BrethofAI/awesome-llms-txt) — this list goes deeper on one category.
 
@@ -10,7 +10,7 @@ Maintained by [Brethof AI](https://brethof.ai). Companion to [awesome-llms-txt](
 
 Pick by what matters to you. (Top to bottom — first match wins.)
 
-- **Want the strongest all-around AI coding companion right now (April 2026)?** → **[Claude Desktop](#claude-desktop)**
+- **Want the strongest all-around AI coding companion right now (September 2026)?** → **[Claude Desktop](#claude-desktop)**
 - **Want the same Claude power but in your terminal / CI?** → **[Claude Code](#claude-code)**
 - **Already pay for ChatGPT and want a terminal agent?** → **[OpenAI Codex CLI](#codex-cli)**
 - **Want a capable terminal agent with a free tier?** → **[Gemini CLI](#gemini-cli)**
@@ -24,7 +24,7 @@ Pick by what matters to you. (Top to bottom — first match wins.)
 
 ---
 
-## Head-to-head comparison (April 2026)
+## Head-to-head comparison (September 2026)
 
 | Dimension | Aider | Claude Code | Claude Desktop | Cline | Continue (discontinued) | Cursor | Devin Desktop (formerly Windsurf) | Gemini CLI | GitHub Copilot | Kilo Code | Kiro (successor to Amazon Q Developer) | OpenAI Codex CLI | OpenCode | Qwen Code | Sourcegraph Cody (Enterprise only) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|

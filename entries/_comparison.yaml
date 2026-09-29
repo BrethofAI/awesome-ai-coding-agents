@@ -3,7 +3,7 @@
 # Pricing: which tiers exist only — never prices (they change too often
 # to keep honest here; link the vendor's pricing page instead).
 __meta__: comparison_matrix
-title: "Head-to-head comparison (April 2026)"
+title: "Head-to-head comparison (September 2026)"
 dimensions:
   - name: "Pricing tiers (no prices — see each vendor)"
     values:
