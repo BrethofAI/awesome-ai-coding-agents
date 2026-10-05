@@ -147,10 +147,14 @@ def render_readme(entries: list[dict], comparison: dict) -> str:
     lines.append("---\n")
     lines.extend(render_matrix(comparison, entries))
     lines.append("---\n")
+    # LIST:START/END wrap the generated listing; brethof.ai builds the page
+    # from README.md — text outside verbatim, entries inside as a catalog.
+    lines.append("<!-- LIST:START -->")
     lines.append("## Tools\n")
     for e in entries:
         lines.extend(render_entry_card(e))
         lines.append("---\n")
+    lines.append("<!-- LIST:END -->\n")
     lines.append("## Contributing\n")
     lines.append(
         "Submit a PR with a YAML entry following the schema in `entries/`. "

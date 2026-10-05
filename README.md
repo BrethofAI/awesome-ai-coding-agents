@@ -41,6 +41,7 @@ Pick by what matters to you. (Top to bottom — first match wins.)
 
 ---
 
+<!-- LIST:START -->
 ## Tools
 
 ### Aider <a name="aider"></a>
@@ -640,6 +641,8 @@ is no longer developed in the open: the public source now lives in
 `sourcegraph/cody-public-snapshot`, archived since 2025-08-01.
 
 ---
+
+<!-- LIST:END -->
 
 ## Contributing
 
