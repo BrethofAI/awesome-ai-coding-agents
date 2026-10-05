@@ -22,6 +22,18 @@ except ImportError:
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:                                      # this week's facts (scripts/facts.py):
+    from facts import fact_line, load_facts   # stars, latest release, last push
+except ImportError:
+    def load_facts(root):
+        return {}
+
+    def fact_line(f):
+        return ""
+
+FACTS = load_facts(REPO_ROOT)
 ENTRIES_DIR = REPO_ROOT / "entries"
 README_OUT = REPO_ROOT / "README.md"
 LLMS_OUT = REPO_ROOT / "llms.txt"
@@ -99,6 +111,9 @@ def render_entry_card(entry: dict) -> list[str]:
     out = [f"### {entry['name']} <a name=\"{entry['slug']}\"></a>\n"]
     if entry.get("tagline"):
         out.append(f"_{entry['tagline'].strip()}_\n")
+    fl = fact_line(FACTS.get(str(entry.get("slug"))))
+    if fl:
+        out.append(f"<sub>{fl}</sub>\n")
     bits = []
     if entry.get("url"):
         bits.append(f"**Site:** [{entry['url']}]({entry['url']})")
