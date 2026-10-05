@@ -1,0 +1,361 @@
+{
+ "checked": "2026-10-05",
+ "entries": {
+  "aider": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "aider is AI pair programming in your terminal",
+    "licence": "Apache-2.0",
+    "pushed": "2026-05-22",
+    "release": "v0.86.0",
+    "released": "2025-08-09",
+    "repo": "Aider-AI/aider",
+    "stars": 49374
+   },
+   "github_ref": "Aider-AI/aider",
+   "name": "Aider",
+   "url": "https://aider.chat",
+   "web": {
+    "final": "https://aider.chat/",
+    "status": 200,
+    "title": "Aider - AI Pair Programming in Your Terminal"
+   }
+  },
+  "amp": {
+   "checked": "2026-10-05",
+   "name": "Amp",
+   "url": "https://ampcode.com",
+   "web": {
+    "final": "https://ampcode.com/",
+    "status": 200,
+    "title": "Amp: Coding agent and dev environment built for the frontier"
+   }
+  },
+  "antigravity-cli": {
+   "checked": "2026-10-05",
+   "name": "Antigravity CLI (Google Antigravity)",
+   "url": "https://antigravity.google",
+   "web": {
+    "final": "https://antigravity.google/",
+    "status": 200,
+    "title": "Google Antigravity"
+   }
+  },
+  "claude-code": {
+   "checked": "2026-10-05",
+   "name": "Claude Code",
+   "url": "https://claude.com/product/claude-code",
+   "web": {
+    "final": "https://claude.com/product/claude-code",
+    "status": 200,
+    "title": "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE"
+   }
+  },
+  "claude-desktop": {
+   "checked": "2026-10-05",
+   "name": "Claude Desktop",
+   "url": "https://claude.com/download",
+   "web": {
+    "final": "https://claude.com/download",
+    "status": 200,
+    "title": "Download Claude | Claude by Anthropic"
+   }
+  },
+  "cline": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+    "licence": "Apache-2.0",
+    "pushed": "2026-10-05",
+    "release": "desktop-v0.0.43",
+    "released": "2026-10-02",
+    "repo": "cline/cline",
+    "stars": 69871
+   },
+   "github_ref": "cline/cline",
+   "name": "Cline",
+   "url": "https://cline.bot",
+   "web": {
+    "final": "https://cline.bot/",
+    "status": 200,
+    "title": "Cline - AI Coding, Open Source and Open Choice"
+   }
+  },
+  "codebuddy": {
+   "checked": "2026-10-05",
+   "name": "CodeBuddy (Tencent Cloud)",
+   "url": "https://www.codebuddy.ai",
+   "web": {
+    "error": "ConnectTimeout",
+    "status": null
+   }
+  },
+  "codex-cli": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "Lightweight coding agent that runs in your terminal",
+    "licence": "Apache-2.0",
+    "pushed": "2026-10-05",
+    "release": "rust-v0.160.0",
+    "released": "2026-10-01",
+    "repo": "openai/codex",
+    "stars": 127901
+   },
+   "github_ref": "openai/codex",
+   "name": "OpenAI Codex CLI",
+   "url": "https://learn.chatgpt.com/docs/codex/cli",
+   "web": {
+    "final": "https://learn.chatgpt.com/docs/codex/cli",
+    "status": 200,
+    "title": "Codex CLI | ChatGPT Learn"
+   }
+  },
+  "continue-dev": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "open-source coding agent",
+    "licence": "Apache-2.0",
+    "pushed": "2026-10-05",
+    "release": "v2.0.0-vscode",
+    "released": "2026-06-19",
+    "repo": "continuedev/continue",
+    "stars": 36113
+   },
+   "github_ref": "continuedev/continue",
+   "name": "Continue (discontinued)",
+   "url": "https://www.continue.dev",
+   "web": {
+    "final": "https://continue.dev/",
+    "status": 200,
+    "title": "Continue (acquired by Cursor)"
+   }
+  },
+  "cursor": {
+   "checked": "2026-10-05",
+   "name": "Cursor",
+   "url": "https://cursor.com",
+   "web": {
+    "final": "https://cursor.com/",
+    "status": 200,
+    "title": "AI Coding Agent for Building Ambitious Software | Cursor"
+   }
+  },
+  "deepseek-harness": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "DeepSeek Harness: Everything is a Plugin.",
+    "licence": "MIT",
+    "pushed": "2026-10-03",
+    "release": null,
+    "released": null,
+    "repo": "deepseek-ai/deepseek-harness",
+    "stars": 243773
+   },
+   "github_ref": "deepseek-ai/deepseek-harness",
+   "name": "DeepSeek Harness (dsh)",
+   "url": "https://deepseek.com/harness",
+   "web": {
+    "final": "https://deepseek.com/harness/",
+    "status": 200,
+    "title": "DeepSeek Harnessï½å ±æ¢æºè½ä¸é"
+   }
+  },
+  "devin-desktop": {
+   "checked": "2026-10-05",
+   "name": "Devin Desktop (formerly Windsurf)",
+   "url": "https://devin.ai/desktop",
+   "web": {
+    "final": "https://devin.ai/desktop",
+    "status": 200,
+    "title": "Devin Desktop | Devin"
+   }
+  },
+  "gemini-cli": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+    "licence": "Apache-2.0",
+    "pushed": "2026-10-05",
+    "release": "v0.62.0",
+    "released": "2026-09-29",
+    "repo": "google-gemini/gemini-cli",
+    "stars": 107231
+   },
+   "github_ref": "google-gemini/gemini-cli",
+   "name": "Gemini CLI",
+   "url": "https://geminicli.com",
+   "web": {
+    "final": "https://geminicli.com/",
+    "status": 200,
+    "title": "Build, debug & deploy with AI | Gemini CLI"
+   }
+  },
+  "github-copilot": {
+   "checked": "2026-10-05",
+   "name": "GitHub Copilot",
+   "url": "https://github.com/features/copilot"
+  },
+  "goose": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+    "licence": "Apache-2.0",
+    "pushed": "2026-10-05",
+    "release": "v1.53.0",
+    "released": "2026-10-02",
+    "repo": "aaif-goose/goose",
+    "stars": 54950
+   },
+   "github_ref": "aaif-goose/goose",
+   "name": "goose",
+   "url": "https://goose-docs.ai",
+   "web": {
+    "final": "https://goose-docs.ai/",
+    "status": 200,
+    "title": "goose | Your open source AI agent"
+   }
+  },
+  "kilo-code": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+    "licence": "MIT",
+    "pushed": "2026-10-05",
+    "release": "v7.8.3",
+    "released": "2026-10-01",
+    "repo": "Kilo-Org/kilocode",
+    "stars": 27494
+   },
+   "github_ref": "Kilo-Org/kilocode",
+   "name": "Kilo Code",
+   "url": "https://kilo.ai",
+   "web": {
+    "final": "https://kilo.ai/",
+    "status": 200,
+    "title": "Kilo – Open Source AI Coding Agent in IDE, CLI and Cloud"
+   }
+  },
+  "kiro": {
+   "checked": "2026-10-05",
+   "name": "Kiro (successor to Amazon Q Developer)",
+   "url": "https://kiro.dev",
+   "web": {
+    "final": "https://kiro.dev/",
+    "status": 200,
+    "title": "Kiro: Move beyond AI coding to agentic engineering"
+   }
+  },
+  "minimax-code": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "An open-source coding agent for your terminal, powered by MiniMax.",
+    "licence": "MIT",
+    "pushed": "2026-10-05",
+    "release": "v0.6.2",
+    "released": "2026-10-02",
+    "repo": "MiniMax-AI/minimax-code",
+    "stars": 1970
+   },
+   "github_ref": "MiniMax-AI/minimax-code",
+   "name": "MiniMax Code",
+   "url": "https://agent.minimax.io/docs/cli/quick-start",
+   "web": {
+    "final": "https://agent.minimax.io/docs/cli/quick-start",
+    "status": 200,
+    "title": "Quick Start - MiniMax Agent Docs"
+   }
+  },
+  "opencode": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "The open source coding agent.",
+    "licence": "MIT",
+    "pushed": "2026-10-05",
+    "release": "v1.18.34",
+    "released": "2026-09-30",
+    "repo": "anomalyco/opencode",
+    "stars": 211823
+   },
+   "github_ref": "anomalyco/opencode",
+   "name": "OpenCode",
+   "url": "https://opencode.ai",
+   "web": {
+    "final": "https://opencode.ai/",
+    "status": 200,
+    "title": "OpenCode | The open source AI coding agent"
+   }
+  },
+  "pi": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+    "licence": "MIT",
+    "pushed": "2026-10-05",
+    "release": "v1.0.3",
+    "released": "2026-10-05",
+    "repo": "earendil-works/pi",
+    "stars": 112605
+   },
+   "github_ref": "earendil-works/pi",
+   "name": "Pi",
+   "url": "https://pi.dev",
+   "web": {
+    "final": "https://pi.dev/",
+    "status": 200,
+    "title": "Pi"
+   }
+  },
+  "qoder": {
+   "checked": "2026-10-05",
+   "name": "Qoder (incl. Qoder CLI)",
+   "url": "https://qoder.com",
+   "web": {
+    "final": "https://qoder.com/",
+    "status": 200,
+    "title": "Qoder - AI Coding Assistant | Autonomous Development IDE"
+   }
+  },
+  "qwen-code": {
+   "checked": "2026-10-05",
+   "github": {
+    "archived": false,
+    "description": "An open-source AI coding agent that lives in your terminal.",
+    "licence": "Apache-2.0",
+    "pushed": "2026-10-05",
+    "release": "sdk-typescript-v0.1.18",
+    "released": "2026-10-05",
+    "repo": "QwenLM/qwen-code",
+    "stars": 28311
+   },
+   "github_ref": "QwenLM/qwen-code",
+   "name": "Qwen Code",
+   "url": "https://qwenlm.github.io/qwen-code-docs/",
+   "web": {
+    "final": "https://qwenlm.github.io/qwen-code-docs/",
+    "status": 200,
+    "title": "Qwen Code: AI Coding Agent Documentation"
+   }
+  },
+  "sourcegraph-cody": {
+   "checked": "2026-10-05",
+   "name": "Sourcegraph Cody (Enterprise only)",
+   "url": "https://sourcegraph.com/docs/cody",
+   "web": {
+    "final": "https://sourcegraph.com/docs/cody",
+    "status": 200,
+    "title": "Cody - Sourcegraph docs"
+   }
+  }
+ }
+}

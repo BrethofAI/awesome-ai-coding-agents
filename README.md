@@ -54,6 +54,8 @@ Pick by what matters to you. (Top to bottom — first match wins.)
 
 _AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline._
 
+<sub>★ 49.4k · v0.86.0 (2025-08-09)</sub>
+
 **Site:** [https://aider.chat](https://aider.chat) · **Repo:** [https://github.com/Aider-AI/aider](https://github.com/Aider-AI/aider) · **License:** open-source · **Deployment:** cli
 
 Aider is an open-source CLI coding assistant that edits code in an
@@ -308,6 +310,8 @@ Desktop a new capability without changing the app.
 
 _Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models._
 
+<sub>★ 69.9k · desktop-v0.0.43 (2026-10-02)</sub>
+
 **Site:** [https://cline.bot](https://cline.bot) · **Repo:** [https://github.com/cline/cline](https://github.com/cline/cline) · **License:** open-source · **Deployment:** local
 
 Cline is "the open source coding agent in your IDE, terminal, & desktop",
@@ -382,6 +386,8 @@ credits. The CLI is distributed under a proprietary licence.
 ### Continue (discontinued) <a name="continue-dev"></a>
 
 _DISCONTINUED — Continue was acquired by Cursor in mid-2026; the Apache-2.0 repo is now read-only and no longer maintained._
+
+<sub>★ 36.1k · v2.0.0-vscode (2026-06-19)</sub>
 
 **Site:** [https://www.continue.dev](https://www.continue.dev) · **Repo:** [https://github.com/continuedev/continue](https://github.com/continuedev/continue) · **License:** open-source · **Deployment:** local
 
@@ -476,6 +482,8 @@ also acquired Continue in mid-2026 (see that entry).
 
 _DeepSeek's MIT-licensed "everything is a plugin" agent harness — a coding agent out of the box, run as a local Web UI or desktop app, with DeepSeek, other providers or local models._
 
+<sub>★ 243.8k · last push 2026-10-03</sub>
+
 **Site:** [https://deepseek.com/harness](https://deepseek.com/harness) · **Repo:** [https://github.com/deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) · **License:** open-source · **Deployment:** local
 
 DeepSeek Harness (`dsh`) is "an open-source agent harness developed by
@@ -560,6 +568,8 @@ entry.
 ### Gemini CLI <a name="gemini-cli"></a>
 
 _Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18._
+
+<sub>★ 107.2k · v0.62.0 (2026-09-29)</sub>
 
 **Site:** [https://geminicli.com](https://geminicli.com) · **Repo:** [https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) · **License:** open-source · **Deployment:** cli
 
@@ -651,6 +661,8 @@ external traffic.
 
 _Apache-2.0 local AI agent (desktop app, CLI and API) started by Block and now part of the Linux Foundation's Agentic AI Foundation — 15+ providers, local models and MCP extensions._
 
+<sub>★ 55k · v1.53.0 (2026-10-02)</sub>
+
 **Site:** [https://goose-docs.ai](https://goose-docs.ai) · **Repo:** [https://github.com/aaif-goose/goose](https://github.com/aaif-goose/goose) · **License:** open-source · **Deployment:** local
 
 goose is "your native open source AI agent — desktop app, CLI, and API —
@@ -688,6 +700,8 @@ and project hints (`.goosehints` / AGENTS.md).
 ### Kilo Code <a name="kilo-code"></a>
 
 _MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models._
+
+<sub>★ 27.5k · v7.8.3 (2026-10-01)</sub>
 
 **Site:** [https://kilo.ai](https://kilo.ai) · **Repo:** [https://github.com/Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) · **License:** open-source · **Deployment:** local
 
@@ -773,6 +787,8 @@ product source is not hosted there.
 
 _MiniMax's coding agent — an MIT-licensed terminal CLI (`mcode`) plus a desktop app, running MiniMax models on an M Plan or any compatible model you bring._
 
+<sub>★ 2k · v0.6.2 (2026-10-02)</sub>
+
 **Site:** [https://agent.minimax.io/docs/cli/quick-start](https://agent.minimax.io/docs/cli/quick-start) · **Repo:** [https://github.com/MiniMax-AI/minimax-code](https://github.com/MiniMax-AI/minimax-code) · **License:** open-source · **Deployment:** cli
 
 MiniMax Code is MiniMax's agent product: a desktop app (macOS, Windows)
@@ -812,6 +828,8 @@ Codex, Cursor and OpenCode.
 ### OpenAI Codex CLI <a name="codex-cli"></a>
 
 _OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and the ChatGPT desktop app on the same harness._
+
+<sub>★ 127.9k · rust-v0.160.0 (2026-10-01)</sub>
 
 **Site:** [https://learn.chatgpt.com/docs/codex/cli](https://learn.chatgpt.com/docs/codex/cli) · **Repo:** [https://github.com/openai/codex](https://github.com/openai/codex) · **License:** open-source · **Deployment:** cli
 
@@ -854,6 +872,8 @@ instructions and a configurable sandbox, and accepts image attachments
 
 _MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models._
 
+<sub>★ 211.8k · v1.18.34 (2026-09-30)</sub>
+
 **Site:** [https://opencode.ai](https://opencode.ai) · **Repo:** [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) · **License:** open-source · **Deployment:** cli
 
 OpenCode describes itself as "the open source AI coding agent". It is
@@ -894,6 +914,8 @@ MCP servers, and images can be dragged into the terminal.
 ### Pi <a name="pi"></a>
 
 _MIT-licensed minimal agent harness for the terminal (Earendil) — 15+ providers, local models, and everything else built as extensions; 1.0 shipped 2026-10-01._
+
+<sub>★ 112.6k · v1.0.3 (2026-10-05)</sub>
 
 **Site:** [https://pi.dev](https://pi.dev) · **Repo:** [https://github.com/earendil-works/pi](https://github.com/earendil-works/pi) · **License:** open-source · **Deployment:** cli
 
@@ -976,6 +998,8 @@ plans. The free Pro trial is not available on virtual machines.
 ### Qwen Code <a name="qwen-code"></a>
 
 _Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model._
+
+<sub>★ 28.3k · sdk-typescript-v0.1.18 (2026-10-05)</sub>
 
 **Site:** [https://qwenlm.github.io/qwen-code-docs/](https://qwenlm.github.io/qwen-code-docs/) · **Repo:** [https://github.com/QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) · **License:** open-source · **Deployment:** cli
 
