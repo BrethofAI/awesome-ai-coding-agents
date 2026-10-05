@@ -39,6 +39,9 @@ See an existing entry under `entries/` as a template. Required fields:
 
 - Tools in production or active development
 - Both open-source and commercial tools
+- New or small projects — we don't turn a tool away for being young or
+  little-known; listings are labelled honestly, and our weekly check
+  removes anything that stops working
 - Tools with public documentation we can verify
 
 ## What we don't accept
@@ -50,8 +53,8 @@ See an existing entry under `entries/` as a template. Required fields:
 
 ## Receipts required
 
-Every claim in an entry needs a verifiable source. Pricing claims must
-link the pricing page. Feature claims must be testable. "Best in class"
+Every claim in an entry needs a verifiable source. We don't quote prices;
+which plan tiers exist must link the pricing page. Feature claims must be testable. "Best in class"
 claims need to identify the dimension you're measuring.
 
 ## License
