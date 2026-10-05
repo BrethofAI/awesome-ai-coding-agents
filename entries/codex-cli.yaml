@@ -1,26 +1,29 @@
 name: OpenAI Codex CLI
 slug: codex-cli
-url: https://developers.openai.com/codex
+url: https://learn.chatgpt.com/docs/codex/cli
 repository: https://github.com/openai/codex
-llms_txt: https://developers.openai.com/codex/llms.txt
+llms_txt: https://learn.chatgpt.com/docs/llms.txt
+llms_full_txt: https://learn.chatgpt.com/docs/llms-full.txt
 llms_txt_status: published
 
 category: coding-agents
 subcategory: cli-coding-agent
 
-tagline: OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and a desktop app on the same harness.
+tagline: OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and the ChatGPT desktop app on the same harness.
 
 description: |
   Codex CLI is "a coding agent from OpenAI that runs locally on your
   computer". The CLI is open source under Apache 2.0 and written in Rust;
   the same agent is available as an IDE extension (VS Code, Cursor,
   Windsurf, VS Code Insiders, with Xcode and JetBrains providing their own
-  integrations), a desktop app (`codex app`) and a cloud agent at
+  integrations), inside the ChatGPT desktop app (macOS, Windows; Linux in
+  preview; `codex app` opens it) and as a cloud agent (Codex Cloud) at
   chatgpt.com/codex.
 
-  You can sign in with a ChatGPT account — OpenAI's pricing docs say Codex is
-  included in the Free, Go, Plus, Pro, Business, Edu and Enterprise plans —
-  or use an API key, which OpenAI recommends for CI and shared environments.
+  You can sign in with a ChatGPT account — Codex in the CLI and IDE
+  extension is included in the Plus, Pro, Business, Edu and Enterprise
+  plans (Free and Go include Codex only in the ChatGPT desktop app) — or
+  use an API key, which OpenAI recommends for CI and shared environments.
   It is not locked to OpenAI's hosted models: with `--oss` it runs against a
   local "open source" provider such as Ollama or LM Studio, and custom
   model providers can be defined in `config.toml`.
@@ -31,11 +34,11 @@ description: |
 
 features:
   - Terminal agent (Rust), Apache 2.0
-  - Sign in with ChatGPT (Free through Enterprise plans) or an API key
+  - Sign in with ChatGPT (Plus through Enterprise) or an API key
   - Local models via `--oss` (Ollama, LM Studio) and custom providers
   - MCP servers, hooks, skills, AGENTS.md
   - Image attachments (`--image`)
-  - IDE extension for VS Code-family editors; desktop app; cloud agent
+  - IDE extension for VS Code-family editors; ChatGPT desktop app; Codex Cloud
 
 use_cases:
   - ChatGPT subscribers who want a terminal agent included in their plan
@@ -48,3 +51,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cli, openai, codex, open-source, mcp, local-llm]
 maintainer: OpenAI
 added: 2026-09-29
+verified: '2026-10-05'

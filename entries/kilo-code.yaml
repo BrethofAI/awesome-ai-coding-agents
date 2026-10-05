@@ -16,19 +16,26 @@ description: |
   The Kilo CLI is a fork of OpenCode.
 
   Kilo's pricing page lists a free and open-source tier (VS Code, JetBrains
-  and CLI extensions), plus Teams and Enterprise. You can "Bring your own
-  Anthropic, OpenAI, Google, Azure, AWS Bedrock, or other provider keys" and
-  "Run local models with Ollama or LM Studio"; through a Kilo account there
-  are 500+ models with mid-task switching.
+  and CLI extensions), plus Teams and Enterprise (14-day Enterprise
+  trial). You can "Bring your own Anthropic, OpenAI, Google, Azure, AWS
+  Bedrock, or other provider keys" and "Run local models with Ollama or
+  LM Studio"; through a Kilo account (Kilo Gateway, or the optional Kilo
+  Pass) there are 500+ models with mid-task switching. Opt-in Codebase
+  Indexing adds semantic search with embeddings.
 
   A Kilo Marketplace distributes agents, skills, MCP servers and plugins.
+
+  Kilo's `llms.txt` is served, but as of 2026-10-05 its page links point
+  at `kilocode-docs.vercel.app` raw-markdown URLs that return 404, so it is
+  of limited use to agents.
 
 features:
   - VS Code and JetBrains extensions, CLI (OpenCode fork), cloud agents
   - 500+ models; BYOK for major providers
   - Local models via Ollama or LM Studio
+  - Opt-in Codebase Indexing (semantic search)
   - Marketplace for agents, skills, MCP servers, plugins
-  - Plans — Free & Open Source, Teams, Enterprise
+  - Plans — Free & Open Source, Teams, Enterprise; optional Kilo Pass for inference
 
 use_cases:
   - One open-source agent across VS Code, JetBrains and terminal
@@ -41,3 +48,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, vscode, jetbrains, cli, kilo, open-source, mcp, local-llm]
 maintainer: Kilo-Org
 added: 2026-09-29
+verified: '2026-10-05'

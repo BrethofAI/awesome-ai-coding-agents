@@ -1,0 +1,50 @@
+name: goose
+slug: goose
+url: https://goose-docs.ai
+repository: https://github.com/aaif-goose/goose
+llms_txt: https://goose-docs.ai/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Apache-2.0 local AI agent (desktop app, CLI and API) started by Block and now part of the Linux Foundation's Agentic AI Foundation — 15+ providers, local models and MCP extensions.
+
+description: |
+  goose is "your native open source AI agent — desktop app, CLI, and API —
+  for code, workflows, and everything in between", written in Rust and
+  licensed Apache 2.0. Block created it; it is now "part of the Agentic AI
+  Foundation (AAIF) at the Linux Foundation", and the repository moved from
+  `block/goose` to `aaif-goose/goose` (the old URL redirects). The docs moved
+  from block.github.io/goose to goose-docs.ai.
+
+  It runs on your machine, with a native desktop app and a CLI for macOS,
+  Linux and Windows (native Windows install via Git Bash or PowerShell; WSL
+  optional). It works with "15+ providers — Anthropic, OpenAI, Google,
+  Ollama, OpenRouter, Azure, Bedrock, and more", can use existing Claude,
+  ChatGPT or Gemini subscriptions via ACP, and runs local models through
+  Ollama, LM Studio, Docker Model Runner, Ramalama and other
+  OpenAI-compatible servers.
+
+  Capabilities come from MCP extensions (70+), reusable recipes, subagents
+  and project hints (`.goosehints` / AGENTS.md).
+
+features:
+  - Desktop app and CLI for macOS, Linux and Windows; embeddable API
+  - 15+ providers; subscriptions via ACP; local models via Ollama, LM Studio, Docker Model Runner, Ramalama
+  - MCP extensions (70+), built-in Developer extension for shell and file editing
+  - Recipes (shareable task templates), sessions, `.goosehints` / AGENTS.md
+  - Apache 2.0, governed under the Agentic AI Foundation (Linux Foundation)
+
+use_cases:
+  - Open-source, vendor-neutral agent with a desktop UI as well as a CLI
+  - Fully local agent work with open-weight models
+  - Automations shared as recipes across a team
+
+license: open-source
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, desktop, goose, block, aaif, open-source, mcp, local-llm]
+maintainer: Agentic AI Foundation (Linux Foundation); created by Block
+added: '2026-10-05'
+verified: '2026-10-05'

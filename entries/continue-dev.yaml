@@ -9,7 +9,7 @@ llms_txt_status: missing
 category: coding-agents
 subcategory: ide-coding-assistant
 
-tagline: DISCONTINUED — Continue was acquired by Cursor in June 2026; the Apache-2.0 repo is now read-only and no longer maintained.
+tagline: DISCONTINUED — Continue was acquired by Cursor in mid-2026; the Apache-2.0 repo is now read-only and no longer maintained.
 
 description: |
   Continue was an open-source (Apache 2.0) coding agent for VS Code,
@@ -18,9 +18,10 @@ description: |
 
   It has been discontinued. continue.dev now reads "Continue was acquired by
   Cursor", and the repository README states that it "is no longer actively
-  maintained and is read-only for all users". The team shipped a final
-  2.0.0 release of the VS Code extension, CLI and JetBrains plugin
-  (v2.0.0 / v2.1.0 tags, 2026-06-19). The source stays available under
+  maintained and is read-only for all users". The team shipped final
+  releases (final published builds: VS Code extension 2.0.0 stable / 2.1.0
+  pre-release, tagged 2026-06-19; CLI 1.5.47 on npm, 2026-06-18; JetBrains
+  plugin 1.0.67). The source stays available under
   Apache 2.0, so existing installs keep working and the code can be forked,
   but there will be no fixes, new model support or security updates.
 
@@ -32,7 +33,7 @@ description: |
   2026-07-24.
 
 features:
-  - Final release 2.0.0 (VS Code extension, CLI, JetBrains plugin), 2026-06-19
+  - "Final releases: VS Code extension 2.0.0 (2026-06-19), CLI 1.5.47, JetBrains plugin 1.0.67"
   - Source remains Apache 2.0 on GitHub (read-only)
   - No further maintenance
 
@@ -41,8 +42,9 @@ use_cases:
   - Forks that want an Apache-2.0 IDE-agent codebase to build on
 
 license: open-source
-deployment: library
+deployment: local
 platforms: [linux, macos, windows]
 tags: [coding-agent, vscode, jetbrains, continue, open-source, discontinued]
 maintainer: Continue (acquired by Cursor)
 added: 2026-04-24
+verified: '2026-10-05'

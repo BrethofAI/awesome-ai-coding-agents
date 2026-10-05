@@ -2,8 +2,8 @@ name: Cursor
 slug: cursor
 url: https://cursor.com
 repository: null
-llms_txt: https://docs.cursor.com/llms.txt
-llms_full_txt: https://docs.cursor.com/llms-full.txt
+llms_txt: https://cursor.com/docs/llms.txt
+llms_full_txt: null
 llms_txt_status: missing
 
 category: coding-agents
@@ -16,36 +16,42 @@ description: |
   the center of the editor rather than as an extension. It ships chat,
   inline edits, multi-file rewrites, autocomplete, an agent mode for
   autonomous task execution, and codebase-wide context retrieval out of the
-  box — all tuned against Claude and GPT models.
+  box — running Cursor's own models (Composer 2.5, Grok 4.7) alongside
+  OpenAI, Anthropic and Google models.
 
   Cursor differentiates on UX polish: @-mentions to reference files and
   symbols, diff-style inline edits, a native command palette for AI
-  actions, and proprietary context-selection heuristics tuned for the
-  provided models. Its agent mode (formerly "Composer") can execute
+  actions, and proprietary context-selection heuristics. Codebase search
+  uses a local Instant Grep index and an Explore subagent; Cursor "does not
+  store embeddings of your codebase for search". Its Agent (formerly
+  "Composer"; Composer is now Cursor's in-house model) can execute
   multi-step refactors across many files with user approval gates.
 
-  It's closed-source and subscription-based. Plans are Hobby (free, with
-  limited agent requests), Individual (Pro / Pro+ / Ultra), Teams and
-  Enterprise; paid plans include MCPs, skills, hooks and cloud agents. A
-  terminal agent, Cursor CLI (`agent`), ships alongside the editor. Bring-
-  your-own API keys (OpenAI, Anthropic, Google, Azure, AWS Bedrock) work for
-  chat models only — per Cursor's docs, Tab completion stays on Cursor's
-  built-in models.
+  It's closed-source and subscription-based. Plans are Hobby (free),
+  Individual (Pro / Pro+ / Ultra), Teams (Standard / Premium seats),
+  Enterprise, plus a Start plan (India only); paid plans include MCPs,
+  skills, hooks and cloud agents. A terminal agent, Cursor CLI (`agent`),
+  ships alongside the editor, together with an Agents Window, Cloud Agents
+  (web / iOS) and JetBrains support via ACP. Bring-your-own API keys
+  (OpenAI, Anthropic, Google, Azure, AWS Bedrock) work for chat models
+  only — per Cursor's docs, Tab completion stays on Cursor's built-in
+  models.
 
   Ownership changed in 2026: "Cursor has officially been acquired by SpaceX"
   (Cursor blog, 2026-08-14), completing a process that began with a SpaceXAI
   model-training partnership in April. The product keeps its name. Cursor
-  also acquired Continue in June 2026 (see that entry).
+  also acquired Continue in mid-2026 (see that entry).
 
 features:
   - VS Code fork with preserved extension compatibility
   - Chat with @-file, @-symbol, @-web context references
   - Inline edit with diff-preview before applying
   - Agent mode for multi-step autonomous refactors
-  - Codebase-wide semantic search and retrieval
-  - Tab autocomplete tuned for each supported model
-  - Anthropic and OpenAI model support out of the box
+  - Codebase search via a local Instant Grep index and an Explore subagent
+  - Tab autocomplete (runs on Cursor's built-in models)
+  - Cursor models (Composer, Grok) plus OpenAI, Anthropic and Google models
   - Cursor CLI (`agent`) for terminal use
+  - Agents Window, Cloud Agents (web / iOS) and JetBrains via ACP
   - MCP support
 
 use_cases:
@@ -60,3 +66,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cursor, ide, vscode-fork, agent-mode, commercial]
 maintainer: Cursor (Anysphere; acquired by SpaceX, 2026-08-14)
 added: 2026-04-24
+verified: '2026-10-05'

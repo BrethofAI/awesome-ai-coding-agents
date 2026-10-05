@@ -1,0 +1,53 @@
+name: Pi
+slug: pi
+url: https://pi.dev
+repository: https://github.com/earendil-works/pi
+llms_txt: null
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: MIT-licensed minimal agent harness for the terminal (Earendil) — 15+ providers, local models, and everything else built as extensions; 1.0 shipped 2026-10-01.
+
+description: |
+  Pi is "a minimal agent harness. Adapt Pi to your workflows, not the other
+  way around." Started by Mario Zechner and now developed by Earendil Inc.
+  and contributors under the MIT licence, it reached 1.0 on 2026-10-01. The
+  repository moved from `badlogic/pi-mono` to `earendil-works/pi` (redirects).
+
+  It deliberately ships a small core — no built-in sub-agents, plan mode,
+  permission popups or to-dos — and you add features as TypeScript
+  extensions, skills, prompt templates and themes, bundled as Pi packages
+  installable from npm or git. Pi 1.0 added built-in MCP with "Codemode",
+  reversing Pi's earlier no-MCP stance.
+
+  It supports "15+ providers, hundreds of models" (Anthropic, OpenAI, Google,
+  Azure, Bedrock, Mistral, Groq, xAI, OpenRouter, Ollama and more), signing in
+  with API keys or subscriptions via `/login`, plus local GGUF models through
+  the llama.cpp router and Ollama / LM Studio / vLLM via `models.json`.
+  Sessions are trees you can branch, export to HTML or share. Modes:
+  interactive TUI, print/JSON, RPC and an SDK. It installs on macOS, Linux and
+  Windows (PowerShell installer).
+
+features:
+  - Terminal agent, MIT; install via script (macOS / Linux / Windows) or npm
+  - 15+ providers; API keys or subscriptions; local models via llama.cpp, Ollama, LM Studio, vLLM
+  - Extensions, skills, prompt templates, themes, shareable Pi packages
+  - Built-in MCP with Codemode (since 1.0)
+  - Branchable session trees, HTML export and sharing
+  - Interactive, print/JSON, RPC and SDK modes
+  - Image paste or drag-in
+
+use_cases:
+  - Developers who want a small harness they shape themselves
+  - Embedding an agent loop in other apps (SDK / RPC)
+  - Switching providers and models mid-session, including local models
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, pi, earendil, open-source, extensible, local-llm]
+maintainer: Earendil Inc. & contributors (created by Mario Zechner)
+added: '2026-10-05'
+verified: '2026-10-05'

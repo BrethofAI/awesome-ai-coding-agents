@@ -1,0 +1,50 @@
+name: CodeBuddy (Tencent Cloud)
+slug: codebuddy
+url: https://www.codebuddy.ai
+repository: null
+llms_txt: null
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: ai-native-ide
+
+tagline: Tencent Cloud's AI coding assistant — CodeBuddy IDE, VS Code and JetBrains plugins, and the CodeBuddy Code terminal agent with MCP and custom (incl. local) models.
+
+description: |
+  CodeBuddy is Tencent Cloud's coding assistant ("Tencent Cloud Code
+  Assistant"), with a China site at codebuddy.cn / copilot.tencent.com and an
+  international site at codebuddy.ai. It comes in three forms: CodeBuddy IDE
+  (Windows and macOS), plugins for VS Code and JetBrains IDEs, and CodeBuddy
+  Code, a terminal agent (`codebuddy` / `cbc`).
+
+  CodeBuddy Code installs via npm (`@tencent-ai/codebuddy-code`), Homebrew or
+  a native binary (beta) for macOS, Linux (x86_64 / arm64) and Windows. It
+  supports MCP, sub-agents, agent teams, skills, hooks, plugins, headless
+  mode, an HTTP API, an SDK (Python / TypeScript) and ACP for Zed. Custom
+  models can be added in `models.json` with any OpenAI-format endpoint,
+  including a local server such as Ollama, and images can be sent to
+  vision models.
+
+  Individual plans are Free and Pro, plus a Team plan; usage is metered in
+  credits. The CLI is distributed under a proprietary licence.
+
+features:
+  - CodeBuddy IDE (Windows, macOS); VS Code and JetBrains plugins
+  - CodeBuddy Code CLI (npm, Homebrew, native binary for macOS / Linux / Windows)
+  - MCP, sub-agents, agent teams, skills, hooks, plugins, SDK, ACP (Zed)
+  - Custom OpenAI-format models via models.json, including local endpoints
+  - Image input for vision models
+  - Plans — Free, Pro, Team
+
+use_cases:
+  - Teams in the Tencent Cloud / WeCom ecosystem
+  - A Claude Code-style terminal agent with custom or local model endpoints
+  - IDE plugin plus terminal agent from one vendor
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, ide, tencent, codebuddy, mcp, commercial]
+maintainer: Tencent Cloud
+added: '2026-10-05'
+verified: '2026-10-05'

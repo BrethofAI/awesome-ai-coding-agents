@@ -1,0 +1,61 @@
+name: Amp
+slug: amp
+url: https://ampcode.com
+repository: null
+llms_txt: https://ampcode.com/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Multi-model coding agent from Amp Inc. (spun out of Sourcegraph) — terminal CLI, web and Mac/iOS apps, with remote "orbs" that keep working after you close the laptop.
+
+description: |
+  Amp describes itself as "a coding agent and development environment built
+  for the frontier". It began inside Sourcegraph and became a separate
+  company on 2025-12-02 ("Amp is becoming a separate company. We're spinning
+  out of Sourcegraph"). It is closed source.
+
+  Amp chooses the models: its main agent runs frontier models (GPT-5.6,
+  Claude Fable 5.1 and fast models at the time of writing), with four modes
+  on "the Dial" (`low`, `medium`, `high`, `ultra`) and specialist subagents
+  (Search, Oracle, Librarian). Model Routing lets you send some or all models
+  through your own API keys, ChatGPT or other subscriptions, cloud platforms
+  (Bedrock, Google Cloud) or gateways (OpenRouter, Ollama Cloud, any
+  OpenAI/Anthropic-compatible URL).
+
+  The same threads run in the terminal CLI (`amp`; macOS, Linux, Windows via
+  WSL), on the web, and in the macOS / iOS apps. Work can run locally, on your
+  own "runners", or in "orbs" — remote machines Amp creates per thread. The
+  CLI connects to VS Code, Cursor, Windsurf, Zed and Neovim. It supports MCP,
+  plugins, skills and AGENTS.md, and images can be pasted or dragged into the
+  prompt.
+
+  Tiers are Hobby (free), Individual (Megawatt / Gigawatt), Teams and
+  Enterprise; usage beyond a tier is paid credits at provider API prices. The
+  former ad-supported "Amp Free" daily grant has been paused or reduced for
+  many users since 2026-05-23. Amp states that neither it nor its
+  subprocessors train on your data unless you opt in, and it is SOC 2 Type II.
+
+features:
+  - Terminal CLI `amp` (macOS, Linux, Windows via WSL); web; macOS and iOS apps
+  - Orbs (per-thread remote machines) and self-hosted runners
+  - Modes low / medium / high / ultra; Search, Oracle and Librarian subagents
+  - Model Routing — own keys, ChatGPT and other subscriptions, Bedrock / Google Cloud, OpenRouter and custom endpoints
+  - Editor connection for VS Code, Cursor, Windsurf, Zed, Neovim
+  - MCP, plugins, skills, AGENTS.md; TypeScript and Python SDKs
+  - Shared threads, multiplayer and workspaces for teams
+  - Plans — Hobby (free), Individual (Megawatt / Gigawatt), Teams, Enterprise
+
+use_cases:
+  - Developers who want the agent to pick frontier models per task
+  - Long-running tasks that continue on a remote machine
+  - Teams that share and review agent threads
+
+license: commercial
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, amp, sourcegraph, multi-model, mcp, commercial]
+maintainer: Amp Inc. (spun out of Sourcegraph, 2025-12-02)
+added: '2026-10-05'
+verified: '2026-10-05'

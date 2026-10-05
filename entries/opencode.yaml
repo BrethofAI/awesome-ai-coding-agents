@@ -13,25 +13,31 @@ tagline: MIT-licensed, provider-agnostic coding agent for the terminal (plus des
 description: |
   OpenCode describes itself as "the open source AI coding agent". It is
   MIT-licensed (about 211k GitHub stars as of 2026-09-29); the
-  repository moved from `sst/opencode` to `anomalyco/opencode`.
+  repository moved from `sst/opencode` to `anomalyco/opencode`, and the
+  project is maintained by Anomaly.
 
   It is provider-agnostic: the docs list support for "75+ LLM providers",
-  and local models through Ollama, LM Studio and llama.cpp. OpenCode Zen is
-  an optional curated list of models tested by the OpenCode team. It ships
-  two built-in agents — `build` (full access) and `plan` (read-only, asks
-  before running shell commands) — plus subagents.
+  and local models through Ollama, LM Studio and llama.cpp; it can also
+  sign in with GitHub Copilot and ChatGPT Plus/Pro accounts. Optional paid
+  offerings are OpenCode Zen (pay-as-you-go access to models tested by the
+  OpenCode team), OpenCode Go / Go Plus (subscriptions for open models) and
+  an Enterprise offering. It ships two built-in agents — `build` (full
+  access) and `plan` (read-only, asks before running shell commands) — plus
+  subagents, and built-in LSP integration feeds diagnostics to the agent.
 
-  Beyond the terminal UI there is a desktop app (beta, macOS / Windows /
-  Linux) and IDE integration. It supports MCP servers, and images can be
-  dragged into the terminal.
+  Beyond the terminal UI there is a desktop app (macOS, Windows, Linux) and
+  extensions for VS Code, Cursor, Zed, Windsurf and VSCodium. It supports
+  MCP servers, and images can be dragged into the terminal.
 
 features:
   - Terminal agent, MIT licence
   - 75+ providers; local models via Ollama, LM Studio, llama.cpp
+  - Sign in with GitHub Copilot or ChatGPT Plus/Pro accounts
   - Built-in `build` and `plan` agents, subagents
+  - LSP integration (language-server diagnostics fed to the agent)
   - MCP servers
   - Image input (drag and drop)
-  - Desktop app (beta) and IDE integration
+  - Desktop app (macOS, Windows, Linux) and extensions for VS Code, Cursor, Zed, Windsurf, VSCodium
 
 use_cases:
   - Open-source, vendor-neutral terminal agent
@@ -42,5 +48,6 @@ license: open-source
 deployment: cli
 platforms: [linux, macos, windows]
 tags: [coding-agent, cli, opencode, open-source, mcp, local-llm, byom]
-maintainer: anomalyco
+maintainer: Anomaly (anomalyco)
 added: 2026-09-29
+verified: '2026-10-05'

@@ -2,8 +2,8 @@ name: Devin Desktop (formerly Windsurf)
 slug: devin-desktop
 url: https://devin.ai/desktop
 repository: null
-llms_txt: https://docs.windsurf.com/llms.txt
-llms_full_txt: https://docs.windsurf.com/llms-full.txt
+llms_txt: https://docs.devin.ai/llms.txt
+llms_full_txt: https://docs.devin.ai/llms-full.txt
 llms_txt_status: published
 
 category: coding-agents
@@ -22,23 +22,27 @@ description: |
 
   The rename also replaced the agent. Cascade, Windsurf's original agent,
   was succeeded by Devin Local, rewritten from scratch in Rust; the legacy
-  Cascade agent remained available until July 1. The editor now positions
-  itself as a command center for local and cloud agents (including Devin
-  itself) and speaks the Agent Client Protocol (ACP).
+  Cascade agent remained available through July 2026. Devin Local shares
+  its agent harness with Devin CLI, Cognition's terminal agent (macOS,
+  Linux, WSL, Windows), which can hand tasks off to Devin Cloud. The editor
+  now positions itself as a command center for local and cloud agents
+  (including Devin itself) and speaks the Agent Client Protocol (ACP).
 
   The old Codeium autocomplete extensions live on as "Windsurf plugins", but
   Cognition's docs put the VS Code, Vim/Neovim, Visual Studio, Jupyter,
   Chrome and Eclipse plugins in maintenance mode, and say of the JetBrains
-  plugin that "Cascade is being deprecated". This list no longer carries a
-  separate Codeium entry.
+  plugin that "Cascade is being deprecated"; for JetBrains the FAQ now
+  recommends Devin over ACP. This list no longer carries a separate Codeium
+  entry.
 
 features:
   - VS Code-based IDE (backwards-compatible with Windsurf and VS Code extensions)
   - Devin Local agent (replaced Cascade in June–July 2026)
+  - Devin CLI — the same agent harness in the terminal (macOS, Linux, WSL, Windows)
   - Agent Command Center for managing local and cloud agents
   - MCP server integration
   - RAG-based codebase indexing and Fast Context retrieval
-  - BYOK options alongside Cognition's own SWE models
+  - Model menu (SWE-2, Claude, GPT, Gemini, Grok) with the Adaptive router
   - Plans — Free, Pro, Max, Teams, Enterprise
 
 use_cases:
@@ -52,3 +56,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, devin, windsurf, codeium, cognition, ide, agent-mode, commercial]
 maintainer: Cognition
 added: 2026-04-24
+verified: '2026-10-05'

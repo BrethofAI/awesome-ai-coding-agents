@@ -14,23 +14,27 @@ tagline: Apache-2.0 coding agent for VS Code-family editors and JetBrains, with 
 description: |
   Cline is "the open source coding agent in your IDE, terminal, & desktop",
   licensed Apache 2.0. The extension installs into VS Code, Cursor,
-  Windsurf, VSCodium, Antigravity and JetBrains IDEs; there is also a CLI
-  (interactive or headless for CI/CD) and a desktop app (macOS, Windows).
+  Windsurf, VSCodium, Antigravity and JetBrains IDEs (JetBrains is listed
+  as an Enterprise feature on the pricing page); there is also a CLI
+  (interactive or headless for CI/CD), a desktop app (macOS; Windows beta)
+  for open-weight models, Kanban (preview) and an SDK (`@cline/sdk`).
 
   The open-source version is free and runs on your own API keys ("OpenAI,
-  Anthropic, Google, and others") or on local models via Ollama and
-  LM Studio. An Enterprise tier adds team management, SSO, audit logs and
-  VPC deployment.
+  Anthropic, Google, and others"), on Cline's usage-billing provider, or on
+  local models via Ollama and LM Studio. ClinePass is an optional
+  subscription for open models. An Enterprise tier adds team management,
+  SSO, audit logs and VPC deployment.
 
   It supports MCP servers and plugins, and can scaffold new MCP tools on
   request.
 
 features:
-  - Extension for VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains
-  - CLI (interactive or headless) and desktop app
+  - Extension for VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains (listed as an Enterprise feature on the pricing page)
+  - CLI (interactive or headless) and desktop app (macOS; Windows beta)
+  - Kanban (preview) and SDK (`@cline/sdk`)
   - Bring your own API keys; local models via Ollama / LM Studio
   - MCP servers and plugins
-  - Plans — Open Source (free) and Enterprise
+  - Plans — Open Source (free) and Enterprise; optional ClinePass subscription for open models
 
 use_cases:
   - Open-source agent inside an existing editor
@@ -43,3 +47,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, vscode, jetbrains, cli, cline, open-source, mcp, local-llm]
 maintainer: Cline
 added: 2026-09-29
+verified: '2026-10-05'

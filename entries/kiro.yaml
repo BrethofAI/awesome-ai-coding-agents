@@ -1,7 +1,7 @@
 name: Kiro (successor to Amazon Q Developer)
 slug: kiro
 url: https://kiro.dev
-repository: https://github.com/kirodotdev/Kiro
+repository: null
 llms_txt: https://kiro.dev/llms.txt
 llms_txt_status: published
 
@@ -12,8 +12,10 @@ tagline: AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for 
 
 description: |
   Kiro is AWS's AI coding agent, built around one agent harness shared by
-  the Kiro IDE, the Kiro CLI, a web surface, iOS, and any ACP-compatible
-  editor. Its distinguishing idea is spec-driven development: a feature is
+  the Kiro IDE, the Kiro CLI, a web surface, iOS (TestFlight early access),
+  Kiro Crew (a multi-agent personal agent for macOS, Linux and Windows)
+  and any ACP-compatible editor. Its distinguishing idea is
+  spec-driven development: a feature is
   planned as requirements, design and tasks before the agent implements it,
   with steering files and event-driven hooks shaping the agent's behaviour.
 
@@ -23,17 +25,20 @@ description: |
   Subscriptions will reach end of support on April 30, 2027, giving customers
   12 months to transition to Kiro." The Q Developer CLI has already become
   Kiro CLI — Kiro's docs call it "the next update of the Q CLI", with
-  existing workflows, subscription and authentication carried over.
+  existing workflows, subscription and authentication carried over. Kiro
+  CLI runs on macOS, Linux and Windows 11 (PowerShell).
 
   Models come from several providers (Anthropic, OpenAI and open-weight
   families such as DeepSeek, GLM, MiniMax and Qwen). The docs we checked do
-  not describe bring-your-own-key or local-model support.
+  not describe bring-your-own-key or local-model support. The public GitHub
+  repository (kirodotdev/Kiro) is an issue and feedback tracker; the
+  product source is not hosted there.
 
 features:
   - Spec-driven development (requirements → design → tasks)
   - Steering files and event-driven agent hooks
   - MCP support
-  - Kiro IDE, Kiro CLI (successor to Amazon Q Developer CLI), web and iOS
+  - Kiro IDE, Kiro CLI (successor to Amazon Q Developer CLI), web, iOS and Kiro Crew
   - ACP support for other editors
   - Multi-provider model menu (Anthropic, OpenAI, open-weight models)
   - Plans — Free, Pro, Pro+, Pro Max, Power, Enterprise
@@ -49,3 +54,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, kiro, aws, amazon-q, spec-driven, mcp, commercial]
 maintainer: AWS
 added: 2026-04-24
+verified: '2026-10-05'

@@ -20,7 +20,11 @@ description: |
 
   It ships subagents, agent teams, auto-memory, skills and MCP. Editor
   integrations are a VS Code companion extension (beta), Zed and JetBrains;
-  there is also a desktop app, web UI, SDKs and chat integrations.
+  there is also a desktop app (macOS, Windows, Linux), web UI, SDKs and
+  chat integrations.
+
+  The Qwen OAuth free tier was discontinued on 2026-04-15; the recommended
+  setup is Alibaba ModelStudio (Coding Plan / Token Plan / API key).
 
 features:
   - Terminal agent, Apache 2.0
@@ -40,3 +44,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cli, qwen, alibaba, open-source, mcp, local-llm]
 maintainer: QwenLM (Alibaba)
 added: 2026-09-29
+verified: '2026-10-05'

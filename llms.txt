@@ -6,17 +6,25 @@
 ## Tools
 
 - [Aider](https://aider.chat): AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
-- [Claude Code](https://claude.com/claude-code): Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
-- [Claude Desktop](https://claude.com/download): Anthropic's native desktop app — currently the strongest all-around AI coding companion via MCP, skills, and agent mode.
+- [Amp](https://ampcode.com): Multi-model coding agent from Amp Inc. (spun out of Sourcegraph) — terminal CLI, web and Mac/iOS apps, with remote "orbs" that keep working after you close the laptop.
+- [Antigravity CLI (Google Antigravity)](https://antigravity.google): Google's `agy` terminal agent — part of Google Antigravity (desktop app, IDE, editor extensions on one harness) and the successor to Gemini CLI for free and Google AI Pro/Ultra users.
+- [Claude Code](https://claude.com/product/claude-code): Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
+- [Claude Desktop](https://claude.com/download): Anthropic's desktop app (macOS, Windows, Linux beta) combining chat, Cowork agentic tasks and Claude Code, extensible via MCP, skills and plugins.
 - [Cline](https://cline.bot): Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models.
-- [Continue (discontinued)](https://www.continue.dev): DISCONTINUED — Continue was acquired by Cursor in June 2026; the Apache-2.0 repo is now read-only and no longer maintained.
+- [CodeBuddy (Tencent Cloud)](https://www.codebuddy.ai): Tencent Cloud's AI coding assistant — CodeBuddy IDE, VS Code and JetBrains plugins, and the CodeBuddy Code terminal agent with MCP and custom (incl. local) models.
+- [Continue (discontinued)](https://www.continue.dev): DISCONTINUED — Continue was acquired by Cursor in mid-2026; the Apache-2.0 repo is now read-only and no longer maintained.
 - [Cursor](https://cursor.com): AI-first fork of VS Code with deep LLM integration, agent mode, and codebase-aware context.
+- [DeepSeek Harness (dsh)](https://deepseek.com/harness): DeepSeek's MIT-licensed "everything is a plugin" agent harness — a coding agent out of the box, run as a local Web UI or desktop app, with DeepSeek, other providers or local models.
 - [Devin Desktop (formerly Windsurf)](https://devin.ai/desktop): Cognition's AI-native IDE — the product formerly called Windsurf (and before that, Codeium), now built around the Devin Local agent.
-- [Gemini CLI](https://www.geminicli.com): Google's open-source (Apache 2.0) terminal agent for Gemini models, with a free tier for personal Google accounts.
+- [Gemini CLI](https://geminicli.com): Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18.
 - [GitHub Copilot](https://github.com/features/copilot): GitHub's native AI coding assistant with chat, autocomplete, and agent mode across major IDEs.
+- [goose](https://goose-docs.ai): Apache-2.0 local AI agent (desktop app, CLI and API) started by Block and now part of the Linux Foundation's Agentic AI Foundation — 15+ providers, local models and MCP extensions.
 - [Kilo Code](https://kilo.ai): MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models.
 - [Kiro (successor to Amazon Q Developer)](https://kiro.dev): AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30.
-- [OpenAI Codex CLI](https://developers.openai.com/codex): OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and a desktop app on the same harness.
+- [MiniMax Code](https://agent.minimax.io/docs/cli/quick-start): MiniMax's coding agent — an MIT-licensed terminal CLI (`mcode`) plus a desktop app, running MiniMax models on an M Plan or any compatible model you bring.
+- [OpenAI Codex CLI](https://learn.chatgpt.com/docs/codex/cli): OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and the ChatGPT desktop app on the same harness.
 - [OpenCode](https://opencode.ai): MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models.
+- [Pi](https://pi.dev): MIT-licensed minimal agent harness for the terminal (Earendil) — 15+ providers, local models, and everything else built as extensions; 1.0 shipped 2026-10-01.
+- [Qoder (incl. Qoder CLI)](https://qoder.com): Alibaba's agentic coding platform — Qoder IDE, a JetBrains plugin and the Qoder CLI terminal agent, with Quest mode, Repo Wiki and bring-your-own-key models.
 - [Qwen Code](https://qwenlm.github.io/qwen-code-docs/): Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model.
-- [Sourcegraph Cody (Enterprise only)](https://sourcegraph.com/cody): Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025.
+- [Sourcegraph Cody (Enterprise only)](https://sourcegraph.com/docs/cody): Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025.

@@ -1,0 +1,53 @@
+name: Qoder (incl. Qoder CLI)
+slug: qoder
+url: https://qoder.com
+repository: null
+llms_txt: https://docs.qoder.com/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-ide
+
+tagline: Alibaba's agentic coding platform — Qoder IDE, a JetBrains plugin and the Qoder CLI terminal agent, with Quest mode, Repo Wiki and bring-your-own-key models.
+
+description: |
+  Qoder is an agentic coding platform launched by Alibaba in August 2025 and
+  operated by BRIGHT ZENITH PRIVATE LIMITED (Singapore). The product family
+  covers the Qoder IDE (Windows and macOS install guides), a JetBrains plugin,
+  the Qoder CLI, Cloud Agents and QoderWork.
+
+  Qoder CLI is "a command-line AI Coding Assistant under the Qoder brand". It
+  installs natively on macOS, Linux and Windows (arm64 / amd64; not Windows
+  on ARM) via a script, or via npm (`@qoder-ai/qodercli`), and runs as
+  `qoder`. It reads and edits files, runs shell commands, searches code and
+  the web, accepts images and PDFs, supports MCP, skills, plugins, subagents,
+  hooks, memory, ACP and headless mode, and can generate a Repo Wiki.
+
+  Individual plans are Free, Pro, Pro+ and Ultra, with Teams and Enterprise
+  for organisations; usage is metered in credits. Bring-your-own-key works
+  with preset providers (Alibaba Cloud Model Studio, DeepSeek, Z.ai, Kimi,
+  MiniMax, Xiaomi MiMo, OpenAI, Google, OpenRouter) and custom OpenAI- or
+  Anthropic-compatible endpoints; in the CLI, BYOK is available on individual
+  plans. The free Pro trial is not available on virtual machines.
+
+features:
+  - Qoder IDE (Editor + Quest mode), JetBrains plugin, Qoder CLI, Cloud Agents
+  - Qoder CLI native on macOS, Linux, Windows; headless mode for CI
+  - BYOK — preset providers plus OpenAI/Anthropic-compatible custom endpoints
+  - MCP, skills, plugins, subagents, hooks, memory, ACP
+  - Repo Wiki and knowledge base for codebase documentation
+  - Image and PDF input
+  - Plans — Free, Pro, Pro+, Ultra; Teams, Enterprise
+
+use_cases:
+  - Long-running delegated tasks (Quest mode, goal mode)
+  - Teams standardising on Qwen and other Chinese model providers
+  - Generating repository documentation (Repo Wiki)
+
+license: commercial
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, ide, cli, qoder, alibaba, qwen, mcp, commercial]
+maintainer: Qoder (Alibaba; operated by BRIGHT ZENITH PRIVATE LIMITED, Singapore)
+added: '2026-10-05'
+verified: '2026-10-05'

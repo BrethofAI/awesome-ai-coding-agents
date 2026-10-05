@@ -1,0 +1,52 @@
+name: MiniMax Code
+slug: minimax-code
+url: https://agent.minimax.io/docs/cli/quick-start
+repository: https://github.com/MiniMax-AI/minimax-code
+llms_txt: https://agent.minimax.io/docs/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: MiniMax's coding agent — an MIT-licensed terminal CLI (`mcode`) plus a desktop app, running MiniMax models on an M Plan or any compatible model you bring.
+
+description: |
+  MiniMax Code is MiniMax's agent product: a desktop app (macOS, Windows)
+  for software development and other tasks, and MiniMax Code CLI, a terminal
+  agent run as `mcode`. The CLI source — terminal TUI, headless CLI and ACP
+  components — is open on GitHub under MIT for first-party code; the desktop
+  app is distributed separately. The repo's licence notes say some terminal
+  code derives from Pi and keeps its original licence declarations.
+
+  The CLI installs with a one-line script on macOS, Linux and WSL, a
+  PowerShell script on Windows, or npm (`@minimax-ai/code`). You either sign
+  in with a MiniMax account (mainland China or Global region) or bring your
+  own key — "BYOK does not require a MiniMax login" — by adding any provider
+  with a base URL, API format and model name, including custom/local models.
+  It offers interactive, headless (`mcode exec`) and ACP modes, with skills,
+  MCP and plugins.
+
+  MiniMax's subscription is M Plan (tiers Go, Explore, Build; built on the
+  earlier Token Plan), which also works in other tools such as Claude Code,
+  Codex, Cursor and OpenCode.
+
+features:
+  - Terminal CLI `mcode` (macOS, Linux, WSL, Windows); MIT first-party source
+  - Desktop app for macOS and Windows (closed, separate)
+  - MiniMax account sign-in or BYOK with any compatible endpoint, incl. local models
+  - Interactive TUI, headless `mcode exec` for CI, ACP for editors
+  - Skills, MCP, plugins
+  - Plans — M Plan (Go, Explore, Build) / Token Plan
+
+use_cases:
+  - MiniMax M-series model users who want a first-party agent
+  - An MIT-licensed terminal agent that also runs other providers or local models
+  - Scripted / CI runs with structured output
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, minimax, open-source, mcp, acp]
+maintainer: MiniMax
+added: '2026-10-05'
+verified: '2026-10-05'

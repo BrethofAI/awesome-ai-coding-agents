@@ -1,6 +1,6 @@
 name: Sourcegraph Cody (Enterprise only)
 slug: sourcegraph-cody
-url: https://sourcegraph.com/cody
+url: https://sourcegraph.com/docs/cody
 llms_txt: https://sourcegraph.com/cody/llms.txt
 llms_txt_status: missing
 status: stub
@@ -12,7 +12,7 @@ description: |
   Cody pairs an AI assistant with Sourcegraph's code search and code graph,
   which is why it is aimed at very large codebases and monorepos. Its docs
   describe it as "Supported on Sourcegraph Enterprise", available in VS Code,
-  JetBrains, Visual Studio and the web app.
+  JetBrains, Visual Studio and the web app, plus a Cody CLI.
 
   Individual plans are gone: Sourcegraph stopped Cody Free and Cody Pro
   signups on 2025-06-25 and cut off access on 2025-07-23, while stating that
@@ -20,6 +20,10 @@ description: |
   is no longer developed in the open: the public source now lives in
   `sourcegraph/cody-public-snapshot`, archived since 2025-08-01.
 
+  Sourcegraph's newer agent, Amp, spun out as an independent company in
+  December 2025 (see Amp); Sourcegraph itself now focuses on code search.
+
 license: commercial
 deployment: local
 added: 2026-04-24
+verified: '2026-10-05'

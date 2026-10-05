@@ -41,17 +41,23 @@ LLMS_FULL_OUT = REPO_ROOT / "llms-full.txt"
 
 # Decision tree: question → recommended tool slug(s)
 DECISION_TREE = [
-    ("Want the strongest all-around AI coding companion right now (September 2026)?", ["claude-desktop"]),
+    ("Want a desktop chat app that also runs a coding agent (Claude Code) and MCP?", ["claude-desktop"]),
     ("Want the same Claude power but in your terminal / CI?", ["claude-code"]),
-    ("Already pay for ChatGPT and want a terminal agent?", ["codex-cli"]),
-    ("Want a capable terminal agent with a free tier?", ["gemini-cli"]),
-    ("Want it free + open source?", ["opencode", "cline", "kilo-code", "aider"]),
-    ("Need to run 100% locally with your own LLM?", ["opencode", "cline", "qwen-code", "aider"]),
+    ("Already pay for ChatGPT (Plus or above) and want a terminal agent?", ["codex-cli"]),
+    ("Want a capable terminal agent with a free tier?", ["antigravity-cli"]),
+    ("On Google Cloud / Gemini Code Assist Standard or Enterprise and want an open-source terminal agent?", ["gemini-cli"]),
+    ("Want it free + open source?", ["opencode", "cline", "kilo-code", "goose", "pi", "aider"]),
+    ("Want a minimal harness you extend yourself (plugins / extensions)?", ["pi", "deepseek-harness"]),
+    ("Need to run 100% locally with your own LLM?", ["opencode", "cline", "goose", "pi", "qwen-code", "aider"]),
+    ("Want frontier models picked for you, remote machines (orbs) and shared team threads?", ["amp"]),
     ("Already pay for GitHub and want zero setup?", ["github-copilot"]),
-    ("Want a polished IDE replacement (closed-source)?", ["cursor", "devin-desktop"]),
+    ("Want a polished IDE replacement (closed-source)?", ["cursor", "devin-desktop", "qoder"]),
     ("Enterprise with a massive monorepo and code-search needs?", ["sourcegraph-cody"]),
     ("Heavy AWS stack, moving off Amazon Q Developer, or want a spec before code?", ["kiro"]),
-    ("Standardised on Qwen models?", ["qwen-code"]),
+    ("Standardised on Qwen models?", ["qwen-code", "qoder"]),
+    ("Using DeepSeek models?", ["deepseek-harness"]),
+    ("On a MiniMax M Plan / Token Plan?", ["minimax-code"]),
+    ("In the Tencent Cloud / WeChat ecosystem?", ["codebuddy"]),
 ]
 
 
@@ -144,7 +150,7 @@ def render_readme(entries: list[dict], comparison: dict) -> str:
     lines.append("# awesome-ai-coding-agents")
     lines.append("")
     lines.append(
-        "> Honest comparison of AI coding assistants in September 2026. "
+        "> Honest comparison of AI coding assistants in October 2026. "
         "What each one does well, what it does badly, which to pick "
         "for your situation. No sponsored placements, no affiliate "
         "links, no paid rankings."

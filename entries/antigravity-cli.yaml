@@ -1,0 +1,54 @@
+name: Antigravity CLI (Google Antigravity)
+slug: antigravity-cli
+url: https://antigravity.google
+repository: null
+llms_txt: https://antigravity.google/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Google's `agy` terminal agent — part of Google Antigravity (desktop app, IDE, editor extensions on one harness) and the successor to Gemini CLI for free and Google AI Pro/Ultra users.
+
+description: |
+  Antigravity CLI (`agy`) is "the lightweight Terminal User Interface (TUI)
+  surface of Antigravity", built in Go. It shares one agent harness and one
+  set of settings with the rest of Google Antigravity: the Antigravity 2.0
+  desktop app, the Antigravity IDE, extensions for VS Code, Visual Studio,
+  JetBrains IDEs, Zed and Xcode, and a Python SDK. Conversations started in
+  the CLI can continue in Antigravity 2.0.
+
+  On 2026-06-18 Antigravity CLI replaced Gemini CLI for free and Google AI
+  Pro/Ultra users. It imports Gemini CLI extensions (as plugins), skills,
+  settings and MCP servers, and still reads `GEMINI.md` and `AGENTS.md`.
+
+  It runs natively on macOS, Linux and Windows. All individual accounts get
+  Gemini models with a weekly-limited quota; Google AI Pro and Ultra raise
+  the limits and allow AI-credit overages, and Ultra adds third-party models.
+  Teams use it under Google Cloud terms via Gemini Enterprise. There is no
+  bring-your-own-key for other providers, but the CLI can run on your own
+  Gemini API key. Individual-tier interactions may be used to improve Google
+  products (opt out in Settings). Closed source: the GitHub repo holds only
+  the README, changelog and examples.
+
+features:
+  - Terminal CLI `agy` (Go), native on macOS, Linux and Windows; headless `agy -p`
+  - Same harness as the Antigravity 2.0 desktop app and Antigravity IDE
+  - Extensions for VS Code, Visual Studio, JetBrains, Zed, Xcode
+  - Plans — free individual quota, Google AI Pro, Google AI Ultra; Gemini Enterprise for teams
+  - Gemini models (third-party models on Ultra); own Gemini API key supported in the CLI
+  - MCP, plugins, skills, hooks, subagents; imports Gemini CLI setups
+  - Image paste into the prompt
+
+use_cases:
+  - Former Gemini CLI free and Google AI Pro/Ultra users
+  - A no-cost Google terminal agent with a weekly quota
+  - Moving between terminal, desktop app and editor on one Google harness
+
+license: commercial
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, google, gemini, antigravity, mcp, commercial]
+maintainer: Google
+added: '2026-10-05'
+verified: '2026-10-05'

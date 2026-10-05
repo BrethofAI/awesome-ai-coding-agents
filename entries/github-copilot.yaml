@@ -13,12 +13,17 @@ tagline: GitHub's native AI coding assistant with chat, autocomplete, and agent 
 description: |
   GitHub Copilot is the original and most widely deployed AI coding
   assistant, integrated natively into VS Code, Visual Studio, JetBrains
-  IDEs, Neovim, Xcode, and GitHub itself. It offers inline code completion,
-  chat, a multi-file agent mode, pull-request summaries, and a terminal
-  agent, GitHub Copilot CLI (`copilot`), which ships with the GitHub MCP
-  server preconfigured and accepts additional MCP servers. The older
-  `gh copilot` extension was deprecated on 2025-10-25 in favour of Copilot
-  CLI.
+  IDEs, Eclipse, Xcode, Neovim, and GitHub itself. It offers inline code
+  completion, chat, a multi-file agent mode, pull-request summaries, and a
+  terminal agent, GitHub Copilot CLI (`copilot`), which ships with the
+  GitHub MCP server preconfigured and accepts additional MCP servers. The
+  older `gh copilot` extension was deprecated on 2025-10-25 in favour of
+  Copilot CLI. Copilot CLI runs on Linux, macOS and Windows (PowerShell and
+  WSL), accepts image and PDF attachments, and supports BYOK including
+  local models (OpenAI-compatible endpoints, Ollama, vLLM, Foundry Local,
+  Azure OpenAI, Anthropic). The GitHub Copilot app, a desktop app built on
+  Copilot CLI for macOS, Linux and Windows, runs parallel agent sessions
+  and is available in all plans.
 
   Under the hood Copilot routes to multiple LLMs — GPT, Claude Sonnet,
   Gemini — with model choice exposed to users on the paid tiers. In VS Code,
@@ -31,17 +36,18 @@ description: |
 
   For enterprise deployments, Copilot offers SOC 2 compliance, data
   residency, code reference filtering, and the ability to restrict
-  external traffic — the most mature enterprise posture in the category.
+  external traffic.
 
 features:
-  - VS Code, Visual Studio, JetBrains, Neovim, Xcode integrations
+  - VS Code, Visual Studio, JetBrains, Eclipse, Xcode, Neovim integrations
   - Inline autocomplete, chat, and multi-file agent mode
   - Pull-request and code-review assistance on GitHub
   - Multiple model backends (GPT, Claude, Gemini)
-  - "GitHub Copilot CLI (`copilot`) — terminal agent with MCP support (replaced `gh copilot`)"
+  - "GitHub Copilot CLI (`copilot`) — terminal agent with MCP, BYOK and local models via Ollama (replaced `gh copilot`)"
+  - GitHub Copilot app — desktop app for parallel agent sessions, built on Copilot CLI (macOS, Linux, Windows)
   - BYOK and offline local models in VS Code (Ollama extension)
   - Enterprise tier with SOC 2, data residency, content filtering
-  - Plans — Free, Pro, Pro+, Max, Business, Enterprise (Copilot Pro access for verified students, faculty and OSS maintainers)
+  - Plans — Free, Student, Pro, Pro+, Max, Business, Enterprise (free Copilot Pro for eligible teachers and popular-OSS maintainers)
 
 use_cases:
   - Professional development at organizations already on GitHub
@@ -56,3 +62,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, github, copilot, ide, enterprise, commercial]
 maintainer: GitHub / Microsoft
 added: 2026-04-24
+verified: '2026-10-05'

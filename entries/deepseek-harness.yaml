@@ -1,0 +1,51 @@
+name: DeepSeek Harness (dsh)
+slug: deepseek-harness
+url: https://deepseek.com/harness
+repository: https://github.com/deepseek-ai/deepseek-harness
+llms_txt: https://deepseek-harness.github.io/deepseek-harness/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-coding-app
+
+tagline: DeepSeek's MIT-licensed "everything is a plugin" agent harness — a coding agent out of the box, run as a local Web UI or desktop app, with DeepSeek, other providers or local models.
+
+description: |
+  DeepSeek Harness (`dsh`) is "an open-source agent harness developed by
+  DeepSeek AI", MIT-licensed and built on an everything-is-a-plugin
+  architecture powered by the Cordis plugin runtime: models, tools, skills,
+  sessions, sandboxes, the agent loop and the UI are all plugins you can
+  swap. It is in developer preview, and the README warns of
+  compatibility-breaking changes.
+
+  It runs as a local Web UI (`npx @deepseek-ai/dsh web`, needs Node.js) or as
+  a desktop app (macOS 13+ on Apple silicon, Windows 10+ x64). Models: a
+  DeepSeek API key, bundled third-party providers (e.g. Anthropic, OpenAI,
+  Moonshot/Kimi, Z.ai/GLM), or any custom OpenAI Chat Completions, OpenAI
+  Responses or Anthropic Messages endpoint; images can be enabled per model.
+  Ollama documents `ollama launch dsh` for local and Ollama Cloud models.
+
+  It connects MCP servers (stdio or Streamable HTTP), and its tool subsystems
+  include bash, PTY sessions, background jobs, LSP navigation, web access,
+  skills and workflows.
+
+features:
+  - Everything-is-a-plugin harness on Cordis; create plugins by conversation
+  - Local Web UI via npx; desktop app (macOS Apple silicon, Windows)
+  - DeepSeek, bundled third-party providers, custom OpenAI/Anthropic-format endpoints
+  - Local models via Ollama (`ollama launch dsh`)
+  - MCP (stdio, Streamable HTTP), LSP navigation, subagents, scheduled tasks
+  - MIT licence; developer preview
+
+use_cases:
+  - DeepSeek model users who want a first-party agent
+  - Building a custom agent harness from swappable plugins
+  - Local-model agent work through Ollama
+
+license: open-source
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, deepseek, harness, plugins, open-source, mcp, local-llm]
+maintainer: DeepSeek
+added: '2026-10-05'
+verified: '2026-10-05'
