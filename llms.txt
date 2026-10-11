@@ -29,3 +29,4 @@
 - [Qwen Code](https://qwenlm.github.io/qwen-code-docs/): Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model.
 - [SCODE](https://github.com/sidra-ai-development/scode): Open-source terminal coding runtime with persistent sessions, MCP tooling, and cloud or local model support.
 - [Sourcegraph Cody (Enterprise only)](https://sourcegraph.com/docs/cody): Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025.
+- [Tale](https://tale.dev/): Open-source workspace where teams assign tasks to reusable AI agents, run coding harnesses in sandboxes, and review the results.

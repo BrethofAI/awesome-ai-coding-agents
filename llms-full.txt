@@ -1315,3 +1315,37 @@ Sourcegraph's newer agent, Amp, spun out as an independent company in
 December 2025 (see Amp); Sourcegraph itself now focuses on code search.
 
 ---
+
+## Tale
+
+URL: https://tale.dev/
+Repo: https://github.com/tale-project/tale
+License: open-source  Deployment: self-hosted
+
+_Open-source workspace where teams assign tasks to reusable AI agents, run coding harnesses in sandboxes, and review the results._
+
+Tale is an open-source project workspace for teams and AI agents. People and
+agents share project boards: tasks are assigned to reusable agents, coding
+harnesses run in isolated sandboxes, and the resulting changes and
+deliverables are reviewed in the same place, with audit records and run
+history.
+
+The full feature set ships in the free, MIT-licensed Community edition, which
+you self-host (on-premises and air-gapped setups are documented); the paid
+Enterprise plan adds support and services, not features. Models are your own
+providers at their rates. A team workspace also exposes an MCP endpoint for
+its knowledge and automations.
+
+Features:
+- Shared project boards for people and reusable AI agents
+- Sandboxed coding-harness runs
+- Review of changes and deliverables, with audit records and run history
+- Self-hosted Community edition (MIT); Enterprise plan for support
+- MCP endpoint for workspace knowledge and automations
+
+Best for:
+- Delegating coding tasks to AI agents and reviewing the results as a team
+- Coordinating several agents and people on one project
+- Running agent work on your own infrastructure
+
+---

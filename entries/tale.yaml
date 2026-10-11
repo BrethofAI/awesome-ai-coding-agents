@@ -1,0 +1,45 @@
+name: Tale
+slug: tale
+url: https://tale.dev/
+repository: https://github.com/tale-project/tale
+llms_txt: https://tale.dev/llms.txt
+llms_full_txt: https://tale.dev/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: ai-native-coding-app
+
+tagline: Open-source workspace where teams assign tasks to reusable AI agents, run coding harnesses in sandboxes, and review the results.
+
+description: |
+  Tale is an open-source project workspace for teams and AI agents. People and
+  agents share project boards: tasks are assigned to reusable agents, coding
+  harnesses run in isolated sandboxes, and the resulting changes and
+  deliverables are reviewed in the same place, with audit records and run
+  history.
+
+  The full feature set ships in the free, MIT-licensed Community edition, which
+  you self-host (on-premises and air-gapped setups are documented); the paid
+  Enterprise plan adds support and services, not features. Models are your own
+  providers at their rates. A team workspace also exposes an MCP endpoint for
+  its knowledge and automations.
+
+features:
+  - Shared project boards for people and reusable AI agents
+  - Sandboxed coding-harness runs
+  - Review of changes and deliverables, with audit records and run history
+  - Self-hosted Community edition (MIT); Enterprise plan for support
+  - MCP endpoint for workspace knowledge and automations
+
+use_cases:
+  - Delegating coding tasks to AI agents and reviewing the results as a team
+  - Coordinating several agents and people on one project
+  - Running agent work on your own infrastructure
+
+license: open-source
+deployment: self-hosted
+platforms: [web]
+tags: [agent-workspace, coding-agent, orchestration, sandbox, collaboration, self-hosted]
+maintainer: Tale (Ruler GmbH)
+added: '2026-10-11'
+verified: '2026-10-11'
