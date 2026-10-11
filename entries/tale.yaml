@@ -1,0 +1,37 @@
+name: Tale
+slug: tale
+url: https://tale.dev/
+repository: null
+llms_txt: null
+llms_full_txt: null
+llms_txt_status: unknown
+
+category: coding-agents
+subcategory: ai-native-coding-app
+
+tagline: Shared workspace for assigning coding-agent tasks, running harnesses in sandboxes, and reviewing deliverables.
+
+description: |
+  Tale is a shared workspace for assigning work to reusable AI agents and
+  coordinating coding-agent runs in isolated sandboxes. Teams can keep task
+  context together, review the resulting changes, and hand work between
+  agents and humans from one workspace.
+
+features:
+  - Shared task workspace for reusable AI agents
+  - Sandboxed coding harness runs
+  - Deliverable and change review
+  - Agent-to-human handoffs
+
+use_cases:
+  - Delegating coding tasks to AI agents
+  - Reviewing changes from isolated agent runs
+  - Coordinating multi-agent software work
+
+license: commercial
+deployment: saas
+platforms: [web]
+tags: [agent-workspace, coding-agent, orchestration, sandbox, collaboration]
+maintainer: Tale
+added: 2026-10-11
+verified: '2026-10-11'
