@@ -1,0 +1,41 @@
+name: SCODE
+slug: scode
+url: https://github.com/sidra-ai-development/scode
+repository: https://github.com/sidra-ai-development/scode
+llms_txt: null
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Open-source terminal coding runtime with persistent sessions, MCP tooling, and cloud or local model support.
+
+description: |
+  SCODE is an Apache-2.0 terminal coding runtime focused on persistent execution
+  sessions. It can read and edit files, search a workspace, run shell commands,
+  keep sessions alive across turns, and connect MCP tools.
+
+  It supports cloud model providers and local model paths, including MLX on
+  Apple Silicon and Ollama across macOS, Windows, and Linux. The runtime is
+  derived from the ZCode architecture and is maintained independently by
+  SIDRA AI Development with upstream attribution preserved in the repository.
+
+features:
+  - Persistent terminal coding sessions
+  - File read, edit, search, and shell execution tools
+  - MCP client and server integration
+  - Cloud providers plus local MLX and Ollama model paths
+  - Cross-platform packaging for macOS, Windows, and Linux
+
+use_cases:
+  - Long-running coding work that benefits from persistent execution state
+  - Connecting coding workflows to MCP tools
+  - Running coding workflows with cloud or local models
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, mcp, persistent-runtime, local-llm, open-source]
+maintainer: SIDRA AI Development
+added: '2026-10-06'
+verified: '2026-10-06'
