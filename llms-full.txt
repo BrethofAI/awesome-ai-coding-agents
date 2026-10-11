@@ -1262,6 +1262,37 @@ Best for:
 
 ---
 
+## SCODE
+
+URL: https://github.com/sidra-ai-development/scode
+Repo: https://github.com/sidra-ai-development/scode
+License: open-source  Deployment: cli
+
+_Open-source terminal coding runtime with persistent sessions, MCP tooling, and cloud or local model support._
+
+SCODE is an Apache-2.0 terminal coding runtime focused on persistent execution
+sessions. It can read and edit files, search a workspace, run shell commands,
+keep sessions alive across turns, and connect MCP tools.
+
+It supports cloud model providers and local model paths, including MLX on
+Apple Silicon and Ollama across macOS, Windows, and Linux. The runtime is
+derived from the ZCode architecture and is maintained independently by
+SIDRA AI Development with upstream attribution preserved in the repository.
+
+Features:
+- Persistent terminal coding sessions
+- File read, edit, search, and shell execution tools
+- MCP client and server integration
+- Cloud providers plus local MLX and Ollama model paths
+- Cross-platform packaging for macOS, Windows, and Linux
+
+Best for:
+- Long-running coding work that benefits from persistent execution state
+- Connecting coding workflows to MCP tools
+- Running coding workflows with cloud or local models
+
+---
+
 ## Sourcegraph Cody (Enterprise only)
 
 URL: https://sourcegraph.com/docs/cody

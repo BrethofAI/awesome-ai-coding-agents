@@ -27,4 +27,5 @@
 - [Pi](https://pi.dev): MIT-licensed minimal agent harness for the terminal (Earendil) — 15+ providers, local models, and everything else built as extensions; 1.0 shipped 2026-10-01.
 - [Qoder (incl. Qoder CLI)](https://qoder.com): Alibaba's agentic coding platform — Qoder IDE, a JetBrains plugin and the Qoder CLI terminal agent, with Quest mode, Repo Wiki and bring-your-own-key models.
 - [Qwen Code](https://qwenlm.github.io/qwen-code-docs/): Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model.
+- [SCODE](https://github.com/sidra-ai-development/scode): Open-source terminal coding runtime with persistent sessions, MCP tooling, and cloud or local model support.
 - [Sourcegraph Cody (Enterprise only)](https://sourcegraph.com/docs/cody): Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025.
