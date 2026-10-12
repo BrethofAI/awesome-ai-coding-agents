@@ -1,3 +1,11 @@
-## Facts 2026-10-05 — 23 entries, 0 change(s) (first run: baseline only)
+## Facts 2026-10-12 — 25 entries, 9 change(s)
 
-No changes.
+- **release** Cline: desktop-v0.0.43 → desktop-v0.0.45 (2026-10-08)
+- **release** OpenAI Codex CLI: rust-v0.160.0 → rust-v0.162.1 (2026-10-09)
+- **release** Gemini CLI: v0.62.0 → v0.63.0 (2026-10-06)
+- **release** goose: v1.53.0 → v1.54.0 (2026-10-08)
+- **release** Kilo Code: v7.8.3 → jetbrains/v7.1.9 (2026-10-08)
+- **release** MiniMax Code: v0.6.2 → v0.6.5 (2026-10-09)
+- **release** OpenCode: v1.18.34 → v1.19.0 (2026-10-11)
+- **release** Pi: v1.0.3 → v1.1.0 (2026-10-07)
+- **release** Qwen Code: sdk-typescript-v0.1.18 → sdk-typescript-v0.1.19 (2026-10-11)

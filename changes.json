@@ -1,5 +1,60 @@
 {
- "checked": "2026-10-05",
- "since": false,
- "changes": []
+ "checked": "2026-10-12",
+ "since": true,
+ "changes": [
+  {
+   "slug": "cline",
+   "name": "Cline",
+   "kind": "release",
+   "detail": "desktop-v0.0.43 → desktop-v0.0.45 (2026-10-08)"
+  },
+  {
+   "slug": "codex-cli",
+   "name": "OpenAI Codex CLI",
+   "kind": "release",
+   "detail": "rust-v0.160.0 → rust-v0.162.1 (2026-10-09)"
+  },
+  {
+   "slug": "gemini-cli",
+   "name": "Gemini CLI",
+   "kind": "release",
+   "detail": "v0.62.0 → v0.63.0 (2026-10-06)"
+  },
+  {
+   "slug": "goose",
+   "name": "goose",
+   "kind": "release",
+   "detail": "v1.53.0 → v1.54.0 (2026-10-08)"
+  },
+  {
+   "slug": "kilo-code",
+   "name": "Kilo Code",
+   "kind": "release",
+   "detail": "v7.8.3 → jetbrains/v7.1.9 (2026-10-08)"
+  },
+  {
+   "slug": "minimax-code",
+   "name": "MiniMax Code",
+   "kind": "release",
+   "detail": "v0.6.2 → v0.6.5 (2026-10-09)"
+  },
+  {
+   "slug": "opencode",
+   "name": "OpenCode",
+   "kind": "release",
+   "detail": "v1.18.34 → v1.19.0 (2026-10-11)"
+  },
+  {
+   "slug": "pi",
+   "name": "Pi",
+   "kind": "release",
+   "detail": "v1.0.3 → v1.1.0 (2026-10-07)"
+  },
+  {
+   "slug": "qwen-code",
+   "name": "Qwen Code",
+   "kind": "release",
+   "detail": "sdk-typescript-v0.1.18 → sdk-typescript-v0.1.19 (2026-10-11)"
+  }
+ ]
 }
