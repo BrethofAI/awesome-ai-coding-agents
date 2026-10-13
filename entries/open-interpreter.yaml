@@ -1,0 +1,54 @@
+name: Open Interpreter
+slug: open-interpreter
+url: https://www.openinterpreter.com
+repository: https://github.com/openinterpreter/openinterpreter
+llms_txt: https://www.openinterpreter.com/llms.txt
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Apache-2.0 terminal coding agent forked from OpenAI's Codex, aimed at low-cost and open-weight models, with switchable harness emulation.
+
+description: |
+  Open Interpreter is now "a coding agent optimized for low-cost models",
+  licensed Apache 2.0. The current version is written in Rust and is a fork
+  of OpenAI's Codex; the original Python project of the same name lives on
+  as a community-maintained fork at `endolith/open-interpreter`. It installs
+  with a script on macOS, Linux and Windows and starts with `i` or
+  `interpreter`.
+
+  Its distinguishing feature is harness emulation: `/harness` switches
+  between Rust re-implementations of other agents' harnesses (Claude Code,
+  Kimi Code, Kimi CLI, Qwen Code, ZCode, DeepSeek TUI, SWE-agent and
+  others), so a model can run in the harness its provider recommends.
+
+  Models: OpenAI (ChatGPT sign-in or API key), Amazon Bedrock, a generated
+  catalogue of hosted providers (Anthropic, OpenRouter, Groq, DeepSeek,
+  Moonshot/Kimi, Z.AI and more), custom providers, and local models through
+  Ollama and LM Studio. It runs commands inside native sandboxing, supports
+  MCP, skills, hooks, `AGENTS.md` and `.agents/skills`, runs as an ACP agent
+  for editors (`interpreter acp`), and speaks the Codex exec protocol, so
+  the Codex SDK can drive it.
+
+features:
+  - Terminal agent (Rust, Codex fork), Apache 2.0; macOS, Linux, Windows
+  - Harness emulation via `/harness` (Claude Code, Kimi Code, Qwen Code, DeepSeek TUI, SWE-agent and others)
+  - ChatGPT sign-in, API keys for many hosted providers, custom providers
+  - Local models via Ollama and LM Studio
+  - Native sandboxing on macOS, Linux and Windows
+  - MCP, skills, hooks, `AGENTS.md`; ACP mode for editors; Codex SDK compatible
+  - Built-in QA skill for testing web and native apps
+
+use_cases:
+  - Running open-weight or low-cost models in the harness they were tuned for
+  - Teams already on the Codex SDK who want to swap in other models
+  - An Apache-2.0 terminal agent that also works with local models
+
+license: open-source
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, open-interpreter, codex-fork, open-source, mcp, acp, local-llm]
+maintainer: Open Interpreter (openinterpreter)
+added: '2026-10-13'
+verified: '2026-10-13'

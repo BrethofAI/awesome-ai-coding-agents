@@ -22,6 +22,7 @@
 - [Kilo Code](https://kilo.ai): MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models.
 - [Kiro (successor to Amazon Q Developer)](https://kiro.dev): AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30.
 - [MiniMax Code](https://agent.minimax.io/docs/cli/quick-start): MiniMax's coding agent — an MIT-licensed terminal CLI (`mcode`) plus a desktop app, running MiniMax models on an M Plan or any compatible model you bring.
+- [Open Interpreter](https://www.openinterpreter.com): Apache-2.0 terminal coding agent forked from OpenAI's Codex, aimed at low-cost and open-weight models, with switchable harness emulation.
 - [OpenAI Codex CLI](https://learn.chatgpt.com/docs/codex/cli): OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and the ChatGPT desktop app on the same harness.
 - [OpenCode](https://opencode.ai): MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models.
 - [Pi](https://pi.dev): MIT-licensed minimal agent harness for the terminal (Earendil) — 15+ providers, local models, and everything else built as extensions; 1.0 shipped 2026-10-01.

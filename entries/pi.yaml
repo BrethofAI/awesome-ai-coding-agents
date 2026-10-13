@@ -50,4 +50,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cli, pi, earendil, open-source, extensible, local-llm]
 maintainer: Earendil Inc. & contributors (created by Mario Zechner)
 added: '2026-10-05'
-verified: '2026-10-05'
+verified: '2026-10-13'

@@ -4,7 +4,7 @@ url: https://cursor.com
 repository: null
 llms_txt: https://cursor.com/docs/llms.txt
 llms_full_txt: null
-llms_txt_status: missing
+llms_txt_status: published
 
 category: coding-agents
 subcategory: ai-native-ide

@@ -4,10 +4,26 @@
  "entries": {
   "aider": {
    "ok_streak": 0,
-   "fail_streak": 2,
+   "fail_streak": 3,
    "last": {
     "state": "gone",
     "code": 404
+   }
+  },
+  "amp": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "antigravity-cli": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
    }
   },
   "claude-code": {
@@ -27,7 +43,7 @@
    }
   },
   "cline": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -35,7 +51,7 @@
    }
   },
   "codex-cli": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -44,21 +60,13 @@
   },
   "continue-dev": {
    "ok_streak": 0,
-   "fail_streak": 2,
+   "fail_streak": 3,
    "last": {
     "state": "gone",
     "code": 404
    }
   },
   "cursor": {
-   "ok_streak": 0,
-   "fail_streak": 2,
-   "last": {
-    "state": "not_a_file",
-    "code": 200
-   }
-  },
-  "devin-desktop": {
    "ok_streak": 1,
    "fail_streak": 0,
    "last": {
@@ -66,8 +74,24 @@
     "code": 200
    }
   },
-  "gemini-cli": {
+  "deepseek-harness": {
    "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "devin-desktop": {
+   "ok_streak": 2,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "gemini-cli": {
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -82,8 +106,16 @@
     "code": 200
    }
   },
-  "kilo-code": {
+  "goose": {
    "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "kilo-code": {
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -91,6 +123,14 @@
    }
   },
   "kiro": {
+   "ok_streak": 2,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "minimax-code": {
    "ok_streak": 1,
    "fail_streak": 0,
    "last": {
@@ -98,7 +138,7 @@
     "code": 200
    }
   },
-  "opencode": {
+  "open-interpreter": {
    "ok_streak": 0,
    "fail_streak": 1,
    "last": {
@@ -106,8 +146,24 @@
     "code": 404
    }
   },
-  "qwen-code": {
+  "opencode": {
+   "ok_streak": 0,
+   "fail_streak": 2,
+   "last": {
+    "state": "gone",
+    "code": 404
+   }
+  },
+  "qoder": {
    "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "qwen-code": {
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -116,10 +172,18 @@
   },
   "sourcegraph-cody": {
    "ok_streak": 0,
-   "fail_streak": 2,
+   "fail_streak": 3,
    "last": {
     "state": "gone",
     "code": 404
+   }
+  },
+  "tale": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
    }
   }
  }
