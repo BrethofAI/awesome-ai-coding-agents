@@ -24,7 +24,7 @@
 - [MiniMax Code](https://agent.minimax.io/docs/cli/quick-start): MiniMax's coding agent — an MIT-licensed terminal CLI (`mcode`) plus a desktop app, running MiniMax models on an M Plan or any compatible model you bring.
 - [Open Interpreter](https://www.openinterpreter.com): Apache-2.0 terminal coding agent forked from OpenAI's Codex, aimed at low-cost and open-weight models, with switchable harness emulation.
 - [OpenAI Codex CLI](https://learn.chatgpt.com/docs/codex/cli): OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and the ChatGPT desktop app on the same harness.
-- [OpenCode](https://opencode.ai): MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models.
+- [OpenCode](https://opencode.ai): MIT-licensed, provider-agnostic coding agent for the terminal, with a desktop app and a web UI; OpenCode 2 is now the default install.
 - [Pi](https://pi.dev): MIT-licensed minimal agent harness for the terminal (Earendil) — 15+ providers, local models, and everything else built as extensions; 1.0 shipped 2026-10-01.
 - [Qoder (incl. Qoder CLI)](https://qoder.com): Alibaba's agentic coding platform — Qoder IDE, a JetBrains plugin and the Qoder CLI terminal agent, with Quest mode, Repo Wiki and bring-your-own-key models.
 - [Qwen Code](https://qwenlm.github.io/qwen-code-docs/): Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model.

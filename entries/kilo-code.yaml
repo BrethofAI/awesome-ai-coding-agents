@@ -49,3 +49,4 @@ tags: [coding-agent, vscode, jetbrains, cli, kilo, open-source, mcp, local-llm]
 maintainer: Kilo-Org
 added: 2026-09-29
 verified: '2026-10-13'
+release_tag: '^v\d'

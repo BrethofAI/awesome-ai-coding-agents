@@ -2,42 +2,58 @@ name: OpenCode
 slug: opencode
 url: https://opencode.ai
 repository: https://github.com/anomalyco/opencode
-llms_txt: https://opencode.ai/llms.txt
-llms_txt_status: missing
+llms_txt: https://opencode.ai/v2/llms.txt
+llms_txt_status: published
 
 category: coding-agents
 subcategory: cli-coding-agent
 
-tagline: MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models.
+tagline: MIT-licensed, provider-agnostic coding agent for the terminal, with a desktop app and a web UI; OpenCode 2 is now the default install.
 
 description: |
   OpenCode describes itself as "the open source AI coding agent". It is
-  MIT-licensed (about 211k GitHub stars as of 2026-09-29); the
+  MIT-licensed (about 213k GitHub stars as of 2026-10-13); the
   repository moved from `sst/opencode` to `anomalyco/opencode`, and the
   project is maintained by Anomaly.
 
-  It is provider-agnostic: the docs list support for "75+ LLM providers",
-  and local models through Ollama, LM Studio and llama.cpp; it can also
-  sign in with GitHub Copilot and ChatGPT Plus/Pro accounts. Optional paid
-  offerings are OpenCode Zen (pay-as-you-go access to models tested by the
-  OpenCode team), OpenCode Go / Go Plus (subscriptions for open models) and
-  an Enterprise offering. It ships two built-in agents — `build` (full
-  access) and `plan` (read-only, asks before running shell commands) — plus
-  subagents, and built-in LSP integration feeds diagnostics to the agent.
+  OpenCode 2 (first release 2.0.0 on 2026-09-11) is now what the website
+  and the README's npm line install: `curl -fsSL https://opencode.ai/v2/install | bash`
+  or `npm install -g @opencode/cli`. OpenCode 1 is still published as the
+  `opencode-ai` npm package (1.19.0, 2026-10-11) with its own docs; 1.19
+  adds `opencode upgrade --major` to move to 2. Both versions use the
+  `opencode` command and are not installed side by side by default. The
+  migration guide lists three intentional breaking changes: a new plugin
+  API (V1 plugins do not run in V2), new server API and client contracts,
+  and terminal settings moving from `tui.json` to one global `cli.json`
+  (migrated automatically). V1 configuration is still read; a native V2
+  config format is optional. V2 accepts but no longer runs LSP servers, so
+  it produces no language-server diagnostics.
 
-  Beyond the terminal UI there is a desktop app (macOS, Windows, Linux) and
-  extensions for VS Code, Cursor, Zed, Windsurf and VSCodium. It supports
-  MCP servers, and images can be dragged into the terminal.
+  It is provider-agnostic: providers and models come from the models.dev
+  catalog, custom OpenAI-compatible providers can be added, and Ollama,
+  LM Studio and vLLM are discovered locally. GitHub Copilot connects
+  through device sign-in and ChatGPT sign-in is supported. Optional paid
+  offerings are the OpenCode Console (pay-as-you-go access to models tested
+  by the OpenCode team, team workspaces and policies) and OpenCode Go /
+  Go Plus subscriptions for open models. Built-in agents are `build`
+  (default), `plan` (explores and plans without editing project files) and
+  a `general` subagent; custom agents are Markdown or JSON files.
+
+  Besides the terminal UI there is a desktop app (macOS, Windows, Linux)
+  and a password-protected web UI started with `opencode pair`.
+  `opencode acp` runs it as an Agent Client Protocol agent for clients
+  such as Zed; the V2 docs have no IDE extension page. It supports MCP
+  servers, skills, plugins and image attachments.
 
 features:
-  - Terminal agent, MIT licence
-  - 75+ providers; local models via Ollama, LM Studio, llama.cpp
-  - Sign in with GitHub Copilot or ChatGPT Plus/Pro accounts
-  - Built-in `build` and `plan` agents, subagents
-  - LSP integration (language-server diagnostics fed to the agent)
-  - MCP servers
-  - Image input (drag and drop)
-  - Desktop app (macOS, Windows, Linux) and extensions for VS Code, Cursor, Zed, Windsurf, VSCodium
+  - Terminal agent, MIT licence; V2 via `npm install -g @opencode/cli`
+  - Providers from the models.dev catalog plus custom ones; local discovery for Ollama, LM Studio, vLLM
+  - Sign in with GitHub Copilot or ChatGPT
+  - Built-in `build` and `plan` agents, `general` subagent, custom agents
+  - MCP servers, skills, plugins (new plugin API in V2)
+  - Image attachments (PNG, JPEG, GIF, WebP) for models with image input
+  - Desktop app (macOS, Windows, Linux) and web UI (`opencode pair`)
+  - ACP agent mode (`opencode acp`) for ACP clients such as Zed
 
 use_cases:
   - Open-source, vendor-neutral terminal agent
@@ -50,4 +66,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cli, opencode, open-source, mcp, local-llm, byom]
 maintainer: Anomaly (anomalyco)
 added: 2026-09-29
-verified: '2026-10-05'
+verified: '2026-10-13'

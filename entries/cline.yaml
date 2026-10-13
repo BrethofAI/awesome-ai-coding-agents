@@ -48,3 +48,4 @@ tags: [coding-agent, vscode, jetbrains, cli, cline, open-source, mcp, local-llm]
 maintainer: Cline
 added: 2026-09-29
 verified: '2026-10-13'
+release_tag: '^v\d'

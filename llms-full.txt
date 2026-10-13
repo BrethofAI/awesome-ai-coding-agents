@@ -71,7 +71,7 @@
 - **Sourcegraph Cody (Enterprise only)**: Yes (admin-configured) — BYOK via providerOverrides: OpenAI-compatible, Bedrock, Azure OpenAI, Anthropic, Fireworks, Google, OpenAI, HF TGI
 - **OpenAI Codex CLI**: Yes — custom model providers in config.toml
 - **Gemini CLI**: Gemini models (Google account, Gemini API, Vertex AI)
-- **OpenCode**: Yes — 75+ providers
+- **OpenCode**: Yes — models.dev provider catalog plus custom providers
 - **Cline**: Yes — OpenAI, Anthropic, Google and others (BYOK)
 - **Kilo Code**: Yes — BYOK, or 500+ models via Kilo
 - **Qwen Code**: Yes — OpenAI, Anthropic, Gemini and Qwen APIs; any third-party provider
@@ -97,7 +97,7 @@
 - **Sourcegraph Cody (Enterprise only)**: Self-hosted models via OpenAI-compatible / HF TGI endpoints (site admin)
 - **OpenAI Codex CLI**: Yes — `--oss` with Ollama or LM Studio
 - **Gemini CLI**: No — only an experimental local Gemma model for routing decisions
-- **OpenCode**: Yes — Ollama, LM Studio, llama.cpp
+- **OpenCode**: Yes — Ollama, LM Studio, vLLM (auto-discovered)
 - **Cline**: Yes — Ollama, LM Studio
 - **Kilo Code**: Yes — Ollama, LM Studio
 - **Qwen Code**: Yes — Ollama, vLLM
@@ -123,7 +123,7 @@
 - **Sourcegraph Cody (Enterprise only)**: Good with codebase search backing
 - **OpenAI Codex CLI**: Agentic, sandboxed
 - **Gemini CLI**: Agentic
-- **OpenCode**: Agentic (`build` agent; read-only `plan` agent)
+- **OpenCode**: Agentic (`build` agent; `plan` agent that does not edit project files)
 - **Cline**: Agentic
 - **Kilo Code**: Agentic
 - **Qwen Code**: Agentic (subagents, agent teams)
@@ -149,7 +149,7 @@
 - **Sourcegraph Cody (Enterprise only)**: Sourcegraph code graph and code search across all repos
 - **OpenAI Codex CLI**: AGENTS.md project instructions
 - **Gemini CLI**: 1M-token context window
-- **OpenCode**: LSP integration (built-in language servers feed diagnostics to the agent)
+- **OpenCode**: AGENTS.md instructions, references to outside directories (V2 dropped LSP diagnostics)
 - **Cline**: @-mentions, research subagents, Memory Bank (no embeddings index)
 - **Kilo Code**: Opt-in Codebase Indexing (semantic search with embeddings)
 - **Qwen Code**: LSP integration, auto-memory
@@ -175,7 +175,7 @@
 - **Sourcegraph Cody (Enterprise only)**: No
 - **OpenAI Codex CLI**: Yes — `--image`
 - **Gemini CLI**: Yes — images, PDFs, sketches
-- **OpenCode**: Yes — drag image into the terminal
+- **OpenCode**: Yes — image attachments (PNG, JPEG, GIF, WebP) for image-capable models
 - **Cline**: Yes — images, PDFs, CSV/Excel attachments with multimodal models
 - **Kilo Code**: Unverified
 - **Qwen Code**: Unverified
@@ -201,7 +201,7 @@
 - **Sourcegraph Cody (Enterprise only)**: VS Code, JetBrains, Visual Studio (experimental), web, Cody CLI
 - **OpenAI Codex CLI**: Terminal CLI; VS Code / Cursor / Windsurf extension; Xcode + JetBrains integrations; ChatGPT desktop app (macOS, Windows, Linux preview)
 - **Gemini CLI**: Terminal CLI; VS Code companion; JetBrains + Zed via ACP
-- **OpenCode**: Terminal TUI; desktop app; VS Code / Cursor / Zed / Windsurf / VSCodium extensions
+- **OpenCode**: Terminal TUI; desktop app; web UI; ACP agent for Zed and other ACP clients (no IDE extension in V2 docs)
 - **Cline**: VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains; CLI; desktop app (macOS, Windows beta); Kanban; SDK
 - **Kilo Code**: VS Code, JetBrains, CLI, cloud
 - **Qwen Code**: Terminal CLI; VS Code (beta), Zed, JetBrains; desktop app
@@ -1147,35 +1147,51 @@ URL: https://opencode.ai
 Repo: https://github.com/anomalyco/opencode
 License: open-source  Deployment: cli
 
-_MIT-licensed, provider-agnostic coding agent for the terminal (plus desktop app and IDE use) — 75+ model providers including local models._
+_MIT-licensed, provider-agnostic coding agent for the terminal, with a desktop app and a web UI; OpenCode 2 is now the default install._
 
 OpenCode describes itself as "the open source AI coding agent". It is
-MIT-licensed (about 211k GitHub stars as of 2026-09-29); the
+MIT-licensed (about 213k GitHub stars as of 2026-10-13); the
 repository moved from `sst/opencode` to `anomalyco/opencode`, and the
 project is maintained by Anomaly.
 
-It is provider-agnostic: the docs list support for "75+ LLM providers",
-and local models through Ollama, LM Studio and llama.cpp; it can also
-sign in with GitHub Copilot and ChatGPT Plus/Pro accounts. Optional paid
-offerings are OpenCode Zen (pay-as-you-go access to models tested by the
-OpenCode team), OpenCode Go / Go Plus (subscriptions for open models) and
-an Enterprise offering. It ships two built-in agents — `build` (full
-access) and `plan` (read-only, asks before running shell commands) — plus
-subagents, and built-in LSP integration feeds diagnostics to the agent.
+OpenCode 2 (first release 2.0.0 on 2026-09-11) is now what the website
+and the README's npm line install: `curl -fsSL https://opencode.ai/v2/install | bash`
+or `npm install -g @opencode/cli`. OpenCode 1 is still published as the
+`opencode-ai` npm package (1.19.0, 2026-10-11) with its own docs; 1.19
+adds `opencode upgrade --major` to move to 2. Both versions use the
+`opencode` command and are not installed side by side by default. The
+migration guide lists three intentional breaking changes: a new plugin
+API (V1 plugins do not run in V2), new server API and client contracts,
+and terminal settings moving from `tui.json` to one global `cli.json`
+(migrated automatically). V1 configuration is still read; a native V2
+config format is optional. V2 accepts but no longer runs LSP servers, so
+it produces no language-server diagnostics.
 
-Beyond the terminal UI there is a desktop app (macOS, Windows, Linux) and
-extensions for VS Code, Cursor, Zed, Windsurf and VSCodium. It supports
-MCP servers, and images can be dragged into the terminal.
+It is provider-agnostic: providers and models come from the models.dev
+catalog, custom OpenAI-compatible providers can be added, and Ollama,
+LM Studio and vLLM are discovered locally. GitHub Copilot connects
+through device sign-in and ChatGPT sign-in is supported. Optional paid
+offerings are the OpenCode Console (pay-as-you-go access to models tested
+by the OpenCode team, team workspaces and policies) and OpenCode Go /
+Go Plus subscriptions for open models. Built-in agents are `build`
+(default), `plan` (explores and plans without editing project files) and
+a `general` subagent; custom agents are Markdown or JSON files.
+
+Besides the terminal UI there is a desktop app (macOS, Windows, Linux)
+and a password-protected web UI started with `opencode pair`.
+`opencode acp` runs it as an Agent Client Protocol agent for clients
+such as Zed; the V2 docs have no IDE extension page. It supports MCP
+servers, skills, plugins and image attachments.
 
 Features:
-- Terminal agent, MIT licence
-- 75+ providers; local models via Ollama, LM Studio, llama.cpp
-- Sign in with GitHub Copilot or ChatGPT Plus/Pro accounts
-- Built-in `build` and `plan` agents, subagents
-- LSP integration (language-server diagnostics fed to the agent)
-- MCP servers
-- Image input (drag and drop)
-- Desktop app (macOS, Windows, Linux) and extensions for VS Code, Cursor, Zed, Windsurf, VSCodium
+- Terminal agent, MIT licence; V2 via `npm install -g @opencode/cli`
+- Providers from the models.dev catalog plus custom ones; local discovery for Ollama, LM Studio, vLLM
+- Sign in with GitHub Copilot or ChatGPT
+- Built-in `build` and `plan` agents, `general` subagent, custom agents
+- MCP servers, skills, plugins (new plugin API in V2)
+- Image attachments (PNG, JPEG, GIF, WebP) for models with image input
+- Desktop app (macOS, Windows, Linux) and web UI (`opencode pair`)
+- ACP agent mode (`opencode acp`) for ACP clients such as Zed
 
 Best for:
 - Open-source, vendor-neutral terminal agent

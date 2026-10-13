@@ -16,7 +16,7 @@ on:
     branches:
       - main
   schedule:
-    # Daily read-only check against the live web. Reports; never writes.
+    # Daily heal against the live web (founder 2026-10-13: automatic, nobody approves).
     - cron: '17 3 * * *'
   workflow_dispatch:
     inputs:
@@ -83,14 +83,14 @@ jobs:
             git push
           fi
 
-  # ── daily: READ-ONLY. Reports drift, writes nothing, never fails. ────────
-  #
-  # Deliberately does not commit. Nothing writes to main on a timer: an
-  # unattended job that rewrites the list is a lot of trust to hand a cron,
-  # and a wrong heuristic would quietly propagate with nobody watching.
-  # Drift is surfaced here and applied by a human via the `heal` job below.
+  # ── read-only check: a manual run without the heal box. ───────────────────
+  # Until 2026-10-13 this was the daily job and healing waited for a human; the
+  # statuses then sat stale for two weeks. Founder 2026-10-13: "LLMS.TXT have only
+  # value for our size if it's done automatic". The schedule now runs `heal`, which
+  # is safe to leave unattended: it only rewrites llms_txt_status, and only after
+  # the .health.json streaks (2 clean fetches to promote, 3 failures to demote).
   monitor:
-    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.heal != 'true')
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.heal != 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -117,9 +117,9 @@ jobs:
             echo 'To apply: Actions -> this workflow -> Run workflow -> tick **heal**.'
           } >> "$GITHUB_STEP_SUMMARY"
 
-  # ── heal: writes. Only ever runs when a human ticks the box. ─────────────
+  # ── heal: writes. Daily on the schedule, or when someone ticks the box. ───
   heal:
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.heal == 'true'
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.heal == 'true')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -144,7 +144,7 @@ jobs:
         if: always()
         run: |
           {
-            echo '## llms.txt reconcile (manual)'
+            echo '## llms.txt reconcile'
             echo
             echo '```'
             sed -n '/^=\{10,\}/,$p' heal.log 2>/dev/null || echo "(no report — see the step log)"
