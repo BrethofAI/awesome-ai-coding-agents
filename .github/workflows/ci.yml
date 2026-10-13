@@ -80,7 +80,16 @@ jobs:
           else
             git add README.md llms.txt llms-full.txt
             git commit -m "chore: regenerate README and llms.txt from entries/"
-            git push
+            git push || {
+              # Two merges seconds apart: main moved on while this ran. The newer
+              # push starts its own run, which regenerates from the newer entries.
+              git fetch -q origin main
+              if [ "$(git rev-parse origin/main)" != "$GITHUB_SHA" ]; then
+                echo "main moved on during this run; its own run regenerates the files."
+              else
+                exit 1
+              fi
+            }
           fi
 
   # ── read-only check: a manual run without the heal box. ───────────────────
@@ -163,5 +172,5 @@ jobs:
           fi
           git commit \
             -m "chore: reconcile llms_txt_status with live URLs" \
-            -m "Manually triggered. Statuses are derived from what each URL actually serves; see .health.json for the consecutive-outcome streaks that gate each flip."
+            -m "Daily heal. Statuses are derived from what each URL actually serves; see .health.json for the consecutive-outcome streaks that gate each flip."
           git push
