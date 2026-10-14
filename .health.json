@@ -11,7 +11,7 @@
    }
   },
   "amp": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -19,7 +19,7 @@
    }
   },
   "antigravity-cli": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -67,7 +67,7 @@
    }
   },
   "cursor": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -75,7 +75,7 @@
    }
   },
   "deepseek-harness": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -107,7 +107,7 @@
    }
   },
   "goose": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -131,7 +131,7 @@
    }
   },
   "minimax-code": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -140,22 +140,22 @@
   },
   "open-interpreter": {
    "ok_streak": 0,
-   "fail_streak": 1,
-   "last": {
-    "state": "gone",
-    "code": 404
-   }
-  },
-  "opencode": {
-   "ok_streak": 0,
    "fail_streak": 2,
    "last": {
     "state": "gone",
     "code": 404
    }
   },
-  "qoder": {
+  "opencode": {
    "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
+  "qoder": {
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -179,7 +179,7 @@
    }
   },
   "tale": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
