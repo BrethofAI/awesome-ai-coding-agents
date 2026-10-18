@@ -1,8 +1,8 @@
 {
- "checked": "2026-10-12",
+ "checked": "2026-10-18",
  "entries": {
   "aider": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "aider is AI pair programming in your terminal",
@@ -11,7 +11,7 @@
     "release": "v0.86.0",
     "released": "2025-08-09",
     "repo": "Aider-AI/aider",
-    "stars": 49476
+    "stars": 49619
    },
    "github_ref": "Aider-AI/aider",
    "name": "Aider",
@@ -23,7 +23,7 @@
    }
   },
   "amp": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Amp",
    "url": "https://ampcode.com",
    "web": {
@@ -33,7 +33,7 @@
    }
   },
   "antigravity-cli": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Antigravity CLI (Google Antigravity)",
    "url": "https://antigravity.google",
    "web": {
@@ -43,36 +43,36 @@
    }
   },
   "claude-code": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Claude Code",
    "url": "https://claude.com/product/claude-code",
    "web": {
     "final": "https://claude.com/product/claude-code",
     "status": 200,
-    "title": "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE"
+    "title": null
    }
   },
   "claude-desktop": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Claude Desktop",
    "url": "https://claude.com/download",
    "web": {
     "final": "https://claude.com/download",
     "status": 200,
-    "title": null
+    "title": "Download Claude | Claude by Anthropic"
    }
   },
   "cline": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
     "licence": "Apache-2.0",
-    "pushed": "2026-10-11",
-    "release": "desktop-v0.0.45",
-    "released": "2026-10-08",
+    "pushed": "2026-10-18",
+    "release": "v4.1.25",
+    "released": "2026-10-16",
     "repo": "cline/cline",
-    "stars": 70177
+    "stars": 70514
    },
    "github_ref": "cline/cline",
    "name": "Cline",
@@ -84,7 +84,7 @@
    }
   },
   "codebuddy": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "CodeBuddy (Tencent Cloud)",
    "url": "https://www.codebuddy.ai",
    "web": {
@@ -93,16 +93,16 @@
    }
   },
   "codex-cli": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "Lightweight coding agent that runs in your terminal",
     "licence": "Apache-2.0",
-    "pushed": "2026-10-11",
-    "release": "rust-v0.162.1",
-    "released": "2026-10-09",
+    "pushed": "2026-10-18",
+    "release": "rust-v0.163.0",
+    "released": "2026-10-15",
     "repo": "openai/codex",
-    "stars": 128671
+    "stars": 129756
    },
    "github_ref": "openai/codex",
    "name": "OpenAI Codex CLI",
@@ -114,16 +114,16 @@
    }
   },
   "continue-dev": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "open-source coding agent",
     "licence": "Apache-2.0",
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-18",
     "release": "v2.0.0-vscode",
     "released": "2026-06-19",
     "repo": "continuedev/continue",
-    "stars": 36188
+    "stars": 36248
    },
    "github_ref": "continuedev/continue",
    "name": "Continue (discontinued)",
@@ -135,7 +135,7 @@
    }
   },
   "cursor": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Cursor",
    "url": "https://cursor.com",
    "web": {
@@ -145,16 +145,16 @@
    }
   },
   "deepseek-harness": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "DeepSeek Harness: Everything is a Plugin.",
     "licence": "MIT",
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-17",
     "release": null,
     "released": null,
     "repo": "deepseek-ai/deepseek-harness",
-    "stars": 247492
+    "stars": 253045
    },
    "github_ref": "deepseek-ai/deepseek-harness",
    "name": "DeepSeek Harness (dsh)",
@@ -166,7 +166,7 @@
    }
   },
   "devin-desktop": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Devin Desktop (formerly Windsurf)",
    "url": "https://devin.ai/desktop",
    "web": {
@@ -176,16 +176,16 @@
    }
   },
   "gemini-cli": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
     "licence": "Apache-2.0",
-    "pushed": "2026-10-10",
-    "release": "v0.63.0",
-    "released": "2026-10-06",
+    "pushed": "2026-10-18",
+    "release": "v0.64.0",
+    "released": "2026-10-13",
     "repo": "google-gemini/gemini-cli",
-    "stars": 107286
+    "stars": 107440
    },
    "github_ref": "google-gemini/gemini-cli",
    "name": "Gemini CLI",
@@ -197,21 +197,21 @@
    }
   },
   "github-copilot": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "GitHub Copilot",
    "url": "https://github.com/features/copilot"
   },
   "goose": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
     "licence": "Apache-2.0",
-    "pushed": "2026-10-11",
-    "release": "v1.54.0",
-    "released": "2026-10-08",
+    "pushed": "2026-10-18",
+    "release": "v1.55.0",
+    "released": "2026-10-16",
     "repo": "aaif-goose/goose",
-    "stars": 55167
+    "stars": 55418
    },
    "github_ref": "aaif-goose/goose",
    "name": "goose",
@@ -223,16 +223,16 @@
    }
   },
   "kilo-code": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
     "licence": "MIT",
-    "pushed": "2026-10-11",
-    "release": "jetbrains/v7.1.9",
-    "released": "2026-10-08",
+    "pushed": "2026-10-18",
+    "release": "v7.8.12",
+    "released": "2026-10-15",
     "repo": "Kilo-Org/kilocode",
-    "stars": 27569
+    "stars": 27653
    },
    "github_ref": "Kilo-Org/kilocode",
    "name": "Kilo Code",
@@ -244,7 +244,7 @@
    }
   },
   "kiro": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Kiro (successor to Amazon Q Developer)",
    "url": "https://kiro.dev",
    "web": {
@@ -254,16 +254,16 @@
    }
   },
   "minimax-code": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "An open-source coding agent for your terminal, powered by MiniMax.",
     "licence": "MIT",
-    "pushed": "2026-10-11",
+    "pushed": "2026-10-16",
     "release": "v0.6.5",
     "released": "2026-10-09",
     "repo": "MiniMax-AI/minimax-code",
-    "stars": 2016
+    "stars": 2042
    },
    "github_ref": "MiniMax-AI/minimax-code",
    "name": "MiniMax Code",
@@ -274,17 +274,38 @@
     "title": "Quick Start - MiniMax Agent Docs"
    }
   },
+  "open-interpreter": {
+   "checked": "2026-10-18",
+   "github": {
+    "archived": false,
+    "description": "A coding agent for open models like Kimi K3 and GLM 5.3",
+    "licence": "Apache-2.0",
+    "pushed": "2026-10-11",
+    "release": "rust-v0.0.56",
+    "released": "2026-10-07",
+    "repo": "openinterpreter/openinterpreter",
+    "stars": 68604
+   },
+   "github_ref": "openinterpreter/openinterpreter",
+   "name": "Open Interpreter",
+   "url": "https://www.openinterpreter.com",
+   "web": {
+    "final": "https://www.openinterpreter.com/",
+    "status": 200,
+    "title": "Open Interpreter | Coding agent for open models"
+   }
+  },
   "opencode": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "The open source coding agent.",
     "licence": "MIT",
-    "pushed": "2026-10-11",
-    "release": "v1.19.0",
-    "released": "2026-10-11",
+    "pushed": "2026-10-18",
+    "release": "v1.19.3",
+    "released": "2026-10-16",
     "repo": "anomalyco/opencode",
-    "stars": 212732
+    "stars": 216500
    },
    "github_ref": "anomalyco/opencode",
    "name": "OpenCode",
@@ -296,16 +317,16 @@
    }
   },
   "pi": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
     "licence": "MIT",
-    "pushed": "2026-10-12",
-    "release": "v1.1.0",
-    "released": "2026-10-07",
+    "pushed": "2026-10-18",
+    "release": "v1.3.0",
+    "released": "2026-10-15",
     "repo": "earendil-works/pi",
-    "stars": 114317
+    "stars": 116142
    },
    "github_ref": "earendil-works/pi",
    "name": "Pi",
@@ -317,7 +338,7 @@
    }
   },
   "qoder": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Qoder (incl. Qoder CLI)",
    "url": "https://qoder.com",
    "web": {
@@ -327,16 +348,16 @@
    }
   },
   "qwen-code": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "An open-source AI coding agent that lives in your terminal.",
     "licence": "Apache-2.0",
-    "pushed": "2026-10-12",
-    "release": "sdk-typescript-v0.1.19",
-    "released": "2026-10-11",
+    "pushed": "2026-10-18",
+    "release": "v0.25.2",
+    "released": "2026-10-15",
     "repo": "QwenLM/qwen-code",
-    "stars": 28424
+    "stars": 28565
    },
    "github_ref": "QwenLM/qwen-code",
    "name": "Qwen Code",
@@ -348,12 +369,12 @@
    }
   },
   "scode": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "Open-source persistent coding CLI/runtime for AI agents, MCP and local models on macOS, Windows and Linux.",
     "licence": "Apache-2.0",
-    "pushed": "2026-10-06",
+    "pushed": "2026-10-13",
     "release": "v1.0.2",
     "released": "2026-10-06",
     "repo": "sidra-ai-development/scode",
@@ -364,7 +385,7 @@
    "url": "https://github.com/sidra-ai-development/scode"
   },
   "sourcegraph-cody": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "name": "Sourcegraph Cody (Enterprise only)",
    "url": "https://sourcegraph.com/docs/cody",
    "web": {
@@ -374,16 +395,16 @@
    }
   },
   "tale": {
-   "checked": "2026-10-12",
+   "checked": "2026-10-18",
    "github": {
     "archived": false,
     "description": "Open-source project workspace for teams and AI agents. Assign tasks, coordinate agents in persistent sandboxes, and review results together. Self-hosted or managed cloud.",
     "licence": "MIT",
-    "pushed": "2026-10-12",
-    "release": "v0.5.86",
-    "released": "2026-10-11",
+    "pushed": "2026-10-18",
+    "release": "v0.5.91",
+    "released": "2026-10-15",
     "repo": "tale-project/tale",
-    "stars": 34
+    "stars": 35
    },
    "github_ref": "tale-project/tale",
    "name": "Tale",
