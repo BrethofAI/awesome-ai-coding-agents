@@ -54,7 +54,7 @@ Pick by what matters to you. (Top to bottom — first match wins.)
 
 _AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline._
 
-<sub>★ 49.5k · v0.86.0 (2025-08-09)</sub>
+<sub>★ 49.6k · v0.86.0 (2025-08-09)</sub>
 
 **Site:** [https://aider.chat](https://aider.chat) · **Repo:** [https://github.com/Aider-AI/aider](https://github.com/Aider-AI/aider) · **License:** open-source · **Deployment:** cli
 
@@ -310,7 +310,7 @@ Desktop a new capability without changing the app.
 
 _Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models._
 
-<sub>★ 70.2k · desktop-v0.0.45 (2026-10-08)</sub>
+<sub>★ 70.5k · v4.1.25 (2026-10-16)</sub>
 
 **Site:** [https://cline.bot](https://cline.bot) · **Repo:** [https://github.com/cline/cline](https://github.com/cline/cline) · **License:** open-source · **Deployment:** local
 
@@ -482,7 +482,7 @@ also acquired Continue in mid-2026 (see that entry).
 
 _DeepSeek's MIT-licensed "everything is a plugin" agent harness — a coding agent out of the box, run as a local Web UI or desktop app, with DeepSeek, other providers or local models._
 
-<sub>★ 247.5k · last push 2026-10-09</sub>
+<sub>★ 253k · last push 2026-10-17</sub>
 
 **Site:** [https://deepseek.com/harness](https://deepseek.com/harness) · **Repo:** [https://github.com/deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) · **License:** open-source · **Deployment:** local
 
@@ -569,7 +569,7 @@ entry.
 
 _Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18, and Google says it isn't optimized for Gemini 4 and points to Antigravity CLI for the latest models._
 
-<sub>★ 107.3k · v0.63.0 (2026-10-06)</sub>
+<sub>★ 107.4k · v0.64.0 (2026-10-13)</sub>
 
 **Site:** [https://geminicli.com](https://geminicli.com) · **Repo:** [https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) · **License:** open-source · **Deployment:** cli
 
@@ -661,7 +661,7 @@ external traffic.
 
 _Apache-2.0 local AI agent (desktop app, CLI and API) started by Block and now part of the Linux Foundation's Agentic AI Foundation — 15+ providers, local models and MCP extensions._
 
-<sub>★ 55.2k · v1.54.0 (2026-10-08)</sub>
+<sub>★ 55.4k · v1.55.0 (2026-10-16)</sub>
 
 **Site:** [https://goose-docs.ai](https://goose-docs.ai) · **Repo:** [https://github.com/aaif-goose/goose](https://github.com/aaif-goose/goose) · **License:** open-source · **Deployment:** local
 
@@ -701,7 +701,7 @@ and project hints (`.goosehints` / AGENTS.md).
 
 _MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models._
 
-<sub>★ 27.6k · jetbrains/v7.1.9 (2026-10-08)</sub>
+<sub>★ 27.7k · v7.8.12 (2026-10-15)</sub>
 
 **Site:** [https://kilo.ai](https://kilo.ai) · **Repo:** [https://github.com/Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) · **License:** open-source · **Deployment:** local
 
@@ -829,6 +829,8 @@ Codex, Cursor and OpenCode.
 
 _Apache-2.0 terminal coding agent forked from OpenAI's Codex, aimed at low-cost and open-weight models, with switchable harness emulation._
 
+<sub>★ 68.6k · rust-v0.0.56 (2026-10-07)</sub>
+
 **Site:** [https://www.openinterpreter.com](https://www.openinterpreter.com) · **Repo:** [https://github.com/openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter) · **License:** open-source · **Deployment:** cli
 
 Open Interpreter is now "a coding agent optimized for low-cost models",
@@ -871,7 +873,7 @@ the Codex SDK can drive it.
 
 _OpenAI's open-source (Apache 2.0) coding agent that runs locally in your terminal, with IDE extensions and the ChatGPT desktop app on the same harness._
 
-<sub>★ 128.7k · rust-v0.162.1 (2026-10-09)</sub>
+<sub>★ 129.8k · rust-v0.163.0 (2026-10-15)</sub>
 
 **Site:** [https://learn.chatgpt.com/docs/codex/cli](https://learn.chatgpt.com/docs/codex/cli) · **Repo:** [https://github.com/openai/codex](https://github.com/openai/codex) · **License:** open-source · **Deployment:** cli
 
@@ -914,7 +916,7 @@ instructions and a configurable sandbox, and accepts image attachments
 
 _MIT-licensed, provider-agnostic coding agent for the terminal, with a desktop app and a web UI; OpenCode 2 is now the default install._
 
-<sub>★ 212.7k · v1.19.0 (2026-10-11)</sub>
+<sub>★ 216.5k · v1.19.3 (2026-10-16)</sub>
 
 **Site:** [https://opencode.ai](https://opencode.ai) · **Repo:** [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) · **License:** open-source · **Deployment:** cli
 
@@ -974,7 +976,7 @@ servers, skills, plugins and image attachments.
 
 _MIT-licensed minimal agent harness for the terminal (Earendil) — 15+ providers, local models, and everything else built as extensions; 1.0 shipped 2026-10-01._
 
-<sub>★ 114.3k · v1.1.0 (2026-10-07)</sub>
+<sub>★ 116.1k · v1.3.0 (2026-10-15)</sub>
 
 **Site:** [https://pi.dev](https://pi.dev) · **Repo:** [https://github.com/earendil-works/pi](https://github.com/earendil-works/pi) · **License:** open-source · **Deployment:** cli
 
@@ -1058,7 +1060,7 @@ plans. The free Pro trial is not available on virtual machines.
 
 _Alibaba's Apache-2.0 coding agent for terminal, editor and desktop — multi-protocol, with any third-party provider or local model._
 
-<sub>★ 28.4k · sdk-typescript-v0.1.19 (2026-10-11)</sub>
+<sub>★ 28.6k · v0.25.2 (2026-10-15)</sub>
 
 **Site:** [https://qwenlm.github.io/qwen-code-docs/](https://qwenlm.github.io/qwen-code-docs/) · **Repo:** [https://github.com/QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) · **License:** open-source · **Deployment:** cli
 
@@ -1148,7 +1150,7 @@ December 2025 (see Amp); Sourcegraph itself now focuses on code search.
 
 _Open-source workspace where teams assign tasks to reusable AI agents, run coding harnesses in sandboxes, and review the results._
 
-<sub>★ 34 · v0.5.86 (2026-10-11)</sub>
+<sub>★ 35 · v0.5.91 (2026-10-15)</sub>
 
 **Site:** [https://tale.dev/](https://tale.dev/) · **Repo:** [https://github.com/tale-project/tale](https://github.com/tale-project/tale) · **License:** open-source · **Deployment:** self-hosted
 
