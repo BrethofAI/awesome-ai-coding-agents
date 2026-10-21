@@ -51,4 +51,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cli, openai, codex, open-source, mcp, local-llm]
 maintainer: OpenAI
 added: 2026-09-29
-verified: '2026-10-13'
+verified: '2026-10-21'

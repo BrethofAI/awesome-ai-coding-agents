@@ -16,7 +16,7 @@
 - [Cursor](https://cursor.com): AI-first fork of VS Code with deep LLM integration, agent mode, and codebase-aware context.
 - [DeepSeek Harness (dsh)](https://deepseek.com/harness): DeepSeek's MIT-licensed "everything is a plugin" agent harness — a coding agent out of the box, run as a local Web UI or desktop app, with DeepSeek, other providers or local models.
 - [Devin Desktop (formerly Windsurf)](https://devin.ai/desktop): Cognition's AI-native IDE — the product formerly called Windsurf (and before that, Codeium), now built around the Devin Local agent.
-- [Gemini CLI](https://geminicli.com): Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18.
+- [Gemini CLI](https://geminicli.com): Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18, and Google says it isn't optimized for Gemini 4 and points to Antigravity CLI for the latest models.
 - [GitHub Copilot](https://github.com/features/copilot): GitHub's native AI coding assistant with chat, autocomplete, and agent mode across major IDEs.
 - [goose](https://goose-docs.ai): Apache-2.0 local AI agent (desktop app, CLI and API) started by Block and now part of the Linux Foundation's Agentic AI Foundation — 15+ providers, local models and MCP extensions.
 - [Kilo Code](https://kilo.ai): MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models.
@@ -31,3 +31,4 @@
 - [SCODE](https://github.com/sidra-ai-development/scode): Open-source terminal coding runtime with persistent sessions, MCP tooling, and cloud or local model support.
 - [Sourcegraph Cody (Enterprise only)](https://sourcegraph.com/docs/cody): Sourcegraph's code-search-backed coding assistant — now sold only as part of Sourcegraph Enterprise; Cody Free and Pro were discontinued in July 2025.
 - [Tale](https://tale.dev/): Open-source workspace where teams assign tasks to reusable AI agents, run coding harnesses in sandboxes, and review the results.
+- [YYLO](https://yylo.dev): MIT-licensed CLI that orchestrates other coding agents (Claude Code, Codex, Gemini CLI, Cursor, Pi) through typed tasks, isolated Git worktrees and recorded evidence.

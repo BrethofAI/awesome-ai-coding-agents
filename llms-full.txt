@@ -798,7 +798,7 @@ URL: https://geminicli.com
 Repo: https://github.com/google-gemini/gemini-cli
 License: open-source  Deployment: cli
 
-_Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18._
+_Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18, and Google says it isn't optimized for Gemini 4 and points to Antigravity CLI for the latest models._
 
 Gemini CLI is "an open-source AI agent that brings the power of Gemini
 directly into your terminal", licensed Apache 2.0. It runs Gemini 3
@@ -1157,8 +1157,9 @@ project is maintained by Anomaly.
 OpenCode 2 (first release 2.0.0 on 2026-09-11) is now what the website
 and the README's npm line install: `curl -fsSL https://opencode.ai/v2/install | bash`
 or `npm install -g @opencode/cli`. OpenCode 1 is still published as the
-`opencode-ai` npm package (1.19.0, 2026-10-11) with its own docs; 1.19
-adds `opencode upgrade --major` to move to 2. Both versions use the
+`opencode-ai` npm package (1.19.3, 2026-10-16) with its own docs; 1.19
+adds `opencode upgrade --major` to move to 2, and since 1.19.2 a 1.x
+install is never offered a 2.x build as a regular update. Both versions use the
 `opencode` command and are not installed side by side by default. The
 migration guide lists three intentional breaking changes: a new plugin
 API (V1 plugins do not run in V2), new server API and client contracts,
@@ -1407,5 +1408,49 @@ Best for:
 - Delegating coding tasks to AI agents and reviewing the results as a team
 - Coordinating several agents and people on one project
 - Running agent work on your own infrastructure
+
+---
+
+## YYLO
+
+URL: https://yylo.dev
+Repo: https://github.com/yylo-dev/yylo
+License: open-source  Deployment: cli
+
+_MIT-licensed CLI that orchestrates other coding agents (Claude Code, Codex, Gemini CLI, Cursor, Pi) through typed tasks, isolated Git worktrees and recorded evidence._
+
+YYLO (pronounced "why-lo") is not a coding agent of its own: it is a
+command-line orchestrator that hands bounded tasks to the coding agents you
+already use (subagents: Claude Code, OpenAI Codex, Gemini CLI, Cursor and
+Pi) and keeps a record of what happened. Each task runs in its own Git
+worktree cut from an exact base commit; the result goes through validation
+and a one-task merge step, and YYLO keeps receipts (task, session, model,
+test evidence, merge outcome) so the change can be inspected later.
+
+It installs from npm as `@yylo/cli` (commands `yylo` and `yy`, plus `ypl`
+as a shortcut for a live Pi terminal session) and needs Node.js 20.10+ and
+Git. Agents and their provider credentials are installed and configured
+separately. Task records live in the separate YYLO Ledger (a Git-native
+task store, on PyPI), and YYLO Benchmark compares agent attempts; `yy
+ledger` and `yy benchmark` call those packages, which are installed on
+their own. Agent skills ship separately in yylo-dev/yylo-skills.
+
+It is an early project (0.2.x releases), built mostly by one developer.
+The project's own site states that PR, deployment and production-outcome
+features are direction, not the current release.
+
+Features:
+- Dispatches tasks to Claude Code, Codex, Gemini CLI, Cursor or Pi as subagents
+- Per-task Git worktrees from an exact base commit
+- Typed task lifecycle (start, run, status, checkpoint, preflight, finish)
+- Validation evidence tied to exact inputs, and a guarded one-task merge (`merge land`)
+- Read-only `watch` command to observe runs without changing them
+- JSON / NDJSON machine output for task, merge and integration commands
+- Model shortcuts per subagent (for example `:sonnet`, `:opus`, `:gpt`)
+
+Best for:
+- Running several coding agents on bounded tasks without them touching your main checkout
+- Keeping an auditable record of which agent and model produced which change
+- Repeatable agent loops in CI or scripts with machine-readable output
 
 ---

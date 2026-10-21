@@ -8,7 +8,7 @@ llms_txt_status: published
 category: coding-agents
 subcategory: cli-coding-agent
 
-tagline: Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18.
+tagline: Google's open-source (Apache 2.0) terminal agent for Gemini models — now for Code Assist Standard/Enterprise, Google Cloud and paid Gemini API key users; free and Google AI Pro/Ultra users moved to Antigravity CLI on 2026-06-18, and Google says it isn't optimized for Gemini 4 and points to Antigravity CLI for the latest models.
 
 description: |
   Gemini CLI is "an open-source AI agent that brings the power of Gemini
@@ -46,4 +46,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cli, google, gemini, open-source, mcp]
 maintainer: Google
 added: 2026-09-29
-verified: '2026-10-13'
+verified: '2026-10-21'

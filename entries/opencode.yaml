@@ -19,8 +19,9 @@ description: |
   OpenCode 2 (first release 2.0.0 on 2026-09-11) is now what the website
   and the README's npm line install: `curl -fsSL https://opencode.ai/v2/install | bash`
   or `npm install -g @opencode/cli`. OpenCode 1 is still published as the
-  `opencode-ai` npm package (1.19.0, 2026-10-11) with its own docs; 1.19
-  adds `opencode upgrade --major` to move to 2. Both versions use the
+  `opencode-ai` npm package (1.19.3, 2026-10-16) with its own docs; 1.19
+  adds `opencode upgrade --major` to move to 2, and since 1.19.2 a 1.x
+  install is never offered a 2.x build as a regular update. Both versions use the
   `opencode` command and are not installed side by side by default. The
   migration guide lists three intentional breaking changes: a new plugin
   API (V1 plugins do not run in V2), new server API and client contracts,
@@ -66,4 +67,4 @@ platforms: [linux, macos, windows]
 tags: [coding-agent, cli, opencode, open-source, mcp, local-llm, byom]
 maintainer: Anomaly (anomalyco)
 added: 2026-09-29
-verified: '2026-10-13'
+verified: '2026-10-21'

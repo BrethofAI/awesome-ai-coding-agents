@@ -1,0 +1,54 @@
+name: YYLO
+slug: yylo
+url: https://yylo.dev
+repository: https://github.com/yylo-dev/yylo
+llms_txt: https://yylo.dev/llms.txt
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: coding-agent-orchestrator
+
+tagline: MIT-licensed CLI that orchestrates other coding agents (Claude Code, Codex, Gemini CLI, Cursor, Pi) through typed tasks, isolated Git worktrees and recorded evidence.
+
+description: |
+  YYLO (pronounced "why-lo") is not a coding agent of its own: it is a
+  command-line orchestrator that hands bounded tasks to the coding agents you
+  already use (subagents: Claude Code, OpenAI Codex, Gemini CLI, Cursor and
+  Pi) and keeps a record of what happened. Each task runs in its own Git
+  worktree cut from an exact base commit; the result goes through validation
+  and a one-task merge step, and YYLO keeps receipts (task, session, model,
+  test evidence, merge outcome) so the change can be inspected later.
+
+  It installs from npm as `@yylo/cli` (commands `yylo` and `yy`, plus `ypl`
+  as a shortcut for a live Pi terminal session) and needs Node.js 20.10+ and
+  Git. Agents and their provider credentials are installed and configured
+  separately. Task records live in the separate YYLO Ledger (a Git-native
+  task store, on PyPI), and YYLO Benchmark compares agent attempts; `yy
+  ledger` and `yy benchmark` call those packages, which are installed on
+  their own. Agent skills ship separately in yylo-dev/yylo-skills.
+
+  It is an early project (0.2.x releases), built mostly by one developer.
+  The project's own site states that PR, deployment and production-outcome
+  features are direction, not the current release.
+
+features:
+  - Dispatches tasks to Claude Code, Codex, Gemini CLI, Cursor or Pi as subagents
+  - Per-task Git worktrees from an exact base commit
+  - Typed task lifecycle (start, run, status, checkpoint, preflight, finish)
+  - Validation evidence tied to exact inputs, and a guarded one-task merge (`merge land`)
+  - Read-only `watch` command to observe runs without changing them
+  - JSON / NDJSON machine output for task, merge and integration commands
+  - Model shortcuts per subagent (for example `:sonnet`, `:opus`, `:gpt`)
+
+use_cases:
+  - Running several coding agents on bounded tasks without them touching your main checkout
+  - Keeping an auditable record of which agent and model produced which change
+  - Repeatable agent loops in CI or scripts with machine-readable output
+
+license: open-source
+deployment: cli
+platforms: [linux, macos]
+tags: [orchestrator, coding-agent, cli, git, worktrees, multi-agent, open-source]
+maintainer: yylo-dev
+added: '2026-10-21'
+verified: '2026-10-21'
