@@ -185,6 +185,14 @@
     "state": "ok",
     "code": 200
    }
+  },
+  "yylo": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "gone",
+    "code": 404
+   }
   }
  }
 }
