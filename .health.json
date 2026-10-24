@@ -188,7 +188,7 @@
   },
   "yylo": {
    "ok_streak": 0,
-   "fail_streak": 2,
+   "fail_streak": 3,
    "last": {
     "state": "gone",
     "code": 404
