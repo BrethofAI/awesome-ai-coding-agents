@@ -1,0 +1,44 @@
+name: Mixdog
+slug: mixdog
+url: https://github.com/tribgames/mixdog
+repository: https://github.com/tribgames/mixdog
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: ai-native-coding-app
+
+tagline: Open-source (Apache-2.0) desktop coding agent where a lead model plans and cheaper models handle search, edits and review.
+
+description: |
+  Mixdog is an open-source (Apache-2.0) desktop coding agent for Windows,
+  macOS and Linux, also runnable in the terminal (`npm install -g mixdog`).
+  A strong lead model plans the work while cheaper models search, edit and
+  review in parallel; roles can be assigned different models, with fallback
+  models for usage limits.
+
+  It can sign in with an existing Claude, ChatGPT, Grok or Muse Code
+  subscription, use API keys, or run local models. The project publishes
+  its Terminal-Bench 2.1 runs against Codex CLI under
+  benchmarks/terminal-bench-2.1/ in the repository, including the token
+  counts behind the "fewer tokens" claim in its README.
+
+  Disclosure: this entry was submitted by a Mixdog maintainer.
+
+features:
+  - Lead model plus cheaper models for search, edit and review, assigned by role
+  - Sign in with Claude, ChatGPT, Grok or Muse Code accounts, API keys, or local models
+  - Built-in editor, terminals, Git and GitHub integration, code graph and language servers
+  - Goals, schedules and webhooks for unattended work
+  - Browser and desktop control, Office and PDF documents
+
+use_cases:
+  - Coding with an existing AI subscription instead of separate API billing
+  - Splitting planning and routine edits across models to reduce token use
+
+license: open-source
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, desktop, cli, open-source, multi-model, apache-2.0]
+maintainer: tribgames
+added: 2026-11-02
+verified: '2026-11-02'
