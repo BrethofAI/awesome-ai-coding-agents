@@ -1,0 +1,52 @@
+name: Mixdog
+slug: mixdog
+url: https://mixdog.ai
+repository: https://github.com/tribgames/mixdog
+llms_txt: https://mixdog.ai/llms.txt
+llms_txt_status: missing
+
+category: coding-agents
+subcategory: ai-native-coding-app
+
+tagline: Open-source (Apache-2.0) desktop and terminal coding agent where a lead model plans and cheaper models search, edit and review, assigned by role.
+
+description: |
+  Mixdog is an open-source (Apache-2.0) coding agent with a desktop app for
+  Windows, macOS and Linux, also runnable in the terminal (`npm install -g
+  mixdog`, Node.js 22.19+ or 24+). A strong lead model plans the work while
+  cheaper models search, edit and review in parallel; each role can use a
+  different model, with fallback models for usage limits. A small local model
+  picks the reasoning effort for each step (on by default).
+
+  It signs in with an existing Claude, ChatGPT, Grok or Muse Code account,
+  takes API keys (Anthropic, OpenAI, Gemini, xAI, OpenRouter, DeepSeek and
+  others), or runs local models (the built-in local provider needs Windows
+  x64 with an NVIDIA GPU). The README itself warns that the Cursor,
+  Antigravity and MiMo sign-ins, off by default, risk account restrictions.
+
+  Its "fewer tokens" claim rests on Terminal-Bench 2.1 runs against Codex CLI
+  and Claude Code on the same models, with verdicts, logs and scripts
+  published under benchmarks/terminal-bench-2.1/ in the repository; the
+  reference run against Codex CLI uses five trials per task, the other runs
+  are single passes. It is a young project (first npm release June 2026), funded through
+  its maintainer's GitHub Sponsors.
+
+features:
+  - Lead model plus cheaper models for search, edit and review, assigned by role
+  - Sign in with Claude, ChatGPT, Grok or Muse Code accounts, API keys, or local models
+  - Built-in editor, terminals, Git and GitHub integration, code graph and language servers
+  - Goals, schedules and webhooks for unattended work
+  - Headless `mixdog exec` for single non-interactive runs
+  - Browser and desktop control, Office and PDF documents
+
+use_cases:
+  - Coding with an existing AI subscription instead of separate API billing
+  - Splitting planning and routine edits across models to reduce token use
+
+license: open-source
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, desktop, cli, open-source, multi-model, apache-2.0]
+maintainer: tribgames
+added: '2026-11-05'
+verified: '2026-11-05'

@@ -194,7 +194,7 @@ dimensions:
       codex-cli: "Terminal CLI; VS Code / Cursor / Windsurf extension; Xcode + JetBrains integrations; ChatGPT desktop app (macOS, Windows, Linux preview)"
       gemini-cli: "Terminal CLI; VS Code companion; JetBrains + Zed via ACP"
       opencode: "Terminal TUI; desktop app; web UI; ACP agent for Zed and other ACP clients (no IDE extension in V2 docs)"
-      cline: "VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains; CLI; desktop app (macOS, Windows beta); Kanban; SDK"
+      cline: "VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains; CLI; desktop app (beta: macOS, Windows, Linux); Kanban; SDK"
       kilo-code: "VS Code, JetBrains, CLI, cloud"
       qwen-code: "Terminal CLI; VS Code (beta), Zed, JetBrains; desktop app"
       amp: "Terminal CLI; web; macOS / iOS apps; editor connection for VS Code, Cursor, Windsurf, Zed, Neovim"

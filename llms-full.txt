@@ -202,7 +202,7 @@
 - **OpenAI Codex CLI**: Terminal CLI; VS Code / Cursor / Windsurf extension; Xcode + JetBrains integrations; ChatGPT desktop app (macOS, Windows, Linux preview)
 - **Gemini CLI**: Terminal CLI; VS Code companion; JetBrains + Zed via ACP
 - **OpenCode**: Terminal TUI; desktop app; web UI; ACP agent for Zed and other ACP clients (no IDE extension in V2 docs)
-- **Cline**: VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains; CLI; desktop app (macOS, Windows beta); Kanban; SDK
+- **Cline**: VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains; CLI; desktop app (beta: macOS, Windows, Linux); Kanban; SDK
 - **Kilo Code**: VS Code, JetBrains, CLI, cloud
 - **Qwen Code**: Terminal CLI; VS Code (beta), Zed, JetBrains; desktop app
 - **Amp**: Terminal CLI; web; macOS / iOS apps; editor connection for VS Code, Cursor, Windsurf, Zed, Neovim
@@ -542,8 +542,8 @@ Cline is "the open source coding agent in your IDE, terminal, & desktop",
 licensed Apache 2.0. The extension installs into VS Code, Cursor,
 Windsurf, VSCodium, Antigravity and JetBrains IDEs (JetBrains is listed
 as an Enterprise feature on the pricing page); there is also a CLI
-(interactive or headless for CI/CD), a desktop app (macOS; Windows beta)
-for open-weight models, Kanban (preview) and an SDK (`@cline/sdk`).
+(interactive or headless for CI/CD), a desktop app (beta; macOS, Windows,
+Linux) for open-weight models, Kanban (preview) and an SDK (`@cline/sdk`).
 
 The open-source version is free and runs on your own API keys ("OpenAI,
 Anthropic, Google, and others"), on Cline's usage-billing provider, or on
@@ -556,7 +556,7 @@ request.
 
 Features:
 - Extension for VS Code, Cursor, Windsurf, VSCodium, Antigravity, JetBrains (listed as an Enterprise feature on the pricing page)
-- CLI (interactive or headless) and desktop app (macOS; Windows beta)
+- CLI (interactive or headless) and desktop app (beta; macOS, Windows, Linux)
 - Kanban (preview) and SDK (`@cline/sdk`)
 - Bring your own API keys; local models via Ollama / LM Studio
 - MCP servers and plugins
@@ -1054,6 +1054,48 @@ Best for:
 
 ---
 
+## Mixdog
+
+URL: https://mixdog.ai
+Repo: https://github.com/tribgames/mixdog
+License: open-source  Deployment: local
+
+_Open-source (Apache-2.0) desktop and terminal coding agent where a lead model plans and cheaper models search, edit and review, assigned by role._
+
+Mixdog is an open-source (Apache-2.0) coding agent with a desktop app for
+Windows, macOS and Linux, also runnable in the terminal (`npm install -g
+mixdog`, Node.js 22.19+ or 24+). A strong lead model plans the work while
+cheaper models search, edit and review in parallel; each role can use a
+different model, with fallback models for usage limits. A small local model
+picks the reasoning effort for each step (on by default).
+
+It signs in with an existing Claude, ChatGPT, Grok or Muse Code account,
+takes API keys (Anthropic, OpenAI, Gemini, xAI, OpenRouter, DeepSeek and
+others), or runs local models (the built-in local provider needs Windows
+x64 with an NVIDIA GPU). The README itself warns that the Cursor,
+Antigravity and MiMo sign-ins, off by default, risk account restrictions.
+
+Its "fewer tokens" claim rests on Terminal-Bench 2.1 runs against Codex CLI
+and Claude Code on the same models, with verdicts, logs and scripts
+published under benchmarks/terminal-bench-2.1/ in the repository; the
+reference run against Codex CLI uses five trials per task, the other runs
+are single passes. It is a young project (first npm release June 2026), funded through
+its maintainer's GitHub Sponsors.
+
+Features:
+- Lead model plus cheaper models for search, edit and review, assigned by role
+- Sign in with Claude, ChatGPT, Grok or Muse Code accounts, API keys, or local models
+- Built-in editor, terminals, Git and GitHub integration, code graph and language servers
+- Goals, schedules and webhooks for unattended work
+- Headless `mixdog exec` for single non-interactive runs
+- Browser and desktop control, Office and PDF documents
+
+Best for:
+- Coding with an existing AI subscription instead of separate API billing
+- Splitting planning and routine edits across models to reduce token use
+
+---
+
 ## Open Interpreter
 
 URL: https://www.openinterpreter.com
@@ -1157,7 +1199,7 @@ project is maintained by Anomaly.
 OpenCode 2 (first release 2.0.0 on 2026-09-11) is now what the website
 and the README's npm line install: `curl -fsSL https://opencode.ai/v2/install | bash`
 or `npm install -g @opencode/cli`. OpenCode 1 is still published as the
-`opencode-ai` npm package (1.19.3, 2026-10-16) with its own docs; 1.19
+`opencode-ai` npm package (1.19.5, 2026-10-28) with its own docs; 1.19
 adds `opencode upgrade --major` to move to 2, and since 1.19.2 a 1.x
 install is never offered a 2.x build as a regular update. Both versions use the
 `opencode` command and are not installed side by side by default. The
