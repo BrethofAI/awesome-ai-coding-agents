@@ -138,6 +138,14 @@
     "code": 200
    }
   },
+  "mixdog": {
+   "ok_streak": 0,
+   "fail_streak": 1,
+   "last": {
+    "state": "gone",
+    "code": 404
+   }
+  },
   "open-interpreter": {
    "ok_streak": 0,
    "fail_streak": 3,
