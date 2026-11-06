@@ -8,6 +8,7 @@
 - [Aider](https://aider.chat): AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
 - [Amp](https://ampcode.com): Multi-model coding agent from Amp Inc. (spun out of Sourcegraph) — terminal CLI, web and Mac/iOS apps, with remote "orbs" that keep working after you close the laptop.
 - [Antigravity CLI (Google Antigravity)](https://antigravity.google): Google's `agy` terminal agent — part of Google Antigravity (desktop app, IDE, editor extensions on one harness) and the successor to Gemini CLI for free and Google AI Pro/Ultra users.
+- [Atlarix](https://atlarix.dev): Proprietary model-agnostic coding agent (desktop app, CLI, editor and Chrome extensions, PR reviewer) where every edit is a diff you approve and commands run in a per-OS sandbox.
 - [Claude Code](https://claude.com/product/claude-code): Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
 - [Claude Desktop](https://claude.com/download): Anthropic's desktop app (macOS, Windows, Linux beta) combining chat, Cowork agentic tasks and Claude Code, extensible via MCP, skills and plugins.
 - [Cline](https://cline.bot): Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models.

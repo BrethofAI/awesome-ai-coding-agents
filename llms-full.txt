@@ -413,6 +413,59 @@ Best for:
 
 ---
 
+## Atlarix
+
+URL: https://atlarix.dev
+License: freemium  Deployment: local
+
+_Proprietary model-agnostic coding agent (desktop app, CLI, editor and Chrome extensions, PR reviewer) where every edit is a diff you approve and commands run in a per-OS sandbox._
+
+Atlarix, by NorahLabs, is a coding agent that works beside your editor rather
+than replacing it. The same agent ships as a desktop app for macOS, Windows
+and Linux, a terminal CLI (`atlarix`, which shares the app's sessions, keys
+and MCP servers), an extension for VS Code, Cursor, Kiro, Windsurf and
+VSCodium (Zed and JetBrains IDEs run it over the Agent Client Protocol), a
+Chrome extension that drives your own browser, a GitHub pull-request reviewer
+and a cloud agent that runs in GitHub Actions. It works in Explore, Plan,
+Build, Debug and Review modes, and can split a task across parallel
+sub-agents.
+
+Nothing changes on disk without approval: file edits come back as diffs you
+accept hunk by hunk, and shell commands run in a write-confining sandbox
+(Seatbelt on macOS, Landlock on Linux, Low Integrity Level on Windows).
+Interactive terminal tabs you drive yourself, the Chrome tools and computer
+use are outside that sandbox, as its docs say. It builds no index or
+embeddings; it searches the open folder with ripgrep when it needs to.
+
+Models: Atlarix Auto (picks a model per step), the managed Atlarix Core
+models, your own key for OpenAI, Anthropic, Google, DeepSeek, OpenRouter and
+others, or a local model through Ollama or LM Studio. Your own keys and local
+models are free. Free Auto, for accounts with no credit, sends prompts to
+providers that may use them for training; the app asks before the first use.
+Core models are paid through Pro or pay-as-you-go credit
+([pricing](https://atlarix.dev/pricing)). The app is closed source and
+signs in to an Atlarix account (free); the CLI works without one on your own
+key or a local model. Installers and release notes are published in a public
+[releases repo](https://github.com/AmariahAK/atlarix-releases). Product
+analytics (PostHog) are opt-in.
+
+Features:
+- Desktop app (macOS, Windows, Linux), terminal CLI and editor extension sharing one agent
+- Edits shown as diffs and approved hunk by hunk
+- Shell commands in a per-OS write-confining sandbox
+- Any model, including your own API key or a local model via Ollama or LM Studio
+- Parallel sub-agents; Explore, Plan, Build, Debug and Review modes
+- Chrome extension that tests your running app in your own browser
+- GitHub pull-request reviewer and a GitHub Actions cloud agent
+- MCP servers from the official MCP Registry
+
+Best for:
+- Developers who want an agent beside their existing editor, with approval on every edit
+- Working on local models or your own API keys without a subscription
+- Teams that want the same agent on desktop, terminal, CI and PR review
+
+---
+
 ## Claude Code
 
 URL: https://claude.com/product/claude-code
