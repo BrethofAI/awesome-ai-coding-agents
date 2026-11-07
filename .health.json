@@ -26,6 +26,14 @@
     "code": 200
    }
   },
+  "atlarix": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
   "claude-code": {
    "ok_streak": 2,
    "fail_streak": 0,
@@ -140,7 +148,7 @@
   },
   "mixdog": {
    "ok_streak": 0,
-   "fail_streak": 1,
+   "fail_streak": 2,
    "last": {
     "state": "gone",
     "code": 404
