@@ -27,7 +27,7 @@
    }
   },
   "atlarix": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
@@ -148,7 +148,7 @@
   },
   "mixdog": {
    "ok_streak": 0,
-   "fail_streak": 2,
+   "fail_streak": 3,
    "last": {
     "state": "gone",
     "code": 404
