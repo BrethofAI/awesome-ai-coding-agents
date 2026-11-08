@@ -1149,6 +1149,47 @@ Best for:
 
 ---
 
+## Octuo
+
+URL: https://www.tutuo.ai/en/octuo/
+License: commercial  Deployment: local
+
+_Native macOS desktop coordinator that hands coding work to Claude Code, Codex and MCP tools — and follows up until it is done_
+
+Octuo, by Tutuo, Inc., is not a coding agent. It is a native macOS desktop
+harness and unified entry point for heavy agent users: you state the goal,
+Octuo prepares the work, hands each part to the right agent — Claude Code,
+Codex, MCP tools, the browser and local files — and follows up until it is
+done. Long jobs continue after the chat closes.
+
+Work runs on your own Mac: tool calls, shell commands and local files stay
+on the user's machine, and tool calls require the user's own Mac. Octuo is
+a native macOS app (macOS 15+, signed and notarized). An iPhone companion
+(iOS 18+) shows everything the Mac side sees and lets you answer decisions
+and tick off checklists on the go, but without a Mac it cannot run tool
+calls.
+
+Plans are paid and credit-based — see [pricing](https://www.tutuo.ai/en/octuo/)
+for the current tiers — and new accounts get 1,000 OC trial credits with no
+card required. There is no public source repository for Octuo.
+
+Features:
+- Native macOS app (macOS 15+, signed and notarized), with an iPhone companion (iOS 18+) for decisions and checklists on the go
+- Delegates work to Claude Code, Codex, MCP tools, the browser and local files — Octuo itself is not a coding agent
+- Prepares work, assigns each part to the right agent, and follows up until it is done; long jobs continue after the chat closes
+- Canvas views and a visible, editable memory graph
+- Encrypted Secrets Vault that the model never sees
+- Tool calls, shell commands and local files stay on your own Mac; tool calls require your Mac
+- Plans — paid, credit-based, with 1,000 OC trial credits and no card required ([pricing](https://www.tutuo.ai/en/octuo/))
+
+Best for:
+- Coordinating long, multi-part coding jobs across Claude Code, Codex and MCP tools from a single entry point
+- Heavy agent users who want one place to state a goal and have follow-up continue until the job is done
+- Working with local files and shell commands while keeping secrets in an encrypted vault the model never sees
+- Answering agent decisions and ticking off checklists from an iPhone while the work runs on the Mac
+
+---
+
 ## Open Interpreter
 
 URL: https://www.openinterpreter.com
@@ -1293,6 +1334,41 @@ Best for:
 - Open-source, vendor-neutral terminal agent
 - Running fully local with open-weight models
 - Switching providers without switching tools
+
+---
+
+## Orbi
+
+URL: https://orbi.build/?ref=dir-brethofai-coding-agents
+Repo: https://github.com/orbi-build/orbi
+License: open-source  Deployment: self-hosted
+
+_GitHub delivery workflow with separate implementation and review sessions, CI-gated merges and separately requested releases._
+
+Orbi is a GitHub App in Cloud and an open-source engine you can self-host.
+Label an issue ai-ready, and an AI agent implements the change in a Git
+worktree. Orbi pushes a branch and opens a PR. A separate review session
+fixes findings and reruns tests, and Orbi merges after CI passes. A separate
+Release task updates the version, creates a tag and publishes a GitHub Release.
+
+Self-hosting requires Python, GitHub authentication and a working model
+provider through Pi. Local OpenAI-compatible endpoints are supported.
+The source is available under AGPL-3.0 or the Sustainable Use License.
+Cloud includes 3 deliveries free, no credit card; plan details are at
+https://orbi.build/cloud/?ref=dir-brethofai-coding-agents.
+
+Features:
+- Implements labelled GitHub issues in separate Git worktrees
+- Opens pull requests for the implemented changes
+- Uses a separate review session to fix findings and rerun tests
+- Merges after review and CI pass
+- Handles versioning, tags and GitHub Releases through separate release tasks
+- Supports local OpenAI-compatible model endpoints when self-hosted
+
+Best for:
+- Delivering GitHub issues through implementation, review and merge
+- Running implementation and review with a self-hosted model provider
+- Requesting releases after changes have been merged
 
 ---
 
