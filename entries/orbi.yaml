@@ -1,0 +1,44 @@
+name: Orbi
+slug: orbi
+url: https://orbi.build/?ref=dir-brethofai-coding-agents
+repository: https://github.com/orbi-build/orbi
+llms_txt: https://orbi.build/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: coding-agent-orchestrator
+
+tagline: GitHub delivery workflow with separate implementation and review sessions, CI-gated merges and separately requested releases.
+
+description: |
+  Orbi is a GitHub App in Cloud and an open-source engine you can self-host.
+  Label an issue ai-ready, and an AI agent implements the change in a Git
+  worktree. Orbi pushes a branch and opens a PR. A separate review session
+  fixes findings and reruns tests, and Orbi merges after CI passes. A separate
+  Release task updates the version, creates a tag and publishes a GitHub Release.
+
+  Self-hosting requires Python, GitHub authentication and a working model
+  provider through Pi. Local OpenAI-compatible endpoints are supported.
+  The source is available under AGPL-3.0 or the Sustainable Use License.
+  Cloud includes 3 deliveries free, no credit card; plan details are at
+  https://orbi.build/cloud/?ref=dir-brethofai-coding-agents.
+
+features:
+  - Implements labelled GitHub issues in separate Git worktrees
+  - Opens pull requests for the implemented changes
+  - Uses a separate review session to fix findings and rerun tests
+  - Merges after review and CI pass
+  - Handles versioning, tags and GitHub Releases through separate release tasks
+  - Supports local OpenAI-compatible model endpoints when self-hosted
+
+use_cases:
+  - Delivering GitHub issues through implementation, review and merge
+  - Running implementation and review with a self-hosted model provider
+  - Requesting releases after changes have been merged
+
+license: open-source
+deployment: self-hosted
+platforms: [linux, macos]
+tags: [orchestrator, coding-agent, github, worktrees, code-review, open-source]
+maintainer: orbi-build
+added: '2026-11-08'
