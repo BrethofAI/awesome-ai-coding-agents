@@ -919,41 +919,43 @@ its maintainer's GitHub Sponsors.
 
 ### Octuo <a name="octuo"></a>
 
-_Native macOS desktop coordinator that hands coding work to Claude Code, Codex and MCP tools — and follows up until it is done_
+_Paid assistant (macOS, web, iPhone/iPad) that hands coding work to Claude Code, Codex and MCP tools under your own accounts, tracks each run and brings the results back._
 
-**Site:** [https://www.tutuo.ai/en/octuo/](https://www.tutuo.ai/en/octuo/) · **License:** commercial · **Deployment:** local
+**Site:** [https://www.tutuo.ai/en/octuo/](https://www.tutuo.ai/en/octuo/) · **License:** commercial · **Deployment:** saas
 
-Octuo, by Tutuo, Inc., is not a coding agent. It is a native macOS desktop
-harness and unified entry point for heavy agent users: you state the goal,
-Octuo prepares the work, hands each part to the right agent — Claude Code,
-Codex, MCP tools, the browser and local files — and follows up until it is
-done. Long jobs continue after the chat closes.
+Octuo, by Tutuo, Inc., is not a coding agent itself: it is an assistant that
+puts other AI tools to work. Tell it what you want done and it prepares
+supported tools where it can (it can install and configure coding CLIs),
+briefs agents such as Claude Code and Codex with the context each task
+needs, hands work to MCP tools, tracks every run and brings the results back
+into one conversation. Long, multi-step tasks, schedules and condition
+watches keep running, and anything that needs your decision waits in an
+Attention list.
 
-Work runs on your own Mac: tool calls, shell commands and local files stay
-on the user's machine, and tool calls require the user's own Mac. Octuo is
-a native macOS app (macOS 15+, signed and notarized). An iPhone companion
-(iOS 18+) shows everything the Mac side sees and lets you answer decisions
-and tick off checklists on the go, but without a Mac it cannot run tool
-calls.
+It runs as a Mac app (macOS 15+, signed and notarized), in the browser, and
+on iPhone/iPad (iOS 18+); a Mac is needed only to use the tools and apps on
+your Mac. Most model calls go to cloud-hosted models. Memory is visible and
+editable, and passwords and API keys sit in an encrypted Secrets Vault, so
+the model never sees raw credentials, with each use written to an audit log.
+Claude Code and Codex run under your own accounts and are billed by their
+providers, separately from Octuo.
 
-Plans are paid and credit-based — see [pricing](https://www.tutuo.ai/en/octuo/)
-for the current tiers — and new accounts get 1,000 OC trial credits with no
-card required. There is no public source repository for Octuo.
+Octuo is a paid, credit-based product with a one-time trial allowance and no
+card needed to start ([pricing](https://www.tutuo.ai/en/octuo/)). It is
+closed source; there is no public repository.
 
 **Features:**
-- Native macOS app (macOS 15+, signed and notarized), with an iPhone companion (iOS 18+) for decisions and checklists on the go
-- Delegates work to Claude Code, Codex, MCP tools, the browser and local files — Octuo itself is not a coding agent
-- Prepares work, assigns each part to the right agent, and follows up until it is done; long jobs continue after the chat closes
-- Canvas views and a visible, editable memory graph
-- Encrypted Secrets Vault that the model never sees
-- Tool calls, shell commands and local files stay on your own Mac; tool calls require your Mac
-- Plans — paid, credit-based, with 1,000 OC trial credits and no card required ([pricing](https://www.tutuo.ai/en/octuo/))
+- Delegates work to Claude Code, Codex and MCP tools, and installs and configures supported coding CLIs
+- Tracks every run and brings results back into one conversation
+- Long tasks, schedules and condition watches, with decisions collected in an Attention list
+- Canvas views (checklists, trackers, dashboards) inside the assistant
+- Visible, editable memory; an encrypted Secrets Vault with an audit log
+- Mac app, web app and iPhone/iPad app on one account
 
 **Best for:**
-- Coordinating long, multi-part coding jobs across Claude Code, Codex and MCP tools from a single entry point
-- Heavy agent users who want one place to state a goal and have follow-up continue until the job is done
-- Working with local files and shell commands while keeping secrets in an encrypted vault the model never sees
-- Answering agent decisions and ticking off checklists from an iPhone while the work runs on the Mac
+- Coordinating multi-part coding jobs across Claude Code, Codex and MCP tools from one place
+- Keeping long-running agent work going and answering its decisions from a phone
+- Using agents without handing raw credentials to the model
 
 ---
 
@@ -1108,7 +1110,7 @@ servers, skills, plugins and image attachments.
 
 _GitHub delivery workflow with separate implementation and review sessions, CI-gated merges and separately requested releases._
 
-**Site:** [https://orbi.build/?ref=dir-brethofai-coding-agents](https://orbi.build/?ref=dir-brethofai-coding-agents) · **Repo:** [https://github.com/orbi-build/orbi](https://github.com/orbi-build/orbi) · **License:** open-source · **Deployment:** self-hosted
+**Site:** [https://orbi.build/](https://orbi.build/) · **Repo:** [https://github.com/orbi-build/orbi](https://github.com/orbi-build/orbi) · **License:** open-source · **Deployment:** self-hosted
 
 Orbi is a GitHub App in Cloud and an open-source engine you can self-host.
 Label an issue ai-ready, and an AI agent implements the change in a Git
@@ -1119,8 +1121,9 @@ Release task updates the version, creates a tag and publishes a GitHub Release.
 Self-hosting requires Python, GitHub authentication and a working model
 provider through Pi. Local OpenAI-compatible endpoints are supported.
 The source is available under AGPL-3.0 or the Sustainable Use License.
-Cloud includes 3 deliveries free, no credit card; plan details are at
-https://orbi.build/cloud/?ref=dir-brethofai-coding-agents.
+Orbi Cloud runs the same delivery line on Orbi's infrastructure, with your
+Issues, PRs and releases staying in your repositories
+([Orbi Cloud](https://orbi.build/cloud/)).
 
 **Features:**
 - Implements labelled GitHub issues in separate Git worktrees

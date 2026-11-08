@@ -1,6 +1,6 @@
 name: Orbi
 slug: orbi
-url: https://orbi.build/?ref=dir-brethofai-coding-agents
+url: https://orbi.build/
 repository: https://github.com/orbi-build/orbi
 llms_txt: https://orbi.build/llms.txt
 llms_txt_status: published
@@ -20,8 +20,9 @@ description: |
   Self-hosting requires Python, GitHub authentication and a working model
   provider through Pi. Local OpenAI-compatible endpoints are supported.
   The source is available under AGPL-3.0 or the Sustainable Use License.
-  Cloud includes 3 deliveries free, no credit card; plan details are at
-  https://orbi.build/cloud/?ref=dir-brethofai-coding-agents.
+  Orbi Cloud runs the same delivery line on Orbi's infrastructure, with your
+  Issues, PRs and releases staying in your repositories
+  ([Orbi Cloud](https://orbi.build/cloud/)).
 
 features:
   - Implements labelled GitHub issues in separate Git worktrees
@@ -42,3 +43,4 @@ platforms: [linux, macos]
 tags: [orchestrator, coding-agent, github, worktrees, code-review, open-source]
 maintainer: orbi-build
 added: '2026-11-08'
+verified: '2026-11-08'
