@@ -1,0 +1,47 @@
+name: Octuo
+slug: octuo
+url: https://www.tutuo.ai/en/octuo/
+repository: null
+llms_txt: null
+llms_full_txt: null
+llms_txt_status: missing
+category: coding-agents
+subcategory: ai-native-coding-app
+tagline: Native macOS desktop coordinator that hands coding work to Claude Code, Codex and MCP tools — and follows up until it is done
+description: |
+  Octuo, by Tutuo, Inc., is not a coding agent. It is a native macOS desktop
+  harness and unified entry point for heavy agent users: you state the goal,
+  Octuo prepares the work, hands each part to the right agent — Claude Code,
+  Codex, MCP tools, the browser and local files — and follows up until it is
+  done. Long jobs continue after the chat closes.
+
+  Work runs on your own Mac: tool calls, shell commands and local files stay
+  on the user's machine, and tool calls require the user's own Mac. Octuo is
+  a native macOS app (macOS 15+, signed and notarized). An iPhone companion
+  (iOS 18+) shows everything the Mac side sees and lets you answer decisions
+  and tick off checklists on the go, but without a Mac it cannot run tool
+  calls.
+
+  Plans are paid and credit-based — see [pricing](https://www.tutuo.ai/en/octuo/)
+  for the current tiers — and new accounts get 1,000 OC trial credits with no
+  card required. There is no public source repository for Octuo.
+features:
+  - "Native macOS app (macOS 15+, signed and notarized), with an iPhone companion (iOS 18+) for decisions and checklists on the go"
+  - "Delegates work to Claude Code, Codex, MCP tools, the browser and local files — Octuo itself is not a coding agent"
+  - "Prepares work, assigns each part to the right agent, and follows up until it is done; long jobs continue after the chat closes"
+  - "Canvas views and a visible, editable memory graph"
+  - "Encrypted Secrets Vault that the model never sees"
+  - "Tool calls, shell commands and local files stay on your own Mac; tool calls require your Mac"
+  - "Plans — paid, credit-based, with 1,000 OC trial credits and no card required ([pricing](https://www.tutuo.ai/en/octuo/))"
+use_cases:
+  - "Coordinating long, multi-part coding jobs across Claude Code, Codex and MCP tools from a single entry point"
+  - "Heavy agent users who want one place to state a goal and have follow-up continue until the job is done"
+  - "Working with local files and shell commands while keeping secrets in an encrypted vault the model never sees"
+  - "Answering agent decisions and ticking off checklists from an iPhone while the work runs on the Mac"
+license: commercial
+deployment: local
+platforms: [macos, ios]
+tags: [macos, ios, desktop-app, agent-orchestrator, multi-agent, claude-code, codex, mcp, memory-graph, secrets-vault, long-running-tasks]
+maintainer: Tutuo, Inc.
+added: 2026-11-07
+verified: 2026-11-07
