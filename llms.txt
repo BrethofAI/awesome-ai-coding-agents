@@ -8,7 +8,7 @@
 - [Aider](https://aider.chat): AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
 - [Amp](https://ampcode.com): Multi-model coding agent from Amp Inc. (spun out of Sourcegraph) — terminal CLI, web and Mac/iOS apps, with remote "orbs" that keep working after you close the laptop.
 - [Antigravity CLI (Google Antigravity)](https://antigravity.google): Google's `agy` terminal agent — part of Google Antigravity (desktop app, IDE, editor extensions on one harness) and the successor to Gemini CLI for free and Google AI Pro/Ultra users.
-- [Atlarix](https://atlarix.dev): Proprietary model-agnostic coding agent (desktop app, CLI, editor and Chrome extensions, PR reviewer) where every edit is a diff you approve and commands run in a per-OS sandbox.
+- [Atlarix](https://atlarix.dev): Proprietary model-agnostic coding agent (desktop app, CLI, editor and Chrome extensions, PR reviewer) where every file edit is a diff you approve and shell commands run in a per-OS sandbox.
 - [Claude Code](https://claude.com/product/claude-code): Anthropic's terminal-first agentic coding assistant with deep tool use and codebase awareness.
 - [Claude Desktop](https://claude.com/download): Anthropic's desktop app (macOS, Windows, Linux beta) combining chat, Cowork agentic tasks and Claude Code, extensible via MCP, skills and plugins.
 - [Cline](https://cline.bot): Apache-2.0 coding agent for VS Code-family editors and JetBrains, with a CLI and desktop app — bring your own keys or run local models.
@@ -22,7 +22,7 @@
 - [goose](https://goose-docs.ai): Apache-2.0 local AI agent (desktop app, CLI and API) started by Block and now part of the Linux Foundation's Agentic AI Foundation — 15+ providers, local models and MCP extensions.
 - [Kilo Code](https://kilo.ai): MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models.
 - [Kiro (successor to Amazon Q Developer)](https://kiro.dev): AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30.
-- [Mel – the agentic terminal](https://www.openmel.dev): The agentic team for coding. A terminal for macOS, Windows and Linux with a team of AI coding agents and configurable approvals, plus a VS Code extension.
+- [Mel – the agentic terminal](https://www.openmel.dev): A terminal for macOS, Windows and Linux with a team of AI coding agents and configurable approvals, plus a VS Code extension.
 - [MiniMax Code](https://agent.minimax.io/docs/cli/quick-start): MiniMax's coding agent — an MIT-licensed terminal CLI (`mcode`) plus a desktop app, running MiniMax models on an M Plan or any compatible model you bring.
 - [Mixdog](https://mixdog.ai): Open-source (Apache-2.0) desktop and terminal coding agent where a lead model plans and cheaper models search, edit and review, assigned by role.
 - [Octuo](https://www.tutuo.ai/en/octuo/): Paid assistant (macOS, web, iPhone/iPad) that hands coding work to Claude Code, Codex and MCP tools under your own accounts, tracks each run and brings the results back.
