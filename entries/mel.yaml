@@ -1,0 +1,41 @@
+name: Mel – the agentic terminal
+slug: mel
+url: https://www.openmel.dev
+repository: null
+llms_txt: null
+
+category: coding-agents
+subcategory: ai-native-coding-app
+
+tagline: The agentic team for coding. A terminal for macOS, Windows and Linux with a team of AI coding agents and configurable approvals, plus a VS Code extension.
+
+description: |
+  Mel – the agentic terminal is the agentic team for coding. It is a terminal
+  for macOS, Windows and Linux with a team of AI agents. You describe the work
+  and the agents plan it, write the code, test it and get it ready to ship,
+  while you watch every step in your terminal.
+
+  You stay in control: approvals are configurable, so you choose which edits
+  and commands the agents can run on their own and which ones wait for your OK.
+
+  Mel also has a VS Code extension, so you can use the same agent team inside
+  your editor.
+
+  Paid. Mel Free is bring your own AI key only. Pro, Max and Business plans
+  are listed on the [pricing](https://www.openmel.dev/pricing) page.
+  Proprietary; open source is coming soon.
+
+features:
+  - Terminal for macOS, Windows and Linux with a built-in team of AI coding agents
+  - Agents plan, write, test and get code ready to ship
+  - Configurable approvals for edits and commands
+  - VS Code extension with the same agent team
+  - Mel Free works with your own AI key
+
+license: paid
+deployment: local
+platforms: [linux, macos, windows]
+tags: [coding-agent, agentic-terminal, multi-agent, vscode-extension, byok, commercial]
+maintainer: Thinkverse AI LLC
+added: '2026-11-09'
+verified: '2026-11-09'
