@@ -22,6 +22,7 @@
 - [goose](https://goose-docs.ai): Apache-2.0 local AI agent (desktop app, CLI and API) started by Block and now part of the Linux Foundation's Agentic AI Foundation — 15+ providers, local models and MCP extensions.
 - [Kilo Code](https://kilo.ai): MIT-licensed coding agent for VS Code, JetBrains and the CLI with 500+ models, BYOK and local models.
 - [Kiro (successor to Amazon Q Developer)](https://kiro.dev): AWS's spec-driven coding agent (IDE, CLI, web) — the replacement for Amazon Q Developer, whose IDE plugins reach end of support on 2027-04-30.
+- [Mel – the agentic terminal](https://www.openmel.dev): The agentic team for coding. A terminal for macOS, Windows and Linux with a team of AI coding agents and configurable approvals, plus a VS Code extension.
 - [MiniMax Code](https://agent.minimax.io/docs/cli/quick-start): MiniMax's coding agent — an MIT-licensed terminal CLI (`mcode`) plus a desktop app, running MiniMax models on an M Plan or any compatible model you bring.
 - [Mixdog](https://mixdog.ai): Open-source (Apache-2.0) desktop and terminal coding agent where a lead model plans and cheaper models search, edit and review, assigned by role.
 - [Octuo](https://www.tutuo.ai/en/octuo/): Paid assistant (macOS, web, iPhone/iPad) that hands coding work to Claude Code, Codex and MCP tools under your own accounts, tracks each run and brings the results back.

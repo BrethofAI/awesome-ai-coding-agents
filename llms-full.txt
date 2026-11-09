@@ -1065,6 +1065,37 @@ Best for:
 
 ---
 
+## Mel – the agentic terminal
+
+URL: https://www.openmel.dev
+License: paid  Deployment: local
+
+_The agentic team for coding. A terminal for macOS, Windows and Linux with a team of AI coding agents and configurable approvals, plus a VS Code extension._
+
+Mel – the agentic terminal is the agentic team for coding. It is a terminal
+for macOS, Windows and Linux with a team of AI agents. You describe the work
+and the agents plan it, write the code, test it and get it ready to ship,
+while you watch every step in your terminal.
+
+You stay in control: approvals are configurable, so you choose which edits
+and commands the agents can run on their own and which ones wait for your OK.
+
+Mel also has a VS Code extension, so you can use the same agent team inside
+your editor.
+
+Paid. Mel Free is bring your own AI key only. Pro, Max and Business plans
+are listed on the [pricing](https://www.openmel.dev/pricing) page.
+Proprietary; open source is coming soon.
+
+Features:
+- Terminal for macOS, Windows and Linux with a built-in team of AI coding agents
+- Agents plan, write, test and get code ready to ship
+- Configurable approvals for edits and commands
+- VS Code extension with the same agent team
+- Mel Free works with your own AI key
+
+---
+
 ## MiniMax Code
 
 URL: https://agent.minimax.io/docs/cli/quick-start
