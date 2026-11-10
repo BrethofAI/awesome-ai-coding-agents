@@ -1,0 +1,37 @@
+name: Imagera Code
+slug: imagera-code
+url: https://imagera.ai/code
+repository: null
+llms_txt: https://imagera.ai/llms.txt
+
+category: coding-agents
+subcategory: cli-coding-agent
+
+tagline: Terminal coding agent that reads your project, edits files, runs your tests and shows the diff, on any of 276 coding models from one plan.
+
+description: |
+  Imagera Code is a coding agent for the terminal, installed with
+  `npm i -g imagera-code` (or a one-line installer that needs no Node.js).
+  You describe the change; it reads the project, edits the files, runs your
+  tests and shows you the diff before you keep it.
+
+  One plan covers 276 coding models from many labs. Each plan has one weekly
+  limit and no short 3-hour lockouts; when the limit is reached you can keep
+  going on credits instead of waiting. Plans are paid, from Pro to Max 50x
+  ([pricing](https://imagera.ai/code)). The CLI package is MIT-licensed on
+  npm; the models run through Imagera's hosted endpoint.
+
+features:
+  - Terminal agent that reads the project, edits files, runs tests and shows the diff
+  - 276 coding models on one plan
+  - One weekly limit, no short 3-hour lockouts
+  - Keep going on credits when a limit is reached
+  - Builds for macOS, Linux and Windows (arm64 and x64)
+
+license: paid
+deployment: cli
+platforms: [linux, macos, windows]
+tags: [coding-agent, cli, terminal, multi-model, commercial]
+maintainer: Imagera
+added: '2026-11-10'
+verified: '2026-11-10'
