@@ -171,7 +171,7 @@
    }
   },
   "orbi": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
