@@ -1,0 +1,40 @@
+name: agent-qa
+slug: agent-qa
+url: https://vostride.com
+repository: https://github.com/vostride/agent-qa
+llms_txt: https://vostride.com/llms.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: qa-companion
+
+tagline: Local QA companion for coding agents, with persistent memidex memory, validated self-improvement and step evidence.
+
+description: |
+  agent-qa runs plain-language end-to-end tests against web, Android and iOS
+  interfaces through a local CLI or MCP. Coding agents can author tests, run
+  them and inspect step evidence ([documentation](https://vostride.com/llms.txt)).
+
+  Persistent memidex memory reuses validated lessons across runs; proposed
+  updates are checked before adoption and remain reviewable files
+  ([overview](https://vostride.com)). The local dashboard shows run steps and
+  screenshots ([dashboard](https://vostride.com/docs/agent-qa/dashboard.md)).
+
+  The code is licensed FSL-1.1-ALv2. Local software is free for permitted use;
+  users supply model inference and execution infrastructure
+  ([pricing and operating costs](https://vostride.com/pricing.md)).
+
+features:
+  - Plain-language web, Android and iOS QA through CLI or local MCP
+  - Persistent memidex memory and validated self-improvement
+  - Reviewable step evidence and screenshots in a local dashboard
+
+use_cases:
+  - Giving coding agents evidence from real application workflows
+
+license: source-available
+deployment: cli
+tags: [qa, testing, cli, mcp, memory]
+maintainer: vostride
+added: '2026-11-11'
+verified: '2026-11-11'
