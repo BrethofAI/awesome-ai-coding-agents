@@ -1,0 +1,62 @@
+name: Reliant
+slug: reliant
+url: https://reliantlabs.io
+repository: https://github.com/reliant-labs/reliant
+llms_txt: https://reliantlabs.io/llms.txt
+llms_full_txt: https://reliantlabs.io/llms-full.txt
+llms_txt_status: published
+
+category: coding-agents
+subcategory: coding-agent-orchestrator
+
+tagline: Source-available (BSL 1.1) desktop and web app that runs coding agents through YAML workflows kept in your repo, with check-until-green loops, parallel attempts in git worktrees, approvals and event triggers.
+
+description: |
+  Reliant, by Reliant Labs, is an agent harness: a desktop app (macOS,
+  Windows and Linux) and a web app where you chat with coding agents, plus
+  workflows that run them on their own. A workflow is a YAML file in
+  `.reliant/workflows/`, versioned with your code: a graph of agent, shell,
+  approval and integration steps joined by edges that carry conditions. A
+  run starts by hand, on a schedule or webhook, or from a GitHub, Slack,
+  Gmail or Twilio event
+  ([automations](https://docs.reliantlabs.io/automations/overview)).
+
+  Two built-in workflows show the shape. Get It Right implements a change,
+  runs your lint, test and build commands, has a separate reviewer agent
+  judge the result, and loops until the checks pass and the reviewer agrees
+  ([docs](https://docs.reliantlabs.io/guides/get-it-right)). Best of Three
+  has three agents attempt the same task in separate git worktrees, then a
+  reviewer picks the best attempt or combines them
+  ([docs](https://docs.reliantlabs.io/guides/best-of-three)). Agents can
+  also spawn sub-agents.
+
+  Running agents on your own computer is free with your own model API key
+  or a provider subscription
+  ([AI providers](https://docs.reliantlabs.io/settings/api-keys)). Cloud
+  machines, which keep working after the laptop is closed, are a paid plan
+  ([pricing](https://reliantlabs.io/pricing)). Reliant is source-available,
+  not open source: it is licensed under the Business Source License 1.1, and
+  each release becomes Apache-2.0 four years after it is published
+  ([LICENSE](https://github.com/reliant-labs/reliant/blob/main/LICENSE)). The
+  SDKs in `sdk/` are Apache-2.0.
+
+features:
+  - Desktop app (macOS, Windows, Linux) and web app
+  - Workflows as YAML files in the repo, with agent, shell, approval and integration steps
+  - Conditional edges and loops, such as implement, check and review until lint, tests and build pass
+  - Parallel attempts in separate git worktrees, with a reviewer that picks or combines them
+  - Triggers from schedules, webhooks, GitHub, Slack, Gmail and Twilio events
+  - Free on your own computer with your own model key; paid cloud machines
+
+use_cases:
+  - Running a repeatable implement, test and review process instead of one-off prompts
+  - Automating pull-request review or issue work from GitHub events or a schedule
+  - Comparing several agent attempts at one task before keeping one
+
+license: source-available
+deployment: local
+platforms: [linux, macos, windows, web]
+tags: [orchestrator, coding-agent, workflows, worktrees, desktop-app, byok, source-available]
+maintainer: Reliant Labs
+added: '2026-11-12'
+verified: '2026-11-12'
