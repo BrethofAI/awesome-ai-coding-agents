@@ -194,6 +194,14 @@
     "code": 200
    }
   },
+  "reliant": {
+   "ok_streak": 1,
+   "fail_streak": 0,
+   "last": {
+    "state": "ok",
+    "code": 200
+   }
+  },
   "sourcegraph-cody": {
    "ok_streak": 0,
    "fail_streak": 3,
