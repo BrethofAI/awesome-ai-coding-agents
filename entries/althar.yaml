@@ -1,0 +1,46 @@
+name: Althar
+slug: althar
+url: https://althar.ai/
+repository: https://github.com/AltharIDE/althar
+llms_txt: https://althar.ai/llms.txt
+llms_full_txt: null
+llms_txt_status: published
+
+category: coding-agents
+subcategory: coding-agent-orchestrator
+
+tagline: Open-source desktop ADE that assigns coding tasks to agents and routes their changes to a separate model for review.
+
+description: |
+  Althar is an agentic development environment for macOS, Windows, and Linux.
+  A project coordinator turns requests into tasks and chooses a coding agent
+  to implement each one. Review can run as a separate model step, with findings
+  returned to the lead agent. The task graph shows the handoffs and the
+  developer decides when to merge. See the
+  [repository README](https://github.com/AltharIDE/althar#readme) and the
+  [review documentation](https://github.com/AltharIDE/althar/blob/main/docs/decisions/reviews.md).
+
+  The desktop app is Apache-2.0. It connects to coding agents using your
+  existing provider accounts or API keys. OpenCode also supports using a local
+  model. Agent and account setup depends on which providers you choose, and the
+  project notes that the app is tested most on macOS. See the
+  [supported agents and setup](https://github.com/AltharIDE/althar#get-started) and
+  [public releases](https://github.com/AltharIDE/althar/releases).
+
+features:
+  - Project coordinator for planning and assigning coding tasks
+  - Separate implementation and model review steps in a task graph
+  - Existing Claude Code, Codex, and OpenCode accounts or credentials
+  - Integrated browser for checking work
+
+use_cases:
+  - Delegating implementation and review to different coding agents
+  - Following parallel tasks from one desktop workspace
+
+license: open-source
+deployment: local
+platforms: [macos, windows, linux]
+tags: [desktop, coding-agent, orchestration, review]
+maintainer: AltharIDE
+added: '2026-11-14'
+verified: '2026-11-14'
