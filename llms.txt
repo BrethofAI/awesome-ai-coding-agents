@@ -5,7 +5,7 @@
 
 ## Tools
 
-- [agent-qa](https://vostride.com): Local QA companion for coding agents, with persistent memidex memory, validated self-improvement and step evidence.
+- [agent-qa](https://vostride.com): Lets your coding agent test the app it just built. You write the test as plain sentences, it clicks through the real web, Android or iOS app and returns pass or fail with screenshots.
 - [Aider](https://aider.chat): AI pair programming in your terminal — edits code across your git repo with commit-per-change discipline.
 - [Amp](https://ampcode.com): Multi-model coding agent from Amp Inc. (spun out of Sourcegraph) — terminal CLI, web and Mac/iOS apps, with remote "orbs" that keep working after you close the laptop.
 - [Antigravity CLI (Google Antigravity)](https://antigravity.google): Google's `agy` terminal agent — part of Google Antigravity (desktop app, IDE, editor extensions on one harness) and the successor to Gemini CLI for free and Google AI Pro/Ultra users.

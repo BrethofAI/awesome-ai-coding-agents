@@ -6,35 +6,51 @@ llms_txt: https://vostride.com/llms.txt
 llms_txt_status: published
 
 category: coding-agents
-subcategory: qa-companion
+subcategory: testing-qa
 
-tagline: Local QA companion for coding agents, with persistent memidex memory, validated self-improvement and step evidence.
+tagline: Lets your coding agent test the app it just built. You write the test as plain sentences, it clicks through the real web, Android or iOS app and returns pass or fail with screenshots.
 
 description: |
-  agent-qa runs plain-language end-to-end tests against web, Android and iOS
-  interfaces through a local CLI or MCP. Coding agents can author tests, run
-  them and inspect step evidence ([documentation](https://vostride.com/llms.txt)).
+  A test is a short YAML file whose steps are plain sentences ("log in as
+  the test user, open settings, check dark mode switches"). For each step
+  agent-qa reads the screen's accessibility tree, and a screenshot when the
+  model can see images, lets the model pick a click or a keystroke, then
+  checks the result. Web runs use Playwright in a browser it installs;
+  Android and iOS run through Appium, which you install, and iOS needs a
+  Mac with Xcode ([how a run works](https://vostride.com/docs/agent-qa/how-it-works.md)).
+  It does not test desktop apps.
 
-  Persistent memidex memory reuses validated lessons across runs; proposed
-  updates are checked before adoption and remain reviewable files
-  ([overview](https://vostride.com)). The local dashboard shows run steps and
-  screenshots ([dashboard](https://vostride.com/docs/agent-qa/dashboard.md)).
+  You bring the model: a Claude or Codex subscription, any OpenAI- or
+  Anthropic-style endpoint including a local server, or Gemini
+  ([models](https://vostride.com/docs/agent-qa/configuration/models.md)).
+  After each run it writes what it learned about your app (facts,
+  cautions, replayable steps) as files you commit in `agent-qa-knowledge/`;
+  code checks a note before it is used, and runs in CI only propose notes
+  ([memory](https://vostride.com/docs/agent-qa/memory.md)). Coding agents
+  drive it through a local MCP server with 20 tools to write, run and
+  refine tests and read the evidence
+  ([MCP](https://vostride.com/docs/agent-qa/mcp.md)).
 
-  The code is licensed FSL-1.1-ALv2. Local software is free for permitted use;
-  users supply model inference and execution infrastructure
-  ([pricing and operating costs](https://vostride.com/pricing.md)).
+  Free; you pay for your own model and machines
+  ([pricing](https://vostride.com/pricing.md)). Licensed FSL-1.1-ALv2,
+  source-available. Usage events go to PostHog and error reports to
+  Sentry unless you set `analytics.privacy: true`
+  ([safety](https://vostride.com/docs/agent-qa/safety.md)). Early: one
+  main author, and the README says to expect bugs.
 
 features:
-  - Plain-language web, Android and iOS QA through CLI or local MCP
-  - Persistent memidex memory and validated self-improvement
-  - Reviewable step evidence and screenshots in a local dashboard
+  - Plain-sentence end-to-end tests for web (Playwright), Android and iOS (Appium)
+  - Bring your own model, local models included
+  - Learns notes about your app between runs, kept as reviewable files in git
+  - Local MCP server so Claude Code and other agents write and run the tests
+  - Step-by-step screenshots and evidence in a local dashboard
 
 use_cases:
-  - Giving coding agents evidence from real application workflows
+  - Letting a coding agent check its own work in the running app, not just in unit tests
 
 license: source-available
 deployment: cli
-tags: [qa, testing, cli, mcp, memory]
+tags: [qa, testing, cli, mcp]
 maintainer: vostride
-added: '2026-11-11'
-verified: '2026-11-11'
+added: '2026-11-15'
+verified: '2026-11-15'

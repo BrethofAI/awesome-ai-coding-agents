@@ -58,6 +58,7 @@ DECISION_TREE = [
     ("Using DeepSeek models?", ["deepseek-harness"]),
     ("On a MiniMax M Plan / Token Plan?", ["minimax-code"]),
     ("In the Tencent Cloud / WeChat ecosystem?", ["codebuddy"]),
+    ("Want your coding agent to test the app it built (web, Android, iOS)?", ["agent-qa"]),
 ]
 
 
@@ -96,7 +97,7 @@ def render_matrix(comparison: dict, entries: list[dict]) -> list[str]:
     if not comparison:
         return []
     out = [f"## {comparison.get('title', 'Comparison matrix')}\n"]
-    by_slug = {e["slug"]: e["name"] for e in entries}
+    by_slug = {e["slug"]: e["name"] for e in entries if e.get("subcategory") != "testing-qa"}
     cols = sorted(by_slug.items(), key=lambda x: x[1].lower())
     col_slugs = [s for s, _ in cols]
     col_headers = [n for _, n in cols]
@@ -173,8 +174,18 @@ def render_readme(entries: list[dict], comparison: dict) -> str:
     lines.append("<!-- LIST:START -->")
     lines.append("## Tools\n")
     for e in entries:
+        if e.get("subcategory") == "testing-qa":
+            continue
         lines.extend(render_entry_card(e))
         lines.append("---\n")
+    qa = [e for e in entries if e.get("subcategory") == "testing-qa"]
+    if qa:
+        lines.append("## Testing & QA agents\n")
+        lines.append("Tools your coding agent uses to test what it built: they run the real "
+                     "app, decide pass or fail and keep the evidence.\n")
+        for e in qa:
+            lines.extend(render_entry_card(e))
+            lines.append("---\n")
     lines.append("<!-- LIST:END -->\n")
     lines.append("## Contributing\n")
     lines.append(
