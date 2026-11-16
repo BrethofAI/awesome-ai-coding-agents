@@ -1,48 +1,54 @@
 {
- "checked": "2026-11-09",
+ "checked": "2026-11-16",
  "since": true,
  "changes": [
   {
    "slug": "codex-cli",
    "name": "OpenAI Codex CLI",
    "kind": "release",
-   "detail": "rust-v0.166.0 → rust-v0.167.0 (2026-11-06)"
+   "detail": "rust-v0.167.0 → rust-v0.169.0 (2026-11-13)"
   },
   {
    "slug": "gemini-cli",
    "name": "Gemini CLI",
    "kind": "release",
-   "detail": "v0.66.0 → v0.67.0 (2026-11-04)"
+   "detail": "v0.67.0 → v0.68.0 (2026-11-10)"
   },
   {
-   "slug": "kilo-code",
-   "name": "Kilo Code",
+   "slug": "goose",
+   "name": "goose",
    "kind": "release",
-   "detail": "v7.8.18 → v7.8.27 (2026-11-05)"
+   "detail": "v1.57.0 → v1.59.1 (2026-11-14)"
   },
   {
    "slug": "open-interpreter",
    "name": "Open Interpreter",
    "kind": "release",
-   "detail": "rust-v0.0.58 → rust-v0.0.59 (2026-11-04)"
+   "detail": "rust-v0.0.59 → rust-v0.0.61 (2026-11-11)"
+  },
+  {
+   "slug": "orbi",
+   "name": "Orbi",
+   "kind": "release",
+   "detail": "v0.7.41 → v0.7.44 (2026-11-15)"
   },
   {
    "slug": "pi",
    "name": "Pi",
    "kind": "release",
-   "detail": "v1.4.0 → v1.5.0 (2026-11-02)"
+   "detail": "v1.5.0 → v1.5.2 (2026-11-10)"
   },
   {
    "slug": "qwen-code",
    "name": "Qwen Code",
    "kind": "release",
-   "detail": "v0.26.5 → v0.27.0 (2026-11-07)"
+   "detail": "v0.27.0 → v0.27.4 (2026-11-15)"
   },
   {
    "slug": "tale",
    "name": "Tale",
    "kind": "release",
-   "detail": "v0.5.95 → v0.5.105 (2026-11-07)"
+   "detail": "v0.5.105 → v0.5.106 (2026-11-14)"
   }
  ]
 }
