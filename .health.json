@@ -3,7 +3,7 @@
  "_comment": "Machine state for scripts/validate.py. Consecutive-outcome streaks per entry, capped at their thresholds and carrying no timestamps, so this file only changes when a URL's real state changes. Do not hand-edit.",
  "entries": {
   "agent-qa": {
-   "ok_streak": 1,
+   "ok_streak": 2,
    "fail_streak": 0,
    "last": {
     "state": "ok",
